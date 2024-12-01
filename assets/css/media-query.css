@@ -1,0 +1,1935 @@
+@media (max-width: 1870px){
+	.mber-about-content, .mber-news-content, .mber-contact-us-content, .mber-weekend-mode, .mber-single-news-content, .mber-project-content {
+		padding: 60px 80px 20px 30px;
+	}
+}
+@media (max-width: 1690px){
+	.mber-about-content, .mber-news-content, .mber-contact-us-content,
+	.mber-weekend-mode, .mber-single-news-content, .mber-project-content {
+		max-width: 100%;
+		padding: 60px 105px 20px 30px;
+	}
+	/*about me page media query*/
+	.mber-interst-icon {
+		padding: 32px;
+	}
+	.mber-circle-progress {
+		width: 106px;
+		height: 106px;
+	}
+	.mber-progra-progressbar {
+		padding: 12px 0 0;
+	}
+	.mber-client-wrap {
+		padding: 15px 34px;
+	}
+	.pers-info-wrap {
+		padding-bottom: 12px;
+	}
+
+	/*weekend mode on*/
+	.mber-drop-mail-wrap {
+		/*padding: 30px 0 100px;*/
+		padding: 10px 0 30px;
+	}
+	.drop-mail-title, .mber-drop-mail-wrap {
+		font-size: 34px;
+		line-height: 40px;
+	}
+	.mber-client-wrap svg {
+		width: 100%;
+		height: auto;
+	}
+
+	/*portfolio detail page media query*/
+	.mber-clinet-name {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.mber-live-preview {
+		margin: 9px 0 0;
+	}
+	.mber-live-preview a {
+		padding: 0;
+	}
+	.mber-live-preview.mber-get-touch {
+		padding: 16px 20px;
+	}
+	.project-desc {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.mber-img-two {
+		padding: 21px 0 0 0;
+	}
+	.mber-project-hold {
+		padding-right: 12px;
+	}
+	.mber-project-detat-row {
+		display: flex;
+	}
+	.mber-proje-field svg {
+		margin-right: 7px;
+	}
+
+	/*single image media query*/
+
+	.image-wrapper img {
+		height: 490px;
+	}
+	.mber-single-image {
+		padding: 52px 0 0;
+	}
+	.image-close {
+		top: 45px;
+		right: 90px
+	}
+
+	/*slider image media query*/
+
+	.slider-container {
+		height: 510px
+	}
+
+	/*soundcloud media query*/
+	.mber-soundcloud-video iframe {
+		height: 430px;
+		width: 100%;
+	}
+	.mber-soundcloud-video {
+		padding: 66px 0 20px;
+		height: auto;
+		width: 100%;
+		margin: 0 0 100px 0;
+	}
+
+	/*vimeovideo media query*/
+	.mber-vimeo-video {
+		padding: 20px 0 50px;
+		height: 0;
+		max-width: 100%;
+		overflow: hidden;
+		padding-bottom: 65.25%;
+		position: relative;
+		top: -6px;
+	}
+	.mber-vimeo-video iframe {
+		position: absolute;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	/*youtube page media query*/
+	.mber-youtube-video > iframe {
+		top: 70px;
+		padding-bottom: 70px;
+	}
+	.mber-youtube-video {
+		padding-top: 66.25%;
+	}
+
+	/*news blog page media query*/
+	.mber-blog-card .mber-news-desc {
+		padding: 20px 0 10px;
+	}
+	.mber-blog-card .mber-news-description .mber-read-more a {
+		padding: 15px 40px 15px 30px;
+	}
+	.mber-read-more a:after {
+		top: 8px;
+	}
+	.mber-news-title {
+		font-size: 28px;
+		line-height: 40px;
+	} 
+
+	/*single blog page media query*/
+	.nav-blog-tag .nav-tag-item {
+		margin: 0 5px 0 0;
+	}
+	.mber-comme-user-name {
+		padding: 0;
+	}
+	.comment-user-img img {
+		width: 100px;
+		height: 100px;
+	}
+	.reply-card-body {
+		margin: 10px 0px 10px 63px;
+	}
+	.blog-quote {
+		margin: 5px 0 5px;
+	}
+
+	/*contact us page media query*/
+	.mber-cont-get-in {
+		padding: 46px 0 20px;
+	}
+	.mber-message-me {
+		padding: 20px 0 60px;
+	}
+	.mber-get-in-title span{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.mber-location-icon svg {
+		position: absolute;
+		top: 35%;
+		left: auto;
+		right: 26%;
+	}
+}
+@media(max-height: 1050px) {
+	.about-social-wrap .mber-follow-us-content {
+		transform-origin: 92px 55px;
+	}
+}
+@media (max-height: 900px) {
+	.mber-follow-us-content {
+		bottom: -80px;
+	}
+}
+@media (max-height: 768px) {
+	.mber-follow-us-content {
+		bottom: -76px;
+	}
+	.slider-container {
+		height: 390px;
+	}
+}
+@media (max-width: 1500px) {
+
+	/*header menu media query*/
+	[class=navcheck]:checked ~ .mberloga-menu-list::before {
+		transform: skewX(-27deg) translateX(-37%);
+		width: 47rem;
+	}
+	.mber-about-content, .mber-news-content, .mber-contact-us-content,
+	.mber-weekend-mode, .mber-single-news-content, .mber-project-content {
+		max-width: 100%;
+		padding: 60px 105px 20px 30px;
+	}
+	.mber-interst-icon {
+		padding: 30px;
+	}
+	.mber-award-card .mber-main-card-wrap {
+		padding: 24px;
+	}
+	.mber-awrd-card-hover .mber-award-name{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.mber-client-wrap {
+		padding: 15px 32px;
+	} 
+	.sal-week-desc-one, .sal-week-desc-two {
+		padding: 0 0 14px 0;	
+	}
+	.service-card-col {
+		width: 50%;
+		height: auto;
+	}
+	.marketing-col-top {
+		padding-top: 30px;
+	}
+	.mber-award-card .mber-main-card-wrap .mber-awrd-card-hover .mber-awrd-desc {
+		padding-top: 14px;
+	}
+	.mber-award-card:hover .mber-main-card-wrap {
+		padding: 20px 26px;
+	}
+
+	/*portfolio media query*/
+
+	.mber-port-get-btn {
+		margin: 40px 0 50px;
+	}
+
+	/*project detail page media query*/
+
+	.mber-project-hold {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.mber-project-hold svg {
+		height: 22px;
+		width: 22px;
+		margin-right: 7px;
+	}
+	.mber-project-hold {
+		padding-right: 12px;
+	} 
+
+	/*project detail media query*/
+
+	.mber-project-detat-row {
+		padding: 10px 0 30px;
+	}
+
+	/*soundcloud page media query*/
+	.mber-vimeo-video {
+		padding-bottom: 72.25%;
+	}
+
+	/*youtube page media query*/
+	.mber-youtube-video {
+		padding-top: 70.25%;
+	}
+
+	/*news blog page media query*/
+	.mber-blog-wrap {
+		height: auto;
+	}
+	.mber-blog-card .mber-news-desc {
+		padding: 12px 0 10px;
+	}
+	.mber-blog-card .mber-news-description .mber-read-more a {
+		padding: 14px 34px 14px 22px;
+	}
+	.mber-read-more a:hover:after {
+		right: 13px;
+	}
+	.mber-read-more a:after {
+		top: 7px;
+	}
+
+	/*single news page*/
+	.reply-card-body {
+		margin: 10px 0px 10px 72px;
+	}
+
+	/*contact us page*/
+	
+	.mber-contat-us-map iframe{
+		height: 469px!important;
+	}
+}
+@media (max-width: 1440px) {
+	.mber-footer-wrap {
+		padding: 20px 88px 20px 15px;
+	}
+	.mber-header .mber-header-nav {
+		padding: 20px 15px 20px 15px;
+	}
+	.mber-home-main-content {
+		padding: 30px 126px 30px 15px;
+	}
+	.mber-header {
+		padding: 20px 15px 20px 15px;
+	}
+	.mber-about-content, .mber-news-content, .mber-contact-us-content,
+	.mber-weekend-mode, .mber-single-news-content, .mber-project-content {
+		padding: 60px 89px 20px 15px;
+	}
+	.mber-social-content {
+		top: 25%;
+	}
+	.mber-social-list .mber-social-icon {
+		margin-bottom: 12px;
+	}
+	.mber-social-list:after {
+		bottom: -50px;
+	}
+	#menu  {
+		min-width: 330px;
+	}
+	[class=navcheck]:checked ~ #menu::before {
+		transform: skewX(-32deg) translateX(-47%);
+		width: 52rem;
+	}
+	.mberloga-menu-list li a {
+		font-size: 38px;
+		line-height: 44px;
+	}
+	.mber-btn-border-dark {
+		height: 65px;
+	}
+	.mber-btn-border-dark:hover:after, .mber-btn-border-dark:hover .mber-btn-border-dark-inner:before {
+		height: 65px;
+	}
+
+	/*About me page media query*/
+
+	.mber-home-title:after {
+		bottom: -12px;
+	}
+	.mber-about-personal {
+		padding: 40px 0 30px;
+	}
+	.personal-info-row {
+		padding: 10px 0 0;
+	}
+	.pers-info-wrap {
+		padding-bottom: 10px;
+	}
+	.mber-progress-inner.progress-top {
+		padding-top: 32px;
+	}
+	.service-card-wrap {
+		padding: 20px 12px;
+	}
+	.service-card-wrap:hover:before {
+		transform: scale(23);
+	}
+	.educ-year {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.about-edu-title {
+		padding: 20px 0 10px;
+	}
+	.mber-inter-award-list {
+		display: flex;
+	}
+	.mber-about-desc {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.mber-circle-progress {
+		width: 100px;
+		height: 100px;
+	}
+	.mber-circle-prog-value {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.mber-home-image, .mber-weekend-image {
+		background-position: center center;
+	}
+	.mber-about-edu-expr {
+		padding: 30px 0;
+	}
+	.mber-award-card .mber-main-card-wrap:hover {
+		transform: translate(-8px, -8px);	
+	}
+	.mber-inter-main-wrap {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.mber-interst-icon {
+		padding: 25px;
+	}
+	.mber-interst-icon svg {
+		height: 40px;
+		width: 40px;
+	}
+	.mber-interst-icon {
+		margin-bottom: 12px;
+	}
+	.mber-inter-name {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	/*portfolio page media query*/
+
+	.mber-tab-link {
+		padding: 0 28px 0 0;
+	}
+
+	/*project detail media query*/
+
+	.mber-project-hold {
+		padding-right: 10px;
+	}
+	.mber-project-hold svg {
+		height: 21px;
+		width: 21px;
+		margin-right: 3px;
+	}
+	.mber-live-preview.mber-get-touch {
+		padding: 12px 20px;
+	}
+	.mber-proj-desc {
+		padding-bottom: 30px;
+	}
+	.mber-detail-gallary {
+		padding: 0 0 40px 0;
+	}
+	.mber-back-btn .close {
+		padding: 9px 45px;
+	}
+
+	/*single image media query*/
+	.mber-single-image {
+		padding: 60px 0 60px;
+	}
+	.image-wrapper img {
+		height: 450px;
+	}
+
+	/*soundcloud page media query*/
+	.mber-vimeo-video {
+		padding-bottom: 72.25%;
+	}
+
+	/*youtube page media query*/
+	.mber-youtube-video > iframe {
+		top: 55px;
+		padding-bottom: 128px;
+	}
+	.mber-youtube-video {
+		padding-top: 80.25%;
+	}
+
+	/*contact us page media query*/
+	.mber-cont-get-in {
+		padding: 40px 0 20px;
+	}
+	.mber-contact-field {
+		padding-bottom: 34px;
+	}
+	.mber-contat-us-map img {
+		width: auto;
+		height: 454px;
+	}
+	.mber-location-icon svg {
+		position: absolute;
+		top: 33%;
+		left: auto;
+		right: 35%;
+	}
+
+}
+@media (max-height: 768px ) {
+	.mber-youtube-video {
+		padding-top: 53.25%;
+	}
+	.mber-youtube-video > iframe {
+		top: 47px;
+		padding-bottom: 50px;
+	}
+	.mber-social-content {
+		top: 21%;
+	}
+	.mber-single-image {
+		padding: 52px 0 90px;
+	}
+}
+@media (max-width: 1390px) {
+	.inter-col {
+		width: 19%;
+	}
+	.mber-inter-list-wrap {
+		justify-content: flex-start;
+		padding: 0;
+	}
+	.reading-icon {
+		margin-top: 12px;
+	}
+	.portfolio-col {
+		width: 50%;
+	}
+	.tab-top, .image-col {
+		padding-top: 30px;
+	}
+	.mber-all-title {
+		padding: 20px 0 0;
+	}
+	.mber-tab-link {
+		padding: 0 18px 0 0;
+	}
+	.mber-project-hold svg {
+		height: 21px;
+		width: 21px;
+	}
+	.mber-project-hold, .mber-clinet-name {
+		font-size: 16px;
+		line-height: 20px;
+	} 
+	.mber-project-hold {
+		padding-right: 6px;
+	}
+	.mber-live-preview.mber-get-touch {
+		padding: 9px 17px;
+		margin: 3px 0 0;
+	}
+	.mber-proje-field {
+		padding-bottom: 12px;
+	}
+	.project-desc {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.mber-about-proje {
+		padding-bottom: 16px;
+		font-size: 30px;
+		line-height: 34px;
+	}
+	.photos{
+		column-gap: 14px;
+	}
+	.mber-img-two {
+		padding: 14px 0 0 0;
+	}
+	.mber-project-detail-col {
+		padding: 0;
+	}
+	.mber-live-preview a {
+		font-size: 16px;
+		line-height: 20px;
+		padding: 16px 20px;
+	}
+	.mber-live-preview {
+		padding: 12px 10px;
+	}
+	.mber-portfol-get-btn {
+		margin: 42px 0;
+	}
+	.mber-blog-card .mber-news-description .mber-read-more {
+		bottom: 0;
+	}
+
+	/*single image page media query*/
+	.image-wrapper img {
+		height: 420px;
+	}
+
+	/*soundcloud page media query*/
+	.mber-soundcloud-video {
+		padding: 60px 0 20px;
+	}
+
+	/*soundcloud page media query*/
+	.mber-vimeo-video {
+		padding-bottom: 76.25%;
+	}
+
+	/*youtube page media query*/
+	.mber-youtube-video > iframe {
+		padding-bottom: 103px;
+	}
+	.mber-youtube-video {
+		padding-top: 84.25%;
+	}
+
+	/*single news page media query*/
+	.comment-user-img img {
+		width: 92px;
+		height: 92px;
+	}
+	.nav-blog-tag .nav-tag-item {
+		font-size: 16px;
+		line-height: 20px;
+		padding: 10px 10px;
+		margin: 0 2px 0 0;
+	}
+	.mber-comm-desc {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.mber-comm-user-name {
+		padding: 0;
+	}
+	.mber-comm-user-name {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.slav-comme-time {
+		padding: 0 50px 0;
+	}
+	.blog-title {
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.blog-descri, .blog-descri-two {
+		padding: 14px 0 20px;
+	}
+	.blog-quote {
+		margin: 0px 0 5px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.blog-tag {
+		padding: 12px 0 12px;
+	}
+	.save-email-label label {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.mber-comme-button a {
+		padding: 6px 14px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	/*contact us page media query*/
+	.mber-contact-field {
+		padding-bottom: 29px;
+	}
+	.mber-send-btn {
+		padding: 0;
+	}
+	.sal-get-in-wrap {
+		padding: 20px 12px;
+	}
+	.mber-contat-us-map img {
+		width: auto;
+		height: 415px;
+	}
+}
+@media (max-height: 768px) and (max-width: 1390px){
+	.mber-youtube-video {
+		padding-top: 70.25%;
+	}
+}
+@media (max-width: 1366px) {
+	.large-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/*about me page media query*/
+	.mber-about-personal {
+		padding: 40px 0 20px;
+	}
+	.mber-circle-prog-value {
+		font-size: 24px;
+	}
+	.award-col {
+		width: 50%;
+	}
+	.award-three {
+		padding-top: 30px;
+	}
+	.mber-circle-progress {
+		padding: 20px 0 0;	
+	}
+	.mber-about-skills {
+		padding: 30px 0 20px;	
+	}
+	.mber-client-wrap {
+		padding: 15px 16px;
+	}
+	.mber-interst-icon {
+		padding: 34px;
+	}
+	.mber-inter-name  {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	/*single image page media query*/
+
+	.image-wrapper img {
+		height: 390px;
+	}
+
+	/*news blog page media query*/
+	.mber-blog-wrap, .mber-blog-card.alt .mber-blog-wrap {
+		flex-direction: column;
+	}
+	.mber-blog-card .mber-news-meta {
+		flex-basis: 40%;
+		height: auto;
+		position: relative;
+		z-index: 0;
+		height: auto;
+		min-height: 260px;
+	}
+	.mber-blog-card .mber-news-description {
+		flex-basis: 60%;
+	}
+	.mber-blog-card .mber-news-description:before {
+		transform: skewX(-3deg);
+		content: "";
+		background: #fff;
+		width: 30px;
+		position: absolute;
+		left: -10px;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.dark-mber-blog-card .dark-mber-blog-wrap .mber-news-description:before {
+		background: #000000;
+	} 
+	.mber-blog-card.alt {
+		flex-direction: row-reverse;
+	}
+	.mber-blog-card.alt .mber-news-description:before {
+		left: inherit;
+		right: -10px;
+		transform: skew(3deg);
+	}
+	.mber-blog-card.alt .mber-news-details {
+		padding-left: 25px;
+	}
+	.mber-load-news .mber-load-more, .mber-load-news .mber-load-more:after {
+		width: 160px;
+		height: 160px;
+	}
+
+	/*contact us page media query*/
+	.mber-conatct-us input {
+		padding-bottom: 16px;
+	}
+	.mber-contact-field input, .mber-contact-field textarea {
+		font-size: 16px;
+	}
+	.mber-contat-us-map iframe {
+		height: 415px!important;
+	}
+}
+@media (max-width: 1299px) {
+	.mber-testimonial-block .mber-inner-box {
+		padding: 25px;
+	}
+	/*About me page media query*/
+	.mber-interst-icon {
+		padding: 25px;
+	}
+
+	/*single image page media query*/
+	.mber-single-image {
+		padding: 70px 0 60px;
+	}
+	.image-wrapper img {
+		height: 380px;
+	}
+
+	/*youtube video page media query*/
+	.mber-youtube-video {
+		padding-top: 95.25%;
+	}
+	.mber-youtube-video > iframe {
+		padding-bottom: 110px;
+	}
+
+	/*singler blog page media query*/
+	.comment-user-img img {
+		width: 82px;
+		height: 82px;
+	}
+	.nav-blog-tag .nav-tag-item {
+		font-size: 15px;
+	}
+	.nav-blog-tag .nav-tag-item {
+		margin: 0 5px 0 0;
+	}	
+	.nav-tag-item.nav-marketing-item {
+		margin-top: 10px;
+	} 
+	.mber-blog-image {
+		padding: 10px 0;
+	}
+}
+@media (max-width: 1199px) {
+	/*Homescreen media query*/
+	.mber-home-main-content {
+		padding: 30px 74px 30px 15px;
+	}
+	.mber-cv-download {
+		padding: 17px 20px;
+	}
+	.mber-home-image {
+		background-position: 50% 50%;
+	}
+	input:checked + .mber-round:before {
+		left: 8px;
+	}
+	.mber-header {
+		padding: 20px 15px 20px 15px;
+	}
+	.mber-get-touch {
+		margin-right: 18px;
+	}
+	.mber-home-main-content .mber-home-title{
+		font-size: 60px;
+		line-height: 72px;
+	}
+	[class=navcheck]:checked ~ #menu::before {
+		transform: skewX(-27deg) translateX(-40%);
+		width: 54rem;
+	}
+	#menu {
+		min-width: 270px;
+		right: 12px;
+	}
+
+	/*About me page media query*/
+	.service-card-wrap:before {
+		width: 47px;
+	}
+	.go-corner {
+		width: 86px;
+		height: 51px;
+		top: -1px;	
+	}
+	.mber-client-wrap svg {
+		height: auto;
+	}
+	.mber-about-personla-title:after {
+		margin-left: 8px;
+	}
+	.mber-circle-progress {
+		width: 96px;
+		height: 96px;
+	}
+	.mber-circle-progress .progress-left {
+		left: -2px;
+	}
+	.mber-circle-progress .progress-right {
+		right: 2px;
+	}
+	.mber-circle-progress:after {
+		left: -2px;
+	}
+
+	/*Portfolio page media query*/
+	.tab-top, .image-col {
+		padding-top: 30px;
+	}
+
+	/*project detail page media query*/
+	.mber-project-hold, .mber-clinet-name {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.mber-proje-field {
+		padding-bottom: 14px;
+	}
+	.mber-project-detail-col {
+		padding: 10px 0;
+	}
+
+	/*single image page media query*/
+	.image-wrapper img {
+		height: auto;
+	}
+	.mber-single-image {
+		padding: 60px 0 80px;
+	}
+
+	/*vimeo video page media query*/
+	.mber-vimeo-video {
+		padding-bottom: 83.25%;
+	}
+
+	/*youtube video page media query*/
+	.mber-youtube-video {
+		padding-top: 104.25%;
+	}
+	.mber-youtube-video > iframe {
+		padding-bottom: 109px;
+	} 
+
+}
+@media (max-width: 1070px) {
+	/*Homescreen media query*/
+	[class=navcheck]:checked ~ #menu::before {
+		transform: skewX(-23deg) translateX(-40%);
+	}
+	.mber-home-desc {
+		padding: 44px 0 36px;
+	}
+	.mber-tablet-view-soci {
+		display: block;
+	}
+	.mber-social-content {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: auto;
+		bottom: auto;
+	}
+	.mber-tablet-view-soci .mber-social-content {
+		padding-bottom: 40px;
+	}
+	.mber-social-list {
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+	}
+	.mber-social-list:after {
+		border-right: 0;
+	}
+	.mber-home-main-content {
+		padding:20px 74px 30px 15px;
+	}
+	.mber-social-list .mber-social-icon {
+		margin: 0 12px 0 0;
+	}
+	.mber-home-wrap:before, .mber-about-wrap:before,
+	.dark-home-content .mber-home-wrap:before, .dark-home-content .mber-about-wrap:before,
+	.dark-mber-portfolio-content .mber-about-wrap:before, .dark-news-mber-cont .mber-about-wrap:before,
+	.mber-drak-conatct-wrap .mber-about-wrap:before {
+		border-right: 0px;
+	}
+	.mber-social-wrap {
+		display: none;
+	}
+	.mber-footer-wrap {
+		padding: 20px 15px 20px 15px;	
+	}
+	.mber-menu-item {
+		margin: 26px 0;
+	}
+	.mber-home-main-content .mber-home-title {
+		font-size: 56px;
+		line-height: 66px;
+	}
+	/*About me page media query*/
+	.mber-about-content, .mber-news-content, .mber-contact-us-content,
+	.mber-weekend-mode, .mber-single-news-content, .mber-project-content {
+		padding: 60px 15px 20px 15px;
+	}
+	/*weekend mode page*/
+	input:checked + .mber-round:before {
+		left: 9px;
+	}
+	/*portfolio page media query*/
+	.mber-tab-content-box {
+		padding: 39px 0 100px;
+	}
+	.mber-port-get-btn {
+		margin: 32px 0 50px;
+	}
+	.mber-tab-link {
+		padding: 0 16px 0 0;
+	}
+	.mber-all-title {
+		padding: 20px 0 0 0;
+	}
+	/*single image page media query*/
+	.image-close {
+		top: 45px;
+		right: 16px;
+	}
+	/*vimeo video page media query*/
+	.mber-vimeo-video iframe {
+		top: -17px;
+	}
+	.mber-vimeo-video {
+		padding-bottom: 70.25%;
+	}
+
+	/*youtube video page media query*/
+	.mber-youtube-video {
+		padding-top: 100.25%;
+	}
+
+	/*contact us page media query*/
+	.mber-location-icon svg {
+		top: 33%;
+		right: 44%;
+	}		
+}
+@media (max-width: 991px) {
+
+	/*menu design two*/
+	#menu {
+		display: none;
+	}
+	.mber-menu-profile {
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 0 20px 0;
+	}
+	[class=navcheck]:checked ~ .mber-menu-design-two{
+		right: 0;
+	}
+	.mber-header-nav.dark-mber-header label .mber-burger.dark-mber-burger.click::before,
+	.mber-header-nav.dark-mber-header label .mber-burger.dark-mber-burger.click::after,
+	.mber-header-nav.dark-mber-header label .mber-burger.dark-mber-burger.click .bar{
+		background: #000000;
+	}
+	.mber-menu-list {
+		margin: 0 auto;
+		max-width: 250px;
+		padding: 30px 0 0;
+	}
+	.mber-sec-menu-item {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+	.mber-menu-social-list {
+		display: flex;
+		justify-content: flex-start;
+		margin: 0 auto;
+		max-width: 250px;
+		list-style-type: none;
+		padding: 0;
+	}
+	.mber-menu-social-icon a {
+		padding: 0 15px;
+	}
+	.mber-sec-menu-link {
+		text-transform: capitalize;
+		font-size: 32px;
+		line-height: 40px;
+		margin: 0 0 20px 0;
+		font-weight: 600;
+		width: fit-content;
+	}
+	.mber-menu-design-two {
+		display: block;
+	}
+	.mber-sec-menu-link a{
+		transition: all 0.3s ease;
+		transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+		color: #909090;
+	}
+	.mber-sec-menu-link a:hover {
+		color: #000000;
+	}
+	.mber-sec-menu-link .slav-tb-menu-name.active:after {
+		transform: scaleX(1);
+	}
+	.slav-tb-menu-name.active {
+		color: #000000;
+	}
+	.mber-menu-profile img {
+		border-radius: 50%;
+	}
+}
+@media (max-height: 768px) {
+	.mber-youtube-video {
+		padding-top: 79.25%;
+	}
+	.mber-youtube-video > iframe {
+		padding-bottom: 65px;
+	}
+	.mber-single-image {
+		padding: 55px 0 60px;
+	}
+}
+@media (max-width: 991px) {
+	/*Homescreen media query*/
+	.mber-left-fixed-image {
+		display: none;	
+	}
+	[class=navcheck]:checked + label::before {
+		width: 100%;
+	}
+	.mber-follow-us-content {
+		transform-origin: 9px -30px;
+	}
+	[class=navcheck]:checked ~ #menu::before {
+		width: 30rem;
+		transform: skewX(0deg) translateX(-40%);
+	}
+	/*About us media query*/
+	.mber-client-wrap svg {
+		width: 100%;
+		height: auto;
+	}
+
+	/*weekend mode media query*/
+	.mber-weekend-mode .mber-about-title{
+		font-size: 38px;
+		line-height: 44px;
+	}
+	.mber-drop-mail-wrap, .drop-mail-title {
+		font-size: 30px;
+		line-height: 34px;
+	}
+	.inter-col {
+		width: 16.66666667%;
+	}
+	.mber-language-programming {
+		padding-top: 34px;
+	}
+
+	/*portfolio page media query*/
+	.all-content-wrap .mber-all-image img {
+		height: auto;
+	}
+
+	/*soundcloud page media query*/
+	.mber-vimeo-video iframe {
+		top: 0px;
+	}
+
+	/*youtube video page media query*/
+	.mber-youtube-video {
+		padding-top: 67.25%;
+	}
+	.mber-youtube-video > iframe {
+		padding-bottom: 164px;
+	}
+
+	/*single news blog page media query*/
+	.comment-user-img img {
+		width: 78px;
+		height: 78px;
+	}
+	.save-email-label label {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.reply-card-body {
+		margin: 10px 0px 10px 46px;
+	}
+}
+@media (max-height: 768px) { 
+	.mber-youtube-video {
+		padding-top: 58.25%;
+	}
+	.mber-single-image {
+		padding: 55px 0 90px;
+	}
+	.image-close {
+		z-index: 1;
+	}
+}
+@media (max-width: 768px) {
+	.mber-youtube-video > iframe {
+		padding-bottom: 20px;
+	}
+	/*single news blog page media query*/
+	.blog-title {
+		font-size: 28px;
+		line-height: 38px;
+	}
+}
+@media (max-width: 767px) {
+	.mber-home-get-touch a {
+		padding: 8px 10px;
+	}
+	p.mber-copyright-content, p.mber-copyright-content a{
+		color: #000000;
+	}
+	p.mber-copyright-content a:hover, p.mber-copyright-content a:focus{
+		color: #000000;
+	}
+	/*Homescreen media query*/
+	[class=navcheck]:checked ~ #menu::before {
+		width: 100rem;
+	}
+	#menu {
+		width: 100%;
+		right: 0;
+	}
+	[class=navcheck]:checked ~ #menu::before {
+		transform: skewX(0deg) translateX(0%);
+	}
+	.mber-get-touch {
+		margin-right: 16px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.mber-cv-download {
+		padding: 10px 12px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.mber-cv-download svg {
+		margin-right: 4px;
+	}
+	.mber-home-wrap:before {
+		border-right: none;
+	}
+	.mber-footer-wrap {
+		padding: 15px 15px;
+	}
+	.mber-social-content {
+		top: 0;
+		right: 0;
+		position: relative;
+	}
+	.mber-social-list:after {
+		bottom: 0;
+		border-right: none;
+	}
+	.mber-follow-us-content {
+		display: none;
+	}
+	.mber-social-list {
+		flex-direction: row;
+	}
+	.mber-social-list .mber-social-icon {
+		margin-bottom: 0;
+		margin-right: 14px;
+	}
+	input:checked + .mber-round:before {
+		left: 7px;
+	}
+	.mber-home-desc {
+		padding: 10px 0 20px;
+	}
+	.mber-tablet-view-soci .mber-social-content {
+		padding-bottom: 10px;
+	}
+	.mber-btn-border-dark {
+		height: 58px;
+		width: 186px;
+		padding: 16px 12px;
+	}
+	.mber-btn-border-dark-inner a svg {
+		margin-right: 10px;
+	}
+	.mber-btn-border-dark:hover:before, .mber-btn-border-dark:hover .mber-btn-border-dark-inner:after {
+		width: 186px;
+	}
+	.mber-btn-border-dark:hover:after, .mber-btn-border-dark:hover .mber-btn-border-dark-inner:before {
+		height: 52px;
+	}
+	.mber-home-main-content .mber-home-title{
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.mber-menu-item {
+		margin: 20px 0;
+	}
+	.mber-home-desc {
+		font-size: 18px;
+		line-height: 1.1;
+	}
+	.mber-home-main-content {
+		padding: 20px 15px 30px 15px;
+	}
+	.mber-footer-wrap {
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	.mber-mob-copyright {
+		text-align: center;
+		padding: 25px 0 0;
+	}
+	.mber-weekend-btn {
+		padding: 0;
+	}
+	.mber-copyright-content {
+		display: none;
+	}
+	.mber-mob-copyright .mber-copyright-content{
+		display: block;
+	}
+	.mber-logo img {
+		height: 36px;
+		width: auto;
+	}
+	.mber-home-header .row{
+		display: flex;
+		align-items: center;
+	}
+	.mber-switch-btn {
+		width: 68px;
+	}
+	.mber-round:before {
+		height: 24px;
+		width: 24px;
+	}
+	input:checked + .mber-round:before {
+		left: 1px;
+		width: 26px;
+		height: 26px;
+	}
+	.mber-menu-social-list {
+		justify-content: center;
+	}
+	.mber-menu-list {
+		text-align: center;
+	}
+	.mber-sec-menu-link {
+		width: auto;
+	}
+	.mber-sec-menu-link a:after {
+		background: transparent;
+	}
+	.mber-home-get-touch {
+		margin-right: 16px;
+	}
+	.mber-home-get-touch .mber-get-text {
+		padding: 0;
+	}
+	.mber-down-cv-btn {
+		padding: 15px 15px 15px 15px;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.mber-heart-btn {
+		padding: 5px 15px 5px 15px;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.mber-down-cv-btn svg, .mber-heart-btn svg {
+		margin-right: 5px;
+	}
+
+	/*About me media query*/
+	.mber-about-personla-title {
+		padding: 0 0 10px 0;
+	}
+	.dark-mber-testi-carousel .mber-testimonial-block {
+		background: #202020;
+	}
+	.mber-testimonial-block {
+		border-radius: 20px;
+		margin: 32px 0px 95px;
+		padding: 30px 20px 25px;
+		background: #f9f9f9;
+	}
+	.mber-testimonial-block.dark-testimonial-block {
+		/*background: #101010;
+		border: 1px solid #101010;*/
+	}
+	.mber-testimonial-block .mber-inner-box {
+		box-shadow: none;
+		padding: 0;
+	}
+	.pers-info-wrap:last-child {
+		padding-bottom: 10px;
+	}
+	.mber-testimonial-block .mber-desc-text {
+		margin-bottom: 22px;
+	}
+	.mber-testimonial-block .mber-info-box .mber-user-thumb img {
+		height: 82px;
+	}
+	.mber-testimonial-block .mber-info-box .name {
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 4px;
+	}
+	.sal-testimonial-carousel .owl-next, .sal-testimonial-carousel .owl-prev {
+		height: 45px;
+		width: 45px;
+	}
+	.sal-testimonial-carousel .owl-nav {
+		right: 30px;
+		bottom: 110px;
+	}
+	.mber-about-skills {
+		padding: 10px 0 20px;
+	}
+	.mber-about-personal {
+		padding: 30px 0 10px;
+	}
+	.mber-about-title {
+		font-size: 40px;
+		line-height: 44px;
+	}
+	.mber-about-content, .mber-news-content, .mber-contact-us-content,
+	.mber-weekend-mode, .mber-single-news-content, .mber-project-content {
+		padding: 50px 15px 40px 15px;
+	}
+	.mber-about-desc {
+		padding: 34px 0 0 0;
+	}
+	.mber-about-service {
+		padding: 30px 0 10px;
+	}
+	.service-card-wrap:hover:before {
+		transform: scale(24);
+	}
+	.service-card-wrap:before {
+		width: 36px;
+	}
+	.go-corner {
+		width: 82px;
+		height: 41px;
+	}
+	.mber-circle-progress:after {
+		left: -2px;
+	}
+	.mber-circle-progress .progress-left {
+		left: -2px;
+	}
+	.mber-circle-progress .progress-right {
+		right: 2px;
+	}
+	.mber-weekend-mode .mber-about-title {
+		font-size: 32px;
+		line-height: 42px;
+	}
+	.sal-week-desc-one, .sal-week-desc-two, .sal-week-desc-three {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.drop-mail-title, .mber-drop-mail-wrap {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.mber-drop-mail-wrap {
+		/*padding:30px 0 110px;*/
+		padding:10px 0 30px;
+	}
+	.mber-about-award,.mber-about-client, .mber-about-testimonial {
+		padding: 30px 0 20px;
+	}
+	.mber-portfol-get-btn {
+		padding: 16px 18px;
+	}
+	.mber-portfol-get-btn {
+		margin: 30px 0 36px;
+	}
+	.mber-portfol-get-btn .mber-get-text  {
+		padding: 0;
+		letter-spacing: 0;
+	}
+
+	/*project detail page media query*/
+	.mber-proje-field {
+		padding-bottom: 10px;
+	}
+	.mber-project-detat-row {
+		padding: 20px 0 40px;
+	}
+	.mber-project-detail-col {
+		padding: 13px 0 0;
+	}
+	.projec-desc-three {
+		padding: 12px 0 0;
+	}
+	.photos {
+		column-count: 1;
+	}
+	.mber-img-three {
+		padding: 14px 0 0;
+	}
+	.mber-live-preview a {
+		padding: 16px 12px;
+	}
+	.mber-live-preview {
+		padding: 8px 10px;
+	}
+
+	/*youtube video page media query*/
+	.mber-youtube-video > iframe {
+		padding-bottom: 90px;
+	}
+
+	/*contact us page media query*/
+	.mber-contat-us-map img {
+		width: 100%;
+		height: auto;
+	}
+	.mber-get-in-title .sal-get-mail {
+		font-size: 16px;
+		line-height: 22px;
+	}	
+	.map-contact-form-col {
+		order: 2;
+	}
+	.map-img-col {
+		order: 1;
+	}
+	.map-contact-form-col {
+		margin-top: 22px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.contact-section .contact-item .icon-box .pdi {
+        font-size: 3rem;
+    }
+	.contact-section .social-icons a i {
+        font-size: 30px;
+    }
+    .contact-section .social-icons a .iconsocial {
+        font-size: 30px;
+    }
+	.sec-title {
+		margin-bottom: 50px;
+	}
+	.testimonial-block {
+		padding: 0;
+	}
+	.testimonial-block .inner-box {
+		box-shadow: none;
+		border: 2px solid #f1f1f1;
+	}
+	.testimonial-carousel .owl-nav {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.testimonial-carousel .owl-next, .testimonial-carousel .owl-prev {
+		border: 2px solid #f1f1f1;
+	}
+}
+@media (max-width: 640px) {
+	.contact-section .contact-item .icon-box .pdi {
+        font-size: 3rem;
+    }
+	.contact-section .social-icons a i {
+        font-size: 30px;
+    }
+    .contact-section .social-icons a .iconsocial {
+        font-size: 30px;
+    }
+
+	/*header menu media query*/	
+	.mber-menu-design-two {
+		text-transform: none;
+		font-size: 26px;
+		line-height: 34px;
+		font-weight: 600;
+		max-width: 100%;
+	}
+
+	/*About me media query*/
+	.inter-col {
+		width: 24.666667%;	
+	}
+
+	/*portfolio page mmedia query*/
+	.mber-tab-menu {
+		max-width: 600px;
+		overflow-x: scroll;
+		height: 50px;
+	}
+	.portfolio-col {
+		width: 100%;
+	}
+	.mber-tab-menu {
+		scrollbar-width: none;
+		scrollbar-color: #e0dfe1 #ffffff;
+	}
+	.mber-tab-menu::-webkit-scrollbar {
+		width: 8px;
+		height: 6px;
+		display: block!important;
+	}
+	.mber-tab-menu::-webkit-scrollbar-thumb {
+		background-color: #e0dfe1;
+		border-radius: 10px;
+		border: 1px solid #ffffff;
+	}
+	.detail-page {
+		padding: 0 0 30px 0;
+	}
+	.mber-port-get-btn {
+		padding: 20px 20px;
+		font-size: 16px;
+		line-height: 20px;	
+	}
+	.mber-port-get-btn {
+		margin: 30px 0 40px;
+	}
+	.mber-project-detail-col {
+		padding: 10px 0 0;
+	}
+	.blog-btn {
+		padding: 12px 24px	
+	}
+	.blog-tag {
+		align-items: flex-start;
+	}
+
+	/*single image page media query*/
+	.mber-single-image {
+		padding: 90px 0 80px;
+	}
+
+	/*project detail page media query*/
+	.mber-project-detat-row {
+		padding: 10px 0 30px;
+	}
+
+	/*soundcloud page media query*/
+	.mber-soundcloud-video {
+		padding: 80px 0 20px;
+	}
+
+	/*vimeo video page media query*/
+	.mber-vimeo-video {
+		padding-bottom: 113.25%;
+	}
+
+	/*youtube video page media query*/
+	.mber-youtube-video {
+		padding-top: 110.25%;
+	}
+	.mber-youtube-video > iframe {
+		padding-bottom: 0px;
+		top: 70px;
+	}
+
+	/*news blog page media query*/
+	.mber-news-title {
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.mber-read-more a {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.mber-blog-card .mber-news-description .mber-read-more a {
+		padding: 12px 32px 12px 16px;
+	}
+	.mber-read-more a:hover:after {
+
+	}
+	.mber-read-more a:after {
+		top: 11px;
+		font-size: 22px;
+	}
+	.mber-load-news {
+		margin: 30px 0 60px;
+	}
+	.mber-load-news .mber-load-more, .mber-load-news .mber-load-more:after {
+		width: 130px;
+		height: 130px;
+	}
+	.mber-load-news .mber-load-more {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	/*single news blog media query*/
+	.blog-category {
+		padding: 40px 0 12px;
+	}
+	.blog-category {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.blog-title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.mber-post-author {
+		padding: 14px 0 16px;
+	}
+	.blog-descri, .blog-descri-two, .blog-quote {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.card-body-one, .card-body-three {
+		padding: 20px 12px!important;
+	}
+	.reply-card-body {
+		margin: 10px 0px 10px 12px;
+	}
+	.comment-user-img img {
+		width: 72px;
+		height: 72px;
+	}
+	
+	.comment-user-img.img_border_g img {
+		width: 52px;
+		height: 52px;
+	}
+	
+	.mber-comm-user-name {
+		font-size: 16px;
+		line-height: 20px;	
+	} 
+	.blog-author-by {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.mber-post-author {
+		align-items: center;
+	}
+
+	/*contact us page media query*/
+	.mber-send-btn {
+		padding: 0px;
+	}
+	.mber-header .row {
+		align-items: center;
+	}
+	/*статус юзера*/
+	.image-profile__status_green::after {
+		bottom: 0;
+        right: 5px;
+	}
+
+}
+@media (max-width: 575px) {
+	.contact-section .contact-item .icon-box .pdi {
+        font-size: 3rem;
+    }
+	.contact-section .social-icons a i {
+        font-size: 30px;
+    }
+    .contact-section .social-icons a .iconsocial {
+        font-size: 30px;
+    }
+	.service-card-col, .award-col {
+		width: 100%;
+	}
+	.service-card-two, .award-two {
+		padding-top: 30px;
+	}
+	.mber-experience-col {
+		padding-top: 35px
+	}
+	.inter-col {
+		width: 32.80%;
+	}
+	.service-card-wrap:hover:before {
+		transform: scale(31);
+	}
+	.slav-comme-time {
+		padding: 0;
+	}
+	.mber-comme-user-name {
+		justify-content: space-between;
+	}
+	.sal-get-in-wrap:hover:before {
+		transform: scale(28);
+	}
+	.mail-phone-col .sal-get-in-wrap {
+		margin: 22px 0;
+	}
+}
+@media (max-width: 390px) {
+	.mber-get-touch {
+		padding: 16px 20px;
+		margin-right: 14px;
+	}
+	.mber-btn-border-dark {
+		width: 168px;
+		padding: 14px 12px;
+	}
+	.mber-btn-border-dark-inner a svg {
+		margin-right: 1px;
+	}
+	.mber-btn-border-dark-inner a {
+		font-size: 15px;
+	}
+	.mber-btn-border-dark:hover:before, .mber-btn-border-dark:hover .mber-btn-border-dark-inner:after {
+		width: 168px;
+	}
+	.mber-down-cv-btn svg, .mber-heart-btn svg {
+		height: 20px;
+		width: 20px;
+		margin-right: 3px;
+	}
+	.mber-down-cv-btn, .mber-heart-btn {
+		padding: 11px 11px 11px 11px;
+	}
+	.mber-home-get-touch {
+		margin-right: 10px;
+	}
+
+	/*portfolio page media query*/
+	.mber-port-get-btn {
+		padding: 16px 14px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.mber-portfol-get-btn {
+		padding: 16px 16px;
+	}	 
+	.mber-portfol-get-btn {
+		margin: 30px 0 36px;
+	}
+	.mber-home-get-touch .mber-get-text {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	/*single news blog page media query*/
+	.comment-user-img img {
+		width: auto;
+		height: 100%;
+	}
+	.blog-tag {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.nav-social-item-text div {
+		padding: 0 0 12px 0;
+	}
+	.mber-comm-desc {
+		padding: 4px 0 14px 0;
+	}
+}
+@media (max-width: 320px) {
+	.mber-get-touch {
+		padding: 14px 16px;
+		margin-right: 14px;
+	}
+	.mber-get-touch > span {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.mber-btn-border-dark {
+		width: 139px;
+		height: 46px;
+		padding: 12px 13px;
+	}
+	.mber-btn-border-dark-inner a {
+		font-size: 14px;
+	}
+	.mber-btn-border-dark-inner a svg {
+		display: none;
+	}
+	.mber-btn-border-dark:hover:before, .mber-btn-border-dark:hover .mber-btn-border-dark-inner:after {
+		width: 138px;
+	}
+	.mber-btn-border-dark:hover:after, .mber-btn-border-dark:hover .mber-btn-border-dark-inner:before{
+		height: 44px;
+	}
+	.mber-home-buttons {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+	.mber-home-get-touch .mber-get-text {
+		font-size: 13px;
+		line-height: 14px;
+	}
+	.mber-portfol-get-btn  .mber-get-text {
+		padding: 0;
+	}
+	.mber-home-get-touch {
+		margin-bottom: 12px;
+	}
+	.mber-portfol-get-btn {
+		padding: 12px 16px;
+	}
+	.mber-home-get-touch a {
+		padding: 15px 10px;
+	}
+
+	/*portfolio page media query*/
+
+	.mber-port-get-btn {
+		font-size: 13px;
+	}
+	.mber-all-title {
+		padding: 14px 0 0 0;
+	}
+	.tab-top, .image-col {
+		padding-top: 20px;
+	}
+
+	/*project page media query*/
+
+	.mber-detail-gallary {
+		padding: 0 0 20px 0;
+	}
+	.mber-back-btn {
+		margin-bottom: 114px;
+	}
+
+	/*soundcloud page media query*/
+	.mber-back-btn.mber-single-img-btn {
+		margin-bottom: 12px;
+	}
+
+	/*single news blog page media query*/
+	.blog-category {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.blog-leave-title, .blog-comment-title {
+		font-size: 24px;
+		line-height: 30px;
+		padding: 0;
+	}
+}
+
+/****************************************/
+@media (max-width: 767px) and (orientation: landscape) {
+	.mber-home-main-content {
+		padding: 100px 15px 60px 15px;
+	}
+}
+@media (max-width: 360px) {
+	.mber-home-main-content {
+		padding: 150px 15px 100px 15px;
+	}
+}
