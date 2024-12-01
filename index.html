@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+  <!-- ЗАПРЕТ ИНДЕКСАЦИИ !!! -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- ЗАГРУЗКА ВЕБ-СТРАНИЦЫ БЕЗ КЭШИРОВАНИЯ -->
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+        <title>Как при наведении на один элемент менять стили другого элемента?</title>
+
+        <style>
+            .wrapper {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                -webkit-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+                -webkit-align-content: stretch;
+                align-content: stretch;
+                -webkit-align-items: flex-start;
+                align-items: flex-start;
+                grid-gap: 20px;
+            }
+            li {
+                font-size: 20px;
+                color: black;
+            }
+            .item_circle {
+                display: flex;
+                width: 140px;
+                height: 140px;
+                background-color: #008000;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+            }
+            .item_circle > span {
+                font-size: 40px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <ul>
+                <li onmouseover="changeItem01()" onmouseout="rechangeItem01()">one</li>
+                <li onmouseover="changeItem02()" onmouseout="rechangeItem02()">two</li>
+                <li onmouseover="changeItem03()" onmouseout="rechangeItem03()">three</li>
+                <li onmouseover="changeItem04()" onmouseout="rechangeItem04()">four</li>
+                <li onmouseover="changeItem05()" onmouseout="rechangeItem05()">five</li>
+                <li onmouseover="changeItem06()" onmouseout="rechangeItem06()">six</li>
+            </ul>
+
+            <div id="item01" class="item_circle">
+                <span>1</span>
+            </div>
+            <div id="item02" class="item_circle">
+                <span>2</span>
+            </div>
+            <div id="item03" class="item_circle">
+                <span>3</span>
+            </div>
+            <div id="item04" class="item_circle">
+                <span>4</span>
+            </div>
+            <div id="item05" class="item_circle">
+                <span>5</span>
+            </div>
+            <div id="item06" class="item_circle">
+                <span>6</span>
+            </div>
+        </div>
+
+        <script>
+            function changeItem01() {
+                document.getElementById("item01").style.backgroundColor = "#FF0000";
+            }
+            function rechangeItem01() {
+                document.getElementById("item01").style.backgroundColor = "#008000";
+            }
+            function changeItem02() {
+                document.getElementById("item02").style.backgroundColor = "#FF0000";
+            }
+            function rechangeItem02() {
+                document.getElementById("item02").style.backgroundColor = "#008000";
+            }
+            function changeItem03() {
+                document.getElementById("item03").style.backgroundColor = "#FF0000";
+            }
+            function rechangeItem03() {
+                document.getElementById("item03").style.backgroundColor = "#008000";
+            }
+            function changeItem04() {
+                document.getElementById("item04").style.backgroundColor = "#FF0000";
+            }
+            function rechangeItem04() {
+                document.getElementById("item04").style.backgroundColor = "#008000";
+            }
+            function changeItem05() {
+                document.getElementById("item05").style.backgroundColor = "#FF0000";
+            }
+            function rechangeItem05() {
+                document.getElementById("item05").style.backgroundColor = "#008000";
+            }
+            function changeItem06() {
+                document.getElementById("item06").style.backgroundColor = "#FF0000";
+            }
+            function rechangeItem06() {
+                document.getElementById("item06").style.backgroundColor = "#008000";
+            }
+        </script>
+    </body>
+</html>
