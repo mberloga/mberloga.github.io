@@ -1,0 +1,20 @@
+
+.rb-submit {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  border: 0.1em solid #201B0E;
+  margin: 0 auto;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-color: #CCBB9C;
+  text-align: center;
+  transition: all 0.2s;
+}
+.rb-submit:hover {
+  color: #FFFAF0;
+  background-color: #201B0E;
+}
