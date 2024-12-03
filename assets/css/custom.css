@@ -7240,6 +7240,18 @@ blockquote:after {
 
 /*------------------------ [КОНЕЦ ССЫЛКИ СТИЛИ] ------------------------*/
 
+/* меню содержание страницы */
+.table-of-contents .dropdown-menu.show {
+	background-color: #CCBB9C;
+}
+.table-of-contents .dropdown-item {
+	white-space: normal;
+}
+.table-of-contents .dropdown-item:focus, .dropdown-item:hover {
+	color: #000;
+	background-color: #efe4cf;
+}
+
 /*
 .instamask {
   margin: 0 auto;
@@ -7267,13 +7279,3 @@ blockquote:after {
   -webkit-mask-size: calc(100% / 3) calc(100% / 3);
 }
 */
-
-
-
-
-
-
-
-
-
-
