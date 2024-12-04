@@ -7279,3 +7279,8 @@ blockquote:after {
   -webkit-mask-size: calc(100% / 3) calc(100% / 3);
 }
 */
+
+
+.color-bg-default, .color-bg-primary {
+	background-color: #CCBB9C !important;
+}
