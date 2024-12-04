@@ -340,8 +340,11 @@
 		width: 52rem;
 	}
 	.mberloga-menu-list li a {
-		font-size: 38px;
-		line-height: 44px;
+		/*font-size: 38px;
+		line-height: 44px;*/
+		
+		font-size: 28px;
+		line-height: 30px;
 	}
 	.mber-btn-border-dark {
 		height: 65px;

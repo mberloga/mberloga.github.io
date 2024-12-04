@@ -990,6 +990,8 @@ ul { list-style-type: none; }
 	font-weight: 900;
 	font-size: 48px;
 	line-height: 58px;
+	font-size: 38px;
+	line-height: 48px;
     color: #909090;
 }
 .mber-menu-link.active {
