@@ -408,6 +408,78 @@
    </section>
 
 <style>
+.s-population {
+    font-family: 'Inter', sans-serif;
+	background-color: #A87B60;
+	border-radius: 4px;
+	padding: 5px;
+}
+.s-population-view {
+    margin-top: 5px;
+}
+.s-population-view__item {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #CAA28B;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: #CAA28B;
+    display: inline-block;
+}
+.s-population-view .active {
+    background-color: #5EBE5E;
+    color: #fff;
+    border-top-right-radius: 0;
+    border: none;
+}
+.s-population-view .active:hover {
+    background-color: #2c6d2c;
+    color: #fff;
+}
+@media only screen and (max-width: 992px) {
+    .s-population-view {
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .s-population-view {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .s-population-view__item {
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+}
+</style>
+<div class="s-population">
+           <dl class="row m-0">
+            <dt class="sm-md-font col-sm-6 text-sm-end" style="color:#F4D7C6;">СТАТУС ПОПУЛЯЦИИ (МСОП):</dt>
+            <dd class="sm-font col-sm-6 text-sm-start fw-semibold" style="color:#F4D7C6;">
+			 Вид, вызывающий наименьшие опасения<br>
+			 <a style="color:#F4D7C6;" href="https://www.iucnredlist.org/species/41688/121229971" title="IUCN Red List of Threatened Species: Ursus arctos" target="_blank" rel="noreferrer noopener">Least Concern (LC)</a>
+			</dd>
+           </dl>
+        <div class="s-population-view text-center m-0">
+         <a href="https://ru.wikipedia.org/wiki/Виды,_угроза_для_которых_не_оценивалась" target="_blank" rel="noreferrer noopener" title="Not evaluated (NE) - Виды, угроза для которых не оценивалась" class="s-population-view__item">ne</a>
+         <a href="https://ru.wikipedia.org/wiki/Виды,_для_оценки_угрозы_которым_недостаточно_данных" target="_blank" rel="noreferrer noopener" title="Data deficient (DD) - Виды, для оценки угрозы которым недостаточно данных" class="s-population-view__item">dd</a>
+         <a href="https://ru.wikipedia.org/wiki/Виды,_вызывающие_наименьшие_опасения" target="_blank" rel="noreferrer noopener" title="Least concern (LC) - Виды, вызывающие наименьшие опасения" class="s-population-view__item active">lc</a>
+         <a href="https://ru.wikipedia.org/wiki/Виды,_близкие_к_уязвимому_положению" target="_blank" rel="noreferrer noopener" title="Near Threatened (NT) - Виды, близкие к уязвимому положению" class="s-population-view__item">nt</a>
+         <a href="https://ru.wikipedia.org/wiki/Уязвимые_виды" target="_blank" rel="noreferrer noopener" title="Vulnerable (VU) - Уязвимые виды" class="s-population-view__item">vu</a>
+         <a href="https://ru.wikipedia.org/wiki/Вымирающие_виды" target="_blank" rel="noreferrer noopener" title="Endangered (EN) - Вымирающие виды" class="s-population-view__item">en</a>
+         <a href="https://ru.wikipedia.org/wiki/Виды,_находящиеся_на_грани_полного_исчезновения" target="_blank" rel="noreferrer noopener" title="Critically endangered (CR) - Виды, находящиеся на грани полного исчезновения" class="s-population-view__item">cr</a>
+         <a href="https://ru.wikipedia.org/wiki/Виды,_исчезнувшие_в_дикой_природе" target="_blank" rel="noreferrer noopener" title="Extinct in the wild (EW) - Виды, исчезнувшие в дикой природе" class="s-population-view__item">ew</a>
+         <a href="https://ru.wikipedia.org/wiki/Исчезнувшие_(охранный_статус)" target="_blank" rel="noreferrer noopener" title="Extinct (EX) - Исчезнувшие (охранный статус)" class="s-population-view__item">ex</a>
+        </div>
+</div>
+
+<div class="empty-div-30"></div>
+
+<style>
 .tass_border {
    border: 2px solid #201B0E;
    border-radius: 5px;
@@ -421,17 +493,6 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 <img src="assets/images/about-bears/tass.png" class="img img-fluid tass_border" alt="">
 </a>
 </div>
-
-<hr>
-<h3 class="fw-bold text-center">
-МЕДВЕДИ. Бурый медведь. Юг Дальнего Востока
-</h3>
-<div class="btn-group d-flex justify-content-center">
- <a class="yug-dv bn1 mx-1" href="#0" title="МЕДВЕДИ. Бурый медведь. Юг Дальнего Востока">ЧИТАТЬ
- <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M12 13a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v3.5a.5.5 0 0 0 1 0V3h9v9H8.5a.5.5 0 0 0 0 1zM9 6.5v3a.5.5 0 0 1-1 0V7.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 7H5.5a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.497" clip-rule="evenodd"/></svg>
- </a>
-</div>
-<hr>
 
 <style>
 .ts_b_m_bg {
@@ -463,8 +524,26 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
   </div>
 </div>
 
-<h2 class="inter-font-700 text-center" id="size_population">Внешний вид</h2>
+<p class="ex-sm-font fw-italic">
+<span class="fw-semibold">По материалам:</span> Животные зооботанического сада ТГУ / БУРЫЙ МЕДВЕДЬ. Биология. Экология. Культ, Емельянов А.В., Чернова Н.А., Гусев А.А., Громаков Н.А., Тамбовский государственный университет им. Г.Р. Державина, 2007
+</p>
 
+<h2 class="inter-font-700 text-center m-0">Морфология</h2>
+<h4 class="inter-font-700 text-center">Филогенез (историческое развитие) медвежьих</h4>
+<p class="sm-md-font">
+Геологическая история бурого медведя начинается с раннего плейстоцена (примерно за 450 тыс. лет до наших дней). Это была эпоха существования тираспольского фаунистического комплекса, изученного впервые по остаткам из отложений древнего Днестра. Доминирующими видами этого времени были огромный трогонтериевый слон (вероятный предок мамонта), этрусский двурогий носорог, мосбахская лошадь, широколобый лось (предок благородного оленя), понтийская антилопа, бизон Шатензака, пещерный лев, бобр трогонтерий, медведь Денингера и несколько видов мелких грызунов. Именно медведь Денингера, обладавший зубной системой хищника и длинным черепом, по мнению большинства палеозоологов, был предком бурого медведя.
+</p>
+<p class="sm-md-font">
+В это время от ствола родословной бурых медведей, по-видимому, обособилась одна ветвь - белых, а несколько позднее и другая - пещерных медведей. Из среднеплейстоценовых отложений эпохи рисского - днепровского оледенения (около 250 тыс. лет тому назад) известны уже черепа и кости крупных медведей, имеющих большое сходство с современными бурыми. Иными словами, начало эпохи среднего плейстоцена может считаться временем появления первых представителей современных бурых медведей.
+</p>
+<p class="sm-md-font">
+Родиной этого вида был умеренный пояс Евразии. В позднем, или верхнем плейстоцене - в эпоху вюрмских, или валдайских оледенений (60-10 тыс. лет назад), бурые медведи несколько превосходили современных по абсолютным размерам тела и величине зубов. Особенно крупнозубыми были медведи позднего плейстоцена, обитавшие на севере современной Якутии. На Аляске и в Канаде находки ископаемых остатков бурых медведей редки. Их возраст определяется либо позднеплейстоценовым, либо послеледниковым временем.
+</p>
+<p class="sm-md-font">Бурый медведь <em>(Ursus arctos)</em> относится к отряду хищных млекопитающих <em>(Carnivora)</em> семейства медвежьих <em>(Ursidae)</em>.</p>
+
+<div class="empty-div-30"></div>
+
+<h2 class="inter-font-700 text-center" id="size_population">Внешний вид</h2>
 <p class="sm-md-font">
 <b>Бурый медведь</b> - единственный представитель ныне живущих наземных хищников, уступающий в размерах белому медведю. Некоторые особи описываемого вида достигают длины 2,8 м и массы до 800 кг. Наибольшими размерами отличаются медведи с Дальнего Востока, Камчатки (Россия), с полуострова
 Аляска и острова Кадьяк (США). В Европейской части России чаще всего попадаются звери весом 250-300 кг.
@@ -605,6 +684,21 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 свободно скрещиваются между собой и представляют просто географические расы одного и того же вида. Когда-то подобная изменчивость спровоцировала
 честолюбивых натуралистов описать множество «видов» и «подвидов», но теперь все бурые медведи, от русского мишки до американского гризли, сведены к одному виду.
 </p>
+<div class="container-fluid text-center">
+  <div class="row align-items-center">
+    <div class="col-12 text-center">
+<figure class="figure">
+<a data-caption="Отпечатки лап бурого медведя: а - передней лапы; б - левой задней лапы" data-fancybox="bear_about" href="assets/images/about-bears/bear.png">
+<img src="assets/images/about-bears/bear.png" class="img img-fluid" alt="">
+</a>
+<figcaption class="figure-caption text-center b-text ex-sm-font">
+<b>Рис. 1.</b> Внешний вид<br> 
+<span class="fw-normal fst-italic">Источник: Емельянов А.В., Чернова Н.А., Гусев А.А., Громаков Н.А. - БУРЫЙ МЕДВЕДЬ. Биология. Экология. Культ (2007)</span>
+</figcaption>
+</figure>
+    </div>
+  </div>
+</div>
 <p class="sm-md-font">
 За долгую зиму яркость меха приглушается. Ранней весной, под прямыми и отраженными от снега лучами, начинается интенсивное выгорание меха.
 Светло-бурые особи приобретают желтые или охристые оттенки вплоть до соломенного и выглядят как осветленные перекисью, темно-бурые - различные
@@ -633,11 +727,11 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 </p>
 <p class="sm-md-font">
 При ходьбе медведь ступает на мозолистые ладони передних лап и ступни задних. На кончиках коротких толстых пальцев - когти, длиной до 10 см, но
-они мало изогнуты и уплощенные с боков (рис. 1).
+они мало изогнуты и уплощенные с боков (рис. 2).
 </p>
 <p class="sm-md-font">
 По типу аллюра все медведи иноходцы, следовательно, при ходьбе и беге становятся одновременно то на обе правые, то на обе левые лапы, поэтому все
-время тяжело переваливается из стороны в сторону (рис. 2).
+время тяжело переваливается из стороны в сторону (рис. 3).
 </p>
 <div class="container-fluid text-center">
   <div class="row align-items-center">
@@ -647,7 +741,7 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 <img src="assets/images/about-bears/sled.png" class="img img-fluid" alt="">
 </a>
 <figcaption class="figure-caption text-center b-text ex-sm-font">
-<b>Рис. 1.</b> Отпечатки лап бурого медведя: а - передней лапы; б - левой задней лапы<br> 
+<b>Рис. 2.</b> Отпечатки лап бурого медведя: а - передней лапы; б - левой задней лапы<br> 
 <span class="fw-normal fst-italic">Источник: Емельянов А.В., Чернова Н.А., Гусев А.А., Громаков Н.А. - БУРЫЙ МЕДВЕДЬ. Биология. Экология. Культ (2007)</span>
 </figcaption>
 </figure>
@@ -658,7 +752,7 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 <img src="assets/images/about-bears/sled-2.png" class="img img-fluid" width="100px" height="382px" alt="">
 </a>
 <figcaption class="figure-caption text-center b-text ex-sm-font">
-<b>Рис. 2.</b> По типу аллюра все медведи иноходцы<br> 
+<b>Рис. 3.</b> По типу аллюра все медведи иноходцы<br> 
 <span class="fw-normal fst-italic">Источник: (там же)</span>
 </figcaption>
 </figure>
@@ -712,7 +806,7 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 <img src="assets/images/about-bears/areal.png" class="img img-fluid" alt="">
 </a>
 <figcaption class="figure-caption text-center b-text ex-sm-font">
-<b>Рис. 3.</b>
+<b>Рис. 4.</b>
 Ареал бурого медведя в России и плотность его населения по регионам.<br>
 1 - 1-7 ос/1000 км²; 2 - 7-17 ос/1000 км²; 3 - 17-27 ос/1000 км²; 4,5 - более 27 ос/1000 км²<br> 
 <span class="fw-normal fst-italic">Источник: (там же)</span>
@@ -1160,11 +1254,11 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 В настоящее время бурый медведь почти повсеместно исключен из списка вредных и подлежащих уничтожению животных. Некоторые западно-европейские и североамериканские подвиды приобрели охраняемый статус. Декларацией от 1 июля 1975 г. бурый медведь включен во второе Приложение СИТЕС, поэтому вывоз живых или мертвых зверей, их шкур в качестве трофея и других дериватов (производных частей: шапок, воротников, шуб и т. п.) за рубеж требует специального разрешения административного органа СИТЕС.
 </p>
 <p class="sm-md-font">
-Бурый медведь включен в Красную книгу Тамбовского региона и имеет нулевой статус - вероятно исчезнувший в области вид. Последние встречи с медведем имели место в Моршанском районе в нижнем течении р. Керша. В конце XIX в. медведь не являлся редким видом, например, зимой 1895 года только в Тамбовском уезде были добыты 4 особи. Одиночные особи изредка продолжали встречаться до конца 1970-х гг.
+В Красную книгу России бурый медведь (Ursus arctos) не внесен,
+зато занесен в ряд региональных Красных книг: Брянской обл., Владимирской обл., Кабардино-Балкарской Республики, Калужской обл., Московской обл., Пензенской обл., Республики Адыгея, Республики Алтай, Республики Мордовия, Республики Татарстан, Республики Чувашия, Рязанской обл., Тамбовской обл., Тульской обл., Ульяновской обл. и Чеченской Республики.
+См. <a class="link" href="https://zoogalaktika.ru/photos/animals-red-list/mammalia-red-list/ursidae-red-list/ursus-arctos-red-list" title="Бурый медведь (Ursus arctos) в Красной книге" target="_blank" rel="noreferrer noopener">Охранный статус по областям <span class="im im-link-external im-mid"></span></a>
 </p>
-<p class="sm-md-font">
-Причинами исчезновения являются: прямое истребление, вырубка леса, сокращение кормовой базы, фактор беспокойства. Необходимыми мерами охраны является проведение разъяснительных работ среди населения по предотвращению отстрела зверей в случае их возможного захода на территорию области из соседних регионов.
-</p>
+<p class="sm-md-font fw-semibold">Причинами исчезновения медведя являются: прямое истребление, вырубка леса, сокращение кормовой базы, факторы беспокойства.</p>
 <h4 class="inter-font-700 text-center">Случаи нападения на людей</h4>
 <p class="sm-md-font">
 В районах, где взаимоотношения хищника и человека устоялись, взрослый здоровый медведь всегда предпочитает бегство нападению. Агрессивное поведение проявляется здесь крайне редко, так как звери могут прогнозировать встречи с человеком и избегать конфликтных ситуаций. Медведи, как правило, перестают выходить на ягодники, на берега рек и в другие места, часто посещаемые людьми, или выходят на них в ночное время. Даже в голодные для хищника годы нападение на человека - исключительный случай. Освоение человеком новых, отдаленных районов - строительство, вырубка лесов, развитие туризма, охоты и т. п. сокращает число пригодных для обитания медведя мест и увеличивает вероятность прямых контактов. Сопровождающие антропогенную экспансию фактор тревоги и снижение кормности угодий увеличивают агрессивность зверя и частоту появления на свалках и близ дорог. Чаще всего на людей нападают медведицы, защищающие свое потомство. Медвежата из-за любопытства или по невнимательности приближаются к человеку, что воспринимается матерью как угроза.
@@ -1178,6 +1272,17 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 <p class="sm-md-font">
 Анализ показывает, что в 40-60 % случаев медведи нападали на человека, защищая своих медвежат, в 35-55 % - охраняя добычу и около 5 % приходится на долю голодных и больных зверей.
 </p>
+
+<hr>
+<h3 class="fw-bold text-center">
+МЕДВЕДИ. Бурый медведь. Юг Дальнего Востока
+</h3>
+<div class="btn-group d-flex justify-content-center">
+ <a class="yug-dv bn1 mx-1" href="#0" title="МЕДВЕДИ. Бурый медведь. Юг Дальнего Востока">ЧИТАТЬ
+ <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M12 13a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v3.5a.5.5 0 0 0 1 0V3h9v9H8.5a.5.5 0 0 0 0 1zM9 6.5v3a.5.5 0 0 1-1 0V7.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 7H5.5a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.497" clip-rule="evenodd"/></svg>
+ </a>
+</div>
+<hr>
 
 <div class="empty-div-30"></div>
 
