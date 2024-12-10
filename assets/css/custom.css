@@ -504,6 +504,14 @@ body{
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/* Плавное появление страницы */
+.page_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.page_visible {
+	opacity: 1;
+}
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   display: none;
@@ -6430,11 +6438,6 @@ blockquote:after {
   width: 120px;
   height: 33px;
 }
-
-
-
-
-
 
 /*** ДАННЫЕ О МЕДВЕДЯХ ***/
 .s-char {
