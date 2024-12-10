@@ -59,6 +59,18 @@
   <link rel="stylesheet" type="text/css" href="assets/css/pwfreearrows.css">
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
   <link rel="stylesheet" type="text/css" href="assets/css/media-query.css">
+ 
+<!-- Плавное появление страницы -->
+<script>
+setTimeout(function(){
+var element = document.getElementById("page_appearance");
+element.classList.add("page_visible");
+}, 300);
+</script>
+<noscript>
+	<style>.page_hide{opacity: 1 !important;}</style>
+</noscript>
+ 
  </head>
  <body class="mber-body-wrap mber-page-wrap-light">
   <!--ПРЕЛОДЕР -->
@@ -104,7 +116,7 @@
    </div>
   </div>
   <!-- СОДЕРЖАНИЕ СТРАНИЦЫ НАЧИНАЕТСЯ ЗДЕСЬ -->
-  <div class="mber-page-wrap portfolio-page-wrap">
+  <div class="mber-page-wrap portfolio-page-wrap page_hide" id="page_appearance">
    <!-- КОНТЕНТ СТАРТ-->
    <section class="mber-fixed-content" id="portfolio">
     <div class="container-fluid">

@@ -61,29 +61,16 @@
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
   <link rel="stylesheet" type="text/css" href="assets/css/media-query.css">
 
-<!-- https://api.2gis.ru/doc/maps/ru/quickstart/ -->
-<!-- <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script> -->
-<script src="assets/js/2gis_loader.js"></script>
-<script type="text/javascript">
- var map;
-
- DG.then(function () {
-  map = DG.map("map", {
-   center: [50.428489, 136.787781],
-   zoom: 13,
-  });
-
-  var myIcon = DG.icon({
-   iconUrl: "assets/images/map/mapmarker.png",
-   iconRetinaUrl: "my-icon@2x.png",
-   iconSize: [64, 64],
-   iconAnchor: [22, 94],
-   popupAnchor: [-3, -76],
-  });
-
-  DG.marker([50.428489, 136.787781], { icon: myIcon }).addTo(map).bindPopup("База отдыха «Мишкина берлога»");
- });
+<!-- Плавное появление страницы -->
+<script>
+setTimeout(function(){
+var element = document.getElementById("page_appearance");
+element.classList.add("page_visible");
+}, 300);
 </script>
+<noscript>
+	<style>.page_hide{opacity: 1 !important;}</style>
+</noscript>
 
  </head>
  <body class="mber-body-wrap mber-page-wrap-light">
@@ -130,7 +117,7 @@
    </div>
   </div>
   <!-- СОДЕРЖАНИЕ СТРАНИЦЫ НАЧИНАЕТСЯ ЗДЕСЬ -->
-  <div class="mber-page-wrap portfolio-page-wrap">
+  <div class="mber-page-wrap portfolio-page-wrap page_hide" id="page_appearance">
    <!-- КОНТЕНТ СТАРТ-->
    <section class="mber-fixed-content" id="portfolio">
     <div class="container-fluid">
@@ -356,7 +343,6 @@
 <div class="container-fluid text-center">
   <div class="row align-items-center">
     <div class="col-12 text-center">
-
 <figure class="figure">
 <img src="assets/images/about/family-min.png" class="img img-fluid" alt="">
 <figcaption class="figure-caption text-end b-text ex-sm-font">
@@ -1401,7 +1387,7 @@
        <!-- ПРАВАЯ СТОРОНА (КОНТЕНТ) КОНЕЦ -->
       </div>
      </div>
-    </div>
+    <!--</div>-->
    </section>
    <!-- КОНТЕНТ КОНЕЦ -->
   </div>
@@ -1493,6 +1479,30 @@ function rechangeItem (e)
 			});		
 			
 		</script>
+
+<!-- https://api.2gis.ru/doc/maps/ru/quickstart/ -->
+<!-- <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script> -->
+<script src="assets/js/2gis_loader.js"></script>
+<script type="text/javascript">
+ var map;
+
+ DG.then(function () {
+  map = DG.map("map", {
+   center: [50.428489, 136.787781],
+   zoom: 13,
+  });
+
+  var myIcon = DG.icon({
+   iconUrl: "assets/images/map/mapmarker.png",
+   iconRetinaUrl: "my-icon@2x.png",
+   iconSize: [64, 64],
+   iconAnchor: [22, 94],
+   popupAnchor: [-3, -76],
+  });
+
+  DG.marker([50.428489, 136.787781], { icon: myIcon }).addTo(map).bindPopup("База отдыха «Мишкина берлога»");
+ });
+</script>
 
   <!-- Open Street maps -->
   <!--
