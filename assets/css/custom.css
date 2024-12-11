@@ -491,9 +491,25 @@ a (active): #000000
     background: #e01a2b;
 }
 
-html {
+/*html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+}*/
+
+html, body {
+    scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body{
 	font-family: 'Inter', sans-serif;
@@ -501,8 +517,15 @@ body{
 	line-height: 30px;
 	color: #201B0E;
 	background-color: #efe4cf;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	/*background-image: url(../images/bg/stucco.png);*/
+/*
+background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+background-image: url("https://www.transparenttextures.com/patterns/rice-paper.png");
+background-image: url("https://www.transparenttextures.com/patterns/rice-paper-2.png");
+background-image: url("https://www.transparenttextures.com/patterns/stucco.png");
+*/
 }
 /* Плавное появление страницы */
 .page_hide {
@@ -711,6 +734,9 @@ ul { list-style-type: none; }
 }
 .mber-home-image.sidebar_krs {
 	background-image: url(../images/sidebar/krs.jpg);
+}
+.mber-home-image.sidebar_bears_and_i {
+	background-image: url(../images/sidebar/bears_and_i_bg.jpg);
 }
 
 .mber-header {
