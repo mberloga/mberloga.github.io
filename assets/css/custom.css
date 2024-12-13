@@ -515,8 +515,15 @@ body{
 	font-family: 'Inter', sans-serif;
 	font-size: 20px;
 	line-height: 30px;
-	color: #201B0E; /*#403C32*/
+	color: #382c14; /*#201B0E*/ /*#403C32*/
 	background-color: #efe4cf;
+	
+/*
+-webkit-text-shadow: 1px 1px 0px rgba(56, 44, 20, 0.48);
+-moz-text-shadow: 1px 1px 0px rgba(56, 44, 20, 0.48);
+text-shadow: 1px 1px 0px rgba(56, 44, 20, 0.48);
+*/
+	
 	/*background-image: url(../images/bg/stucco.png);*/
 /*
 background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
@@ -3866,6 +3873,12 @@ ul .mber-social-icon:hover .pdi{
 }
 .mber-comme-button a.ch_org:hover{
     background: #e01a2b !important;
+    color: #ffffff!important;
+	border: 2px solid #000000;
+    border-radius: 12px;
+}
+.mber-comme-button a.rsgate:hover{
+    background: #00ccbb !important;
     color: #ffffff!important;
 	border: 2px solid #000000;
     border-radius: 12px;
