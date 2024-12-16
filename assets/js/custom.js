@@ -15,8 +15,8 @@ jQuery(document).ready(function() {
 	jQuery(".mber-switch-btn input:checkbox").on('click', function() {
 		jQuery(this).parents(".mber-weekend-mode").toggleClass("checked");
 		if($('.mber-switch-btn input:checkbox:checked').length){
-			jQuery('.mber-tech, .mber-adm-29-10-2021, .mber-adm-21-12-2021, .mber-adm-05-04-22, .mber-adm-05-10-2022, .mber-adm-24-11-2022, .mber-adm-13-12-2023, .mber-adm-20-03-2024, .mber-adm2-27-12-2023, .mber-adm2-16-02-2024, .mber-adm2-18-04-2024, .mber-ug-23-05-2022, .mber-ug-01-08-2022, .mber-ug-11-07-2023, .mber-spasibo, .mber-html-text-khmel, .mber-yug-dv, .mber-doklad-2023, .mber-uchet-okhot, .mber-pfpkpep, .mber-sichinava, .mber-html-text-23-08-2023, .mber-html-text-23-11-2023, .mber-html-text-06-06-2024, .mber-html-text-page, .mber-project-detail, .mber-portfolio-content, .mber-image-page, .mber-soundcloud-page, .mber-vimeo-content, .mber-youtube-video-page, .mber-home-main-content, .weekend-mode-hide, .mber-slider-page').addClass("hidepage");
-			jQuery('.mber-tech, .mber-adm-29-10-2021, .mber-adm-21-12-2021, .mber-adm-05-04-22, .mber-adm-05-10-2022, .mber-adm-24-11-2022, .mber-adm-13-12-2023, .mber-adm-20-03-2024, .mber-adm2-27-12-2023, .mber-adm2-16-02-2024, .mber-adm2-18-04-2024, .mber-ug-23-05-2022, .mber-ug-01-08-2022, .mber-ug-11-07-2023, .mber-spasibo, .mber-html-text-khmel, .mber-yug-dv, .mber-doklad-2023, .mber-uchet-okhot, .mber-pfpkpep, .mber-sichinava, .mber-html-text-23-08-2023, .mber-html-text-23-11-2023, .mber-html-text-06-06-2024, .mber-html-text-page, .mber-project-detail, .mber-portfolio-content, .mber-image-page, .mber-soundcloud-page, .mber-vimeo-content, .mber-youtube-video-page, .mber-home-main-content, .weekend-mode-hide, .mber-single-news-content, .mber-slider-page').removeClass("showpage");
+			jQuery('.mber-tech, .mber-adm-29-10-2021, .mber-adm-21-12-2021, .mber-adm-05-04-22, .mber-adm-05-10-2022, .mber-adm-24-11-2022, .mber-adm-13-12-2023, .mber-adm-20-03-2024, .mber-adm2-27-12-2023, .mber-adm2-16-02-2024, .mber-adm2-18-04-2024, .mber-ug-23-05-2022, .mber-ug-01-08-2022, .mber-ug-11-07-2023, .mber-spasibo, .mber-html-text-khmel, .mber-yug-dv, .mber-doklad-2023, .mber-uchet-okhot, .mber-pamyatka, .mber-pfpkpep, .mber-sichinava, .mber-html-text-23-08-2023, .mber-html-text-23-11-2023, .mber-html-text-06-06-2024, .mber-html-text-page, .mber-project-detail, .mber-portfolio-content, .mber-image-page, .mber-soundcloud-page, .mber-vimeo-content, .mber-youtube-video-page, .mber-home-main-content, .weekend-mode-hide, .mber-slider-page').addClass("hidepage");
+			jQuery('.mber-tech, .mber-adm-29-10-2021, .mber-adm-21-12-2021, .mber-adm-05-04-22, .mber-adm-05-10-2022, .mber-adm-24-11-2022, .mber-adm-13-12-2023, .mber-adm-20-03-2024, .mber-adm2-27-12-2023, .mber-adm2-16-02-2024, .mber-adm2-18-04-2024, .mber-ug-23-05-2022, .mber-ug-01-08-2022, .mber-ug-11-07-2023, .mber-spasibo, .mber-html-text-khmel, .mber-yug-dv, .mber-doklad-2023, .mber-uchet-okhot, .mber-pamyatka, .mber-pfpkpep, .mber-sichinava, .mber-html-text-23-08-2023, .mber-html-text-23-11-2023, .mber-html-text-06-06-2024, .mber-html-text-page, .mber-project-detail, .mber-portfolio-content, .mber-image-page, .mber-soundcloud-page, .mber-vimeo-content, .mber-youtube-video-page, .mber-home-main-content, .weekend-mode-hide, .mber-single-news-content, .mber-slider-page').removeClass("showpage");
 		} else {
 			jQuery('.mber-project-detail, .mber-single-news-content').removeClass('showpage');
 			jQuery('.mber-portfolio-content, .mber-home-main-content, .weekend-mode-hide').removeClass('hidepage');
@@ -345,6 +345,15 @@ jQuery(document).ready(function() {
 		jQuery('.mber-uchet-okhot').removeClass("showpage");
 	});
 	
+	jQuery("a.pamyatka").click(function() {
+		jQuery('.mber-pamyatka').toggleClass("showpage");
+		jQuery('.mber-news-content').toggleClass("hidepage");
+	})
+	jQuery(".image-close, .close").click(function() {
+		jQuery('.mber-news-content').removeClass("hidepage");
+		jQuery('.mber-pamyatka').removeClass("showpage");
+	});
+	
 	jQuery(".all-content-wrap.html-text-khmel").click(function() {
 		jQuery('.mber-html-text-khmel').toggleClass("showpage");
 		jQuery('.mber-news-content').toggleClass("hidepage");
@@ -386,7 +395,7 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 		$(".mber-blog-list .mber-blog-card").slice(0, limit).show();
 	});	
-	
+
 });
 
 
