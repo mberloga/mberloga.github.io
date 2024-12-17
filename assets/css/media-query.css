@@ -1289,7 +1289,7 @@
 	.mber-footer-wrap {
 		align-items: center;
 		flex-wrap: wrap;
-		flex-direction: column-reverse;
+		/*flex-direction: column-reverse;*/
 	}
 	.mber-mob-copyright {
 		text-align: center;
@@ -1313,7 +1313,8 @@
 		align-items: center;
 	}
 	.mber-switch-btn {
-		width: 68px;
+		/*width: 68px;*/
+		width: 48px;
 	}
 	.mber-round:before {
 		height: 24px;
