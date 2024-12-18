@@ -1275,7 +1275,11 @@ opacity: 0.08;
    filter: brightness(.7);
    transform: scale(.98);
 }
-
+.bg-calendar {
+background-color: #ffffff;
+background-image: url(../images/bg/fabric-of-squares.png);
+/*background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");*/
+}
 /* Simplistic Dialog */
 /*
 .dialog__trigger, .dialog__action {
