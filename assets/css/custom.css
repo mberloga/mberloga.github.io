@@ -7401,6 +7401,83 @@ blockquote:after {
 	background-color: #efe4cf;
 }
 
+/* цитаты */
+.blockquote-l {
+    border-left: 6px solid #A87B60;
+    font-size: 16px;
+    font-style: italic;
+    margin: 16px;
+    padding: 16px 24px;
+    position: relative;
+}
+.blockquote-l:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    height: 40px;
+    background-color: #efe4cf;
+    width: 6px;
+    margin-top: -1em;
+}
+.blockquote-l:after {
+    content: "”";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    color: #A87B60;
+    font-size: 50px;
+    font-family: Times, sans-serif;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.blockquote-l .cite-l {
+    color: #A87B60;
+    font-size: 14px;
+    padding-top: 5px;
+    display: block;
+    text-align: left;
+	margin: 0;
+}
+.blockquote-r {
+    border-right: 6px solid #A87B60;
+    font-size: 16px;
+    font-style: italic;
+    margin: 16px;
+    padding: 16px 24px;
+    position: relative;
+	text-align: right;
+}
+.blockquote-r:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    height: 40px;
+    background-color: #efe4cf;
+    width: 6px;
+    margin-top: -1em;
+}
+.blockquote-r:after {
+    content: "”";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    color: #A87B60;
+    font-size: 50px;
+    font-family: Times, sans-serif;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.blockquote-r .cite-r {
+    color: #A87B60;
+    font-size: 14px;
+    padding-top: 5px;
+    display: block;
+    text-align: right;
+	margin: 0;
+}
+
 /*
 .instamask {
   margin: 0 auto;
