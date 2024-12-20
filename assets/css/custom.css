@@ -7492,7 +7492,7 @@ blockquote:after {
 .papper-main .papper-box {
   height: auto;
   overflow: hidden;
-  padding: 20px;
+  padding: 5px 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
   background-color: #FBECD9;
   background-image: url(../images/bg/concrete-wall.png);
