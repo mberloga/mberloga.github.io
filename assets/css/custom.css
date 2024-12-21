@@ -579,6 +579,9 @@ ul { list-style-type: none; }
 .mbred {
 	color: #e01a2b;
 }
+.mbblue {
+	color: #1e88e5; /*#155fa0*/
+}
 .colorbg {
 	color: #efe4cf;
 }
