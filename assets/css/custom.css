@@ -567,6 +567,14 @@ a:hover {
 p {
     line-height: 1.2;
 }
+hr.hr33 {
+	margin: 1rem auto;
+	color: inherit;
+	border: 0;
+	border-top: 1px solid;
+	opacity: .25;
+	width: 33%;
+}
 ul { list-style-type: none; }
 .tnr { font-family: "Times New Roman", serif; }
 .text-bg-danger, .text-bg-dark, .text-bg-success {
