@@ -701,6 +701,9 @@ ul { list-style-type: none; }
 .second-color {
 	color: #404040;
 }
+.inter-font-300 {
+	font-weight: 300;
+}
 .inter-font-400 {
 	font-weight: 400;
 }
