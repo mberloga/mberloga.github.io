@@ -617,6 +617,21 @@ ul { list-style-type: none; }
 	background-position: center center;
 	border-color: transparent;
 	border-style: solid;
+	padding: 5px;
+}
+.bg-item-science {
+	border-width: 5px;
+	border-radius: 5px;
+	background-color: #FFFAF0;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+	padding: 5px;
+}
+.bg-book {
+	background-image: url(../images/bg/bg_book.jpg);
+    background-size: contain;
+    background-repeat: repeat;
 }
 .color3 {
 	color: #CCBB9C;
@@ -740,6 +755,58 @@ ul { list-style-type: none; }
 .ZoomCursor {
     cursor: url(../images/icons/cursor_zoom.png), url(../images/icons/cursor_zoom.cur), pointer;
 }
+.shadow_b {
+-webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+-moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.shadow_bg {
+-webkit-box-shadow: 0px 0px 4px 0px rgba(32, 27, 14, 1);
+-moz-box-shadow: 0px 0px 4px 0px rgba(32, 27, 14, 1);
+box-shadow: 0px 0px 4px 0px rgba(32, 27, 14, 1);
+}
+.audiobook-img {
+    text-align: center;
+	position: relative;
+}
+.audiobook-img img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 2px;
+    /*filter: saturate(0);*/
+	filter: sepia(100%);
+}
+.audiobook-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .3s ease;
+  /*background-color: red;*/
+}
+.audiobook-img:hover .audiobook-overlay {
+  opacity: 1;
+}
+.audiobook-img:hover .audiobook-icon {
+  color: rgb(204, 187, 156);
+}
+.audiobook-icon {
+  color: rgb(172, 151, 110);
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /*------------------------ [2.Homepage CSS] ------------------------*/
 
 .mber-home-image {
