@@ -7857,3 +7857,145 @@ blockquote:after {
   transition: all 200ms linear;
 }
 */
+
+.hny {
+  margin-bottom: 100px;
+}
+@media (max-width: 420px) {
+.hny {
+  display: none;
+}
+}
+.sectionhny {
+  /*background: radial-gradient(red 50%, transparent 50.5%);*/
+  background-image: url(../images/homepage/hny.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 10px ridge #de192a;
+  height: 400px;
+  margin: 0 auto;
+  width: 400px;
+}
+.sectionhny div {
+  background: linear-gradient(145deg, white 0%, white 20%, bisque 50%, white 51%, white 53%, sienna 53%, sienna 100%);
+  border: solid white 5px;
+  border-radius: 0em 0em 50em 50em;
+  box-shadow: -5px -30px 60px #ffa73d inset;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  transform: rotate(10deg);
+  width: 80px;
+}
+.sectionhny div::before, .sectionhny div::after {
+  background-color: white;
+  content: "";
+  display: block;
+  left: -1px;
+  position: relative;
+}
+.sectionhny div::before {
+  border-bottom: none;
+  border-top: none;
+  height: 100px;
+  margin: 0 34px;
+  top: 193px;
+  width: 5px;
+  z-index: 11;
+}
+.sectionhny div::after {
+  height: 5px;
+  top: 190px;
+  width: 80px;
+}
+.sectionhny div:first-of-type {
+  left: -55px;
+  top: 250px;
+}
+.sectionhny div:last-of-type {
+  background: linear-gradient(-145deg, white 0%, white 20%, bisque 50%, white 51%, white 53%, sienna 53%, sienna 100%);
+  right: -55px;
+  top: 0px;
+  transform: rotate(-10deg);
+}
+#ribbonhny {
+  padding: 0.34em 1em;
+  margin: 0;
+  position: relative;
+  top: -100px;
+  color: #ffffff;
+  font-family: 'Lavka 2021';
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.4);
+  background: -webkit-linear-gradient(top, #e01a2b, #e01a2b);
+  display: inline-block;
+}
+#ribbonhny:before, #ribbonhny:after {
+  content: "";
+  width: 0.2em;
+  bottom: -0.5em;
+  position: absolute;
+  display: block;
+  border: 0.9em solid #e01a2b;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+}
+#ribbonhny:before {
+  left: -1.15em;
+  border-right-width: 0.75em;
+  border-left-color: transparent;
+}
+#ribbonhny:after {
+  right: -1.15em;
+  border-left-width: 0.75em;
+  border-right-color: transparent;
+}
+#contenthny:before, #contenthny:after {
+  content: "";
+  bottom: -0.5em;
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #720d16 transparent transparent transparent;
+  z-index: 1;
+}
+#contenthny::before {
+  left: 0;
+  border-width: 0.5em 0 0 0.5em;
+}
+#contenthny::after {
+  right: 0;
+  border-width: 0.5em 0.5em 0 0;
+}
+h1.h1hny {
+  font-size: 62px;
+  margin-bottom: 0;
+}
+h1.h1hny span {
+  display: block;
+  font-size: 42px;
+}
+h1.h1hny span::before {
+  background: bisque;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  box-shadow: -100px -100px 0px #ffffff, -200px -10px 0px #fbf8f4, -150px 10px 0px #f4ebdd, -40px -40px 0px #ffffff, 150px -60px 0px #edeae3, 200px 50px 0px #fbf8f4, 150px 80px 0px #ffffff, -220px -220px 0px gold, -180px 50px 0px #f4ebdd, -100px 110px 0px #ffffff, 60px 160px 0px #f4ebdd, 150px -60px 0px #fbf8f4, 190px 150px 0px #f4ebdd, 150px 10px 0px #edeae3, -100px -10px 0px #ffffff, -190px 130px 0px #f4ebdd, -150px 210px 0px #ffffff, -140px 130px 0px #f4ebdd, -120px 60px 0px #fbf8e4, 200px 110px 0px #ffffff, 150px 80px 0px #ffffff, 100px -80px 0px #edeae3, 180px -10px 0px #f4ebdd, -100px 110px 0px #ffe0e0, 60px 160px 0px #f4ebdd, 0px -60px 0px #ffffff, 80px -10px 0px #edeae3, 230px 10px 0px #fbf8f4;
+}
+h1.h1hny span::after {
+  background: radial-gradient(lightgray 10%, transparent 80%);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 410px;
+  width: 250px;
+}
