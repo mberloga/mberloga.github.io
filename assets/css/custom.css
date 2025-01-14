@@ -7752,6 +7752,117 @@ blockquote:after {
     font-weight: 400;
 }
 
+/* плейлист список */
+.list-pls {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.list-pls ol {
+    padding: 1.5rem 1.5rem 1.5rem 4em;
+    /*border: 0.3rem solid #22AAE1;*/
+    columns: 15rem;
+    column-gap: 7rem;
+    /*column-rule: 4px dotted #22AAE1;*/
+    border-radius: 0.5rem;
+}
+.list-pls ol {
+    list-style-type: none;
+    counter-reset: num;
+    margin: 0 0 0 45px;
+    padding: 15px 0 5px 0;
+}
+.list-pls ol li {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 5px 0 10px 0;
+    line-height: 1.4;
+	font-size: 14px;
+}
+.list-pls ol li:before {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -42px;
+    width: 28px;
+    height: 28px;
+    /*background: #A87B60;
+    color: #CAA28B;*/
+	background: rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.list-pls ol li.n-groupe:before {
+content: none;
+}
+.list-pls ol li.n-groupe {
+font-size: 18px;
+font-weight: 700;
+}
+.list-pls ol li.kids:after {
+    content: "0+";
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    left: -42px;
+    width: 32px;
+    height: 32px;
+    background: #43A047;
+    color: #fff;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.list-pls ol li:nth-child(-n + 9):before {
+    content: "0" counter(num);
+}
+.list-pls ol > * + * {
+    margin-top: 1rem;
+}
+.list-pls li {
+    /* 	Мы можем предотвратить эти принудительные перерывы, используя break-inside: avoid пунктов нашего списка */
+    break-inside: avoid;
+}
+.list-pls li::marker {
+    /*content: counters(list-item, '') '. ';*/
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #22AAE1;
+}
+.list-pls li span {
+    display: block;
+    margin-bottom: 4px;
+}
+.list-pls li span:nth-child(1) {
+    font-size: 1.2em;
+	font-weight: 600;
+    line-height: 0.8;
+    color: #201B0E;
+}
+.list-pls li span:nth-child(2) {
+    font-size: .9em;
+	font-style: italic;
+    line-height: 0.9;
+    color: #000;
+}
+.list-pls li span:nth-child(3) {
+    font-size: .9em;
+	font-style: normal;
+    line-height: 0.9;
+    color: #000;
+}
+.list-pls small {
+    font-size: 70%;
+    font-weight: 400;
+}
+
 /* всплывающее окно */
 #toggle_1 {
   visibility: hidden;
