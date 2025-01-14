@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Плейлист «Природа+»</title>
+  <meta name="description" content="Плейлист «Природа+»">
+  <meta name="keywords" content="плейлист, природа, животный мир">
+
+  <!-- ЗАПРЕТ ИНДЕКСАЦИИ !!! -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- ЗАГРУЗКА ВЕБ-СТРАНИЦЫ БЕЗ КЭШИРОВАНИЯ -->
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+
+  <!-- OG meta tags that improve the look of your post on social media -->
+  <meta property="og:site_name" content="Плейлист «Природа+»">
+  <!--website name-->
+  <meta property="og:site" content="">
+  <!--website link-->
+  <meta property="og:title" content="Плейлист «Природа+»">
+  <!--Post title-->
+  <meta property="og:description" content="Плейлист «Природа+»">
+  <!--Post description-->
+  <meta property="og:image" content="">
+  <!-- Image link (jpg only)-->
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:url" content="">
+  <!--where do you want your post to link to-->
+  <meta property="og:type" content="article">
+
+<link rel="icon" type="image/png" href="assets/favicons_pls/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicons_pls/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicons_pls/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons_pls/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Плейлист «Природа+»" />
+<link rel="manifest" href="assets/favicons_pls/site.webmanifest" />
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/peaxdrawnicons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/pwfreearrows.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.atuin.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media-query.css">
+
+<!-- Плавное появление страницы -->
+<script>
+setTimeout(function(){
+var element = document.getElementById("page_appearance");
+element.classList.add("page_visible");
+}, 300);
+</script>
+<noscript>
+	<style>.page_hide{opacity: 1 !important;}</style>
+</noscript>
+
+<style>
+body {
+ background-color: #efe4cf;
+ font-size: large;
+ margin: 25px;
+}
+div {
+ margin: 5px;
+}
+pre {
+ padding: 5px;
+ white-space: pre-wrap;
+ word-break: keep-all;
+}
+button {
+ font-size: large;
+ padding: 12px 20px;
+}
+input {
+ font-family: monospace;
+}
+textarea {
+ font-family: monospace;
+ resize: none;
+ width: 100%;
+ display: block;
+}
+.decrypted {
+ background-color: palegreen;
+ border: 2px dotted forestgreen;
+}
+.hint {
+ background-color: rgba(204, 187, 156, 0.3);
+ border: 2px dashed black;
+}
+/*
+  pre.decrypted {
+  }
+  */
+img.decrypted {
+ padding: 12px 20px;
+}
+a.decrypted {
+ font-size: xx-large;
+}
+input.password_input {
+ font-size: large;
+ padding: 12px 20px;
+}
+</style>
+  <script>
+  // Display the encryption inputs on the page (invoked during body onload)
+  async function init() {
+    document.getElementById("secret_type").innerHTML = secretType
+    document.getElementById("salt").setAttribute("value", saltHex)
+    document.getElementById("iv").setAttribute("value", ivHex)
+    document.getElementById("cipher").innerHTML = cipherHex
+
+    if (secretType == 'file') {
+      document.getElementById("target_file").innerHTML = `Download file.${secretExt}`
+    }
+
+    document.getElementById("password").addEventListener("keydown", (event) => {
+      // Decrypt when the user hits the Enter key after entering their password.
+      if (event.key === "Enter") {
+        decrypt();
+      }
+    })
+  }
+
+  // Invoked when the 'Decrypt' button is pressed
+  async function decrypt() {
+    try {
+      setMessage("Генерация ключа на основе пароля...")
+
+      // Load salt, convert hex string to byte array
+      let salt = hexStringToBytes(saltHex)
+      if (salt.length != saltSize) {
+        throw new Error(`Unexpected salt size: ${salt.length}`)
+      }
+
+      // Load IV, convert hex string to byte array
+      let iv = hexStringToBytes(ivHex)
+      if (iv.length != blockSize) {
+        throw new Error(`Unexpected IV size: ${iv.length}`)
+      }
+
+      // Load password, as byte array
+      let password = new TextEncoder().encode(document.getElementById("password").value)
+      if (password.length == 0) {
+        throw new Error(`Пустой пароль`)
+      }
+
+      // Wrap password into a Key object, as required by cryptography APIs
+      let passwordKey = await window.crypto.subtle.importKey(
+        "raw", // Array of bytes
+        password,
+        {name: "PBKDF2"}, // What algorithm uses the key
+        false, // Cannot be extracted
+        ["deriveKey"] // What the key is used for
+      )
+
+      // Derive a key from the password, using PBKDF2
+      let key = await window.crypto.subtle.deriveKey(
+        {
+          name: "PBKDF2", // https://en.wikipedia.org/wiki/PBKDF2
+          salt: salt,
+          iterations: iterations,
+          hash: "SHA-256", // Hash function, blessed by NIST
+        },
+        passwordKey, // Wrapped password
+        {
+          name: "AES-GCM", // What algorithm uses the key
+          length: keySize * 8, // Key bitsize
+        },
+        false, // Cannot be extracted
+        ["decrypt"] // What the derived key is used for
+      )
+
+      setMessage("Расшифровка...")
+
+      // Load ciphertext, convert hex string to byte array
+      let cipher = hexStringToBytes(cipherHex)
+
+      // Decrypt with AES-GCM
+      // https://en.wikipedia.org/wiki/Galois/Counter_Mode
+      let decryptedBuffer = await window.crypto.subtle.decrypt(
+        {
+          name: "AES-GCM", // Name of block cipher algorithm
+          iv: iv, // Initialization vector
+        },
+        key, // Derived key
+        cipher // Ciphertext
+      )
+
+      // Remove padding (added as necessary for block cipher)
+      // https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS#5_and_PKCS#7
+      decrypted = removePadding(new Uint8Array(decryptedBuffer))
+
+      // Render decrypted payload on the page
+      if (secretType == "message") {
+        // Decode bytes to UTF-8
+        plainText = new TextDecoder().decode(decrypted)
+        // Display the plaintext on the page
+        document.getElementById("target_text").innerHTML = plainText
+        document.getElementById("text_output_div").hidden = false
+      } else if (secretType == "image") {
+        // Transform image to base64 string
+        b64Data = btoa(decrypted.reduce((data, byte) => data + String.fromCharCode(byte), ''))
+        // Create 'data' URI
+        // https://en.wikipedia.org/wiki/Data_URI_scheme
+        const imageData = `data:image/${secretExt};base64,${b64Data}`
+        // Display image inline
+        document.getElementById("target_image").setAttribute("src", imageData)
+        document.getElementById("image_output_div").hidden = false
+      } else if (secretType == "file") {
+        // Transform image to base64 string
+        b64Data = btoa(decrypted.reduce((data, byte) => data + String.fromCharCode(byte), ''))
+        // Create 'data' URI
+        // https://en.wikipedia.org/wiki/Data_URI_scheme
+        const fileData = `data:application/octet-stream;base64,${b64Data}`
+        // Activate download link
+        document.getElementById("target_file").setAttribute("href", fileData)
+        document.getElementById("target_file").setAttribute("download", `file.${secretExt}`)
+        document.getElementById("file_output_div").hidden = false
+      } else {
+        throw new Error(`Unknown secret type: ${secretType}`)
+      }
+
+      setMessage("Расшифровано успешно")
+
+    } catch (err) {
+      // TODO better handle failing promises
+      setMessage(`Расшифровка не удалась: ${err}`)
+      return
+    }
+  }
+
+  // Transform hexadecimal string to Uint8Array
+  function hexStringToBytes(input) {
+    for (var bytes = [], c = 0; c < input.length; c += 2) {
+      bytes.push(parseInt(input.substr(c, 2), 16));
+    }
+    return Uint8Array.from(bytes);
+  }
+
+  // The cleartext input must be padded to a multiple of the block size
+  // for encryption. This function removes the padding, expected to be
+  // compatible with PKCS#7 described in RFC 5652.
+  // https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS#5_and_PKCS#7
+  function removePadding(input) {
+    // Last byte is the amount of padding
+    padAmount = input[input.length-1]
+    unpaddedSize = input.length - padAmount
+    return input.slice(0, unpaddedSize)
+  }
+
+  // Update page with status of decryption
+  function setMessage(msg) {
+    document.getElementById("errormsg").innerHTML = msg
+  }
+
+  </script>
+</head>
+
+<body onload="init()" class="mber-body-wrap mber-page-wrap-light">
+
+<div class="container text-center">
+<div class="row">
+<div class="col">
+<span id="secret_type" class="d-none"></span>
+         <div class="mber-inrto-content portfolio-title">
+          <h2 class="md-font b-text inter-font-900 mb-0 shadow_b">Плейлист тв-каналов <span style="color:#326e07;">«Природа+»</span></h2>
+         </div>
+<div class="empty-div-30"></div>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+    <div class="col col-lg-8 text-center">
+     <img src="assets/pl/cover_video.jpg" class="img img-fluid rounded" alt="">
+    </div>
+  </div>
+</div>
+<div class="empty-div-30"></div>
+
+<p class="sm-md-font inter-font-900">Формат: <span class="inter-font-700">M3U8</span></p>
+<p class="sm-md-font inter-font-900">Последнее обновление: <span class="inter-font-700">1 января 2025 г.</span></p>
+<p class="sm-md-font inter-font-900">ОБРАТИТЕ ВНИМАНИЕ:
+<span class="inter-font-700">
+НЕ ВСЕ КАНАЛЫ МОГУТ РАБОТАТЬ.<br>
+Возможные причины: сменился адрес потока, блокировка по IP-адресу (местоположению), <em>User-Agent</em> Вашего устройства не поддерживается и др.
+</span>
+</p>
+
+<div class="empty-div-30"></div>
+<p>
+  <a class="bn1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    СПИСОК КАНАЛОВ
+  </a>
+</p>
+
+<div class="empty-div-30"></div>
+<div class="collapse" id="collapseExample">
+
+    <div class="container-fluid">
+     <div class="row">
+      <div class="col-12">
+       <div class="list-pls text-start">
+        <ol reversed>
+<li>В МИРЕ ЖИВОТНЫХ</li>
+<li>ГЛАЗАМИ ТУРИСТА</li>
+<li class="text-decoration-line-through">ДАЧА HD (UA)</li>
+<li>ДИАЛОГИ О РЫБАЛКЕ</li>
+<li>ДИКАЯ ОХОТА HD</li>
+<li>ДИКАЯ РЫБАЛКА HD</li>
+<li>ДИКИЙ</li>
+<li>ДОМАШНИЕ ЖИВОТНЫЕ</li>
+<li>ЖИВАЯ ПЛАНЕТА</li>
+<li>ЖИВАЯ ПРИРОДА</li>
+<li>ЖИВАЯ ПРИРОДА HD</li>
+<li>ЗОО ТВ</li>
+<li class="text-decoration-line-through">ИНСАЙТ ТВ</li>
+<li>КОННЫЙ МИР</li>
+<li>ЛАПКИ LIVE</li>
+<li class="text-decoration-line-through">ЛЕСНОЙ (GoodGame)</li>
+<li>МОЯ ПЛАНЕТА</li>
+<li>МОЯ ПЛАНЕТА HD</li>
+<li>МОЯ СТИХИЯ</li>
+<li>НАША СИБИРЬ</li>
+<li>НАША СИБИРЬ 4K</li>
+<li class="text-decoration-line-through">НАША ТЕМА</li>
+<li>OКЕАН TV</li>
+<li>ОХОТА И РЫБАЛКА</li>
+<li>ОХОТНИК И РЫБОЛОВ</li>
+<li>ОХОТНИК И РЫБОЛОВ HD</li>
+<li>ОХОТНИК И РЫБОЛОВ Int.</li>
+<li>Пёс и Ко</li>
+<li>РЫБАЛКА И ОХОТА</li>
+<li>РЫБОЛОВ</li>
+<li class="text-decoration-line-through">ФАУНА (UA)</li>
+<li class="text-decoration-line-through">alpha NATURE</li>
+<li>ANIMAL PLANET</li>
+<li>ANIMAL PLANET HD</li>
+<li>BIG PLANET</li>
+<li>BIG PLANET HD</li>
+<li>CuriosityStream HD</li>
+<li>DOCUBOX</li>
+<li>NATIONAL GEOGRAPHIC WILD</li>
+<li>NATIONAL GEOGRAPHIC WILD HD</li>
+<li>RT Doc</li>
+<li>RTG TV</li>
+<li>RTG HD</li>
+<li>Sunset Space</li>
+<li>TERRA</li>
+<li>TERRA HD</li>
+<li>THE EXPLORERS</li>
+<li>THE EXPLORERS HD</li>
+<li>viju EXPLORE</li>
+<li>viju EXPLORE HD</li>
+<li>viju NATURE</li>
+<li>viju+ PLANET HD</li>
+<li>ZOOПАРК</li>
+<li>Zoo Stream (UA) <small>[Geo]</small></li>
+<li class="text-decoration-line-through">Zoosweet (UA)</li>
+
+<li class="n-groupe">ЗАРУБЕЖНЫЕ</li>
+<li>ADVENTURE EARTH (GB)</li>
+<li>AKC TV (US)</li>
+<li>AKC TV - Meet The Breeds Channel (US)</li>
+<li>AKC TV - Puppies 24-7 (US)</li>
+<li>AUTENTIC TRAVEL (GB)</li>
+<li>BARK TV (US)</li>
+<li>BBC EARTH (US)</li>
+<li class="text-decoration-line-through">BEAUTIFUL PLANET (US)</li>
+<li>Better Life’s Nature Channel (US)</li>
+<li class="text-decoration-line-through">CLARITY 4K (US)</li>
+<li class="text-decoration-line-through">CLIX (EU)</li>
+<li>CURIOSITY Now</li>
+<li>DESTINATION NATURE (FR)</li>
+<li class="text-decoration-line-through">EARTH TOUCH TV (GB)</li>
+<li>EVOLUTION EARTH</li>
+<li>FidoTV Channel (BARK TV) (US)</li>
+<li>FISHING & HUNTING CHANNEl</li>
+<li>HORSE & COUNTRY TV (US)</li>
+<li>INWILD (GB)</li>
+<li>ITALIAN FISHING TV (IT)</li>
+<li>Jack Hanna (GB)</li>
+<li>just.fishing</li>
+<li>LOVE NATURE</li>
+<li>LOVE NATURE 4K</li>
+<li>LOVE PETS</li>
+<li>LOVE THE PLANET</li>
+<li class="text-decoration-line-through">LUCKY DOG (US)</li>
+<li>MagellanTV Now (UK)</li>
+<li>MY LITTLE PET</li>
+<li>NATIONAL GEOGRAPHIC WILD (TR)</li>
+<li>NATURE TIME</li>
+<li>ONE TERRA</li>
+<li>OUTDOOR AMERICA</li>
+<li>PBS Digital Studios (US)</li>
+<li>PBS Nature (US)</li>
+<li>PET CLUB TV</li>
+<li class="text-decoration-line-through">Pets.TV (US)</li>
+<li class="text-decoration-line-through">PISI TV (TR)</li>
+<li class="text-decoration-line-through">PLANT-BASED NETWORK (US)</li>
+<li>PLANET EARTH (VN)</li>
+<li>PLANETE+ HD (PL)</li>
+<li class="text-decoration-line-through">Pluto TV Animals</li>
+<li>POLSAT VIASAT NATURE (PL)</li>
+<li>PursuitUP (US)</li>
+<li>REAL WILD</li>
+<li>ROVR PETS (US)</li>
+<li>SAMSUNG WILD LIFE (US)</li>
+<li>STINGRAY NATURESCAPE</li>
+<li>Terra Mater WILD</li>
+<li>Terra X</li>
+<li class="text-decoration-line-through">TERRAVIVA (BR)</li>
+<li class="text-decoration-line-through">THE EXPLORERS (FR)</li>
+<li>The Jack Hanna Channel (US)</li>
+<li>THE PET COLLECTIVE</li>
+<li class="text-decoration-line-through">The Wildlife World</li>
+<li>TIERWELT</li>
+<li class="text-decoration-line-through">TOO WILD</li>
+<li class="text-decoration-line-through">TRING PLANET (AL)</li>
+<li class="text-decoration-line-through">TV Natura (CZ)</li>
+<li>VIASAT NATURE (GR)</li>
+<li class="text-decoration-line-through">WATER PLANET (PL)</li>
+<li>WaterBear</li>
+<li>WeatherSpy</li>
+<li>WHOA! THAT WAS WILD! (EU)</li>
+<li>WILD PLANET</li>
+<li>WILDER PLANET</li>
+<li class="text-decoration-line-through">WILD TV (BG)</li>
+<li>WildEarth</li>
+<li class="text-decoration-line-through">WORLD FISHING NETWORK (US)</li>
+<li>Xplore (DE)</li>
+<li>Xplore</li>
+<li>Xplore Int.</li>
+<li>Xtreme Outdoor Presented by HISTORY (US)</li>
+
+<li class="n-groupe">4K VIDEO RUTUBE</li>
+<li>100 000 захватывающих пейзажей</li>
+<li>Высококачественное видео</li>
+<li>Детеныши животных в 4K</li>
+<li>Дикая природа сафари в 4K</li>
+<li>Животные Австралии в 4K</li>
+<li>Камин</li>
+<li>Лес в 4K</li>
+<li>Невероятная красота 4K</li>
+<li>Океан в 4K Релакс</li>
+<li>Повседневные вещи в макросъемке</li>
+<li>Подводный Мир в 4K</li>
+<li>Птицы 4K</li>
+<li>Райские места на Земле 4K 60fps</li>
+<li>Аляска в 4K 60fps</li>
+<li>Антарктика в 4K</li>
+<li>Болгария в 4K</li>
+<li>Бора-Бора в 4К</li>
+<li>Германия в 4K</li>
+<li>Греция в 4K</li>
+<li>Дубай в 4K</li>
+<li>Карибы в 4К</li>
+<li>Каттегат в 4К с музыкой викингов</li>
+<li>Кения в 4K</li>
+<li>Китай в 4K</li>
+<li>Коста-Рика в 4K 60fps</li>
+<li>Мальдивы в 4К</li>
+<li>Манила в 4K</li>
+<li>Морокко в 4К</li>
+<li>Намибия в 4К</li>
+<li>Пакистан в 4К</li>
+<li>Перу 4K 60fps</li>
+<li>Россия в 4K</li>
+<li>Серенгети в 4К</li>
+<li>Турция в 4K</li>
+<li>Швейцария Железная дорога Кур–Ароза</li>
+<li>4K 60fps</li>
+<li>4K 60fps Удивительные животные</li>
+<li>4K 60fps Colorful World - True Cinematic</li>
+<li>4K HDR 60FPS Dolby Vision</li>
+<li>4K ULTRA HD</li>
+<li>Best of Dolby Vision 4K HDR 60fps</li>
+<li>Breathtaking Landscape 4K</li>
+<li>Colorful World Animals - Animals Sounds</li>
+<li>Demo 4K 60fps</li>
+<li>Mind Blowing 4K</li>
+<li>Most Special 4K 60 FPS</li>
+<li>PARADISE ON EARTH Best Travel </li>
+<li>Razer Sharp 4K</li>
+<li>THE MOST BEAUTIFUL 4K 60fps</li>
+<li>THE ULTIMATE Dolby Vision 4K</li>
+<li>World of Animals 4K</li>
+
+<li class="n-groupe">RELAX</li>
+<li>Beach Bonfire Vibes</li>
+<li>Campfire Vibes</li>
+<li>Christmas Vibes</li>
+<li>Cozy Vibes</li>
+<li>Fall Vibes</li>
+<li>Fireplace Vibes</li>
+<li>Holiday Fireplace Vibes</li>
+<li>Island Vibes</li>
+<li>Lakeside Bonfire Vibes</li>
+<li>Loupe 4K</li>
+<li>Luxe Fireplace Vibes</li>
+<li>Ocean Vibes</li>
+<li>Rainy Day Vibes</li>
+<li>Soothing Vibes</li>
+<li>Stingray Holidayscapes</li>
+<li>Stingray Naturescape</li>
+<li>Stingray Spa</li>
+<li>Storm Vibes</li>
+<li>Waterfall Vibes</li>
+<li>ZenLIFE by Stingray</li>
+
+<li class="n-groupe">РЕЛАКС</li>
+<li>4K TRAVEL</li>
+<li>Аквариум</li>
+<li>Звуки дождя 24/7</li>
+<li>Шум моря</li>
+<li>Cool Summer Channel</li>
+<li>DELUXE LOUNGE HD (DE)</li>
+<li>Fireplace 4K</li>
+<li>Loupe 4K</li>
+<li>Stingray CMusic</li>
+<li>Stingray Holidayscapes</li>
+<li>Stingray Naturescape</li>
+<li>Stingray Spa</li>
+<li>ZenLIFE by Stingray</li>
+<li>Beach Bonfire Vibes 4K</li>
+<li>Campfire Vibes 4K</li>
+<li>Island Vibes 4K</li>
+<li>Lakeside Bonfire Vibes 4K</li>
+<li>Ocean Vibes 4K</li>
+<li>Rainy Day Vibes 4K</li>
+<li>Storm Vibes 4K </li>
+<li>Summer Vibes 4K</li>
+<li>Waterfall Vibes 4K</li>
+
+<li class="n-groupe">ВЕБ-КАМЕРЫ</li>
+<li>Cochrane Polar Bear Habitat - Arctic Enclosure</li>
+<li>Cochrane Polar Bear Habitat - Baffin Enclosure</li>
+<li>Cochrane Polar Bear Habitat - Chukchi Enclosure</li>
+<li>Cochrane Polar Bear Habitat - Davis Enclosure</li>
+<li>Explore.org - Океан (Live Cam)</li>
+<li>Explore.org - Alligator Swamp and Spoonbills (Live Cam 60)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 10)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 11)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 12)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 13)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 14)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 15)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 16)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 17)</li>
+<li>Explore.org - Aquarium Of The Pacific (Live Cam 18)</li>
+<li>Explore.org - Aryana Hummingbird</li>
+<li>Explore.org - Bobcat Hospital</li>
+<li>Explore.org - Channel Islands National Park - Anacapa Peregrine Falcon Cam</li>
+<li>Explore.org - Chesapeake Conservancy - Peregrine Falcons</li>
+<li>Explore.org - ECAD Whelping (Live Cam 117)</li>
+<li>Explore.org - ECAD Whelping (Live Cam 201)</li>
+<li>Explore.org - Farm Sanctuary (Live Cam 19)</li>
+<li>Explore.org - Farm Sanctuary (Live Cam 20)</li>
+<li>Explore.org - Farm Sanctuary (Live Cam 21)</li>
+<li>Explore.org - Farm Sanctuary (Live Cam 22)</li>
+<li>Explore.org - Farm Sanctuary (Live Cam 23)</li>
+<li>Explore.org - Farm Sanctuary (Live Cam 24)</li>
+<li>Explore.org - Farm Sanctuary (Live Cam 25)</li>
+<li>Explore.org - Gorilla Forest Corridor</li>
+<li>Explore.org - International Wolf Center North Camera</li>
+<li>Explore.org - International Wolf Center South Camera</li>
+<li>Explore.org - Kentucky Equine Adoption Center</li>
+<li>Explore.org - Kentucky Equine Adoption Center - Foaling Shed Camera</li>
+<li>Explore.org - Kitten Rescue Sanctuary (Live Cam 84)</li>
+<li>Explore.org - Kitten Rescue Sanctuary (Live Cam 85)</li>
+<li>Explore.org - Kitten Rescue Sanctuary (Live Cam 564)</li>
+<li>Explore.org - Muskox cam</li>
+<li>Explore.org - Puppy Playroom at Warrior Canine Connection</li>
+<li>Explore.org - Puppy Whelping Room at Warrior Canine Connection</li>
+<li>Explore.org - Raptor Resource Project - Great Spirit Bluff Falcons</li>
+<li>Explore.org - Raptor Resource Project - Great Spirit Bluff Falcons - Cliff View</li>
+<li>Explore.org - Red Panda Forest Park</li>
+<li>Explore.org - Sea Lion Beach at OrcaLab</li>
+<li>Explore.org - Sharks in the Atlantic</li>
+<li>Explore.org - Tau Waterhole</li>
+<li>Explore.org - Turpentine Creek - Aria the Tiger Cam</li>
+<li>Explore.org - Turpentine Creek - Dutchess the Tiger Cam</li>
+<li>Explore.org - Turpentine Creek - Jasmine the Tiger Cam</li>
+<li>Explore.org - Turpentine Creek - Max the Tiger Cam</li>
+<li>Explore.org - Wolong Grove Panda Yard</li>
+
+<li class="n-groupe">ДРУГИЕ</li>
+<li>7TV</li>
+<li>8 КАНАЛ</li>
+<li>365 ДНЕЙ</li>
+<li>АНЕКДОТ ТВ</li>
+<li>АППЕТИТНЫЙ</li>
+<li>АРСЕНАЛ</li>
+<li>АРСЕНАЛ</li>
+<li>БОБЁР</li>
+<li>БОЛЬШАЯ АЗИЯ</li>
+<li>ВОПРОСЫ И ОТВЕТЫ</li>
+<li>ВРЕМЯ</li>
+<li>ДЕТСКОЕ КИНО International (Catcast)</li>
+<li>ДОКТОР</li>
+<li>ДОМАШНИЙ International</li>
+<li>ЕДА</li>
+<li>Жар Птица</li>
+<li>ЖИВИ!</li>
+<li>ЖИВИ АКТИВНО</li>
+<li>ЗАГОРОДНАЯ ЖИЗНЬ</li>
+<li>ЗАГОРОДНЫЙ</li>
+<li>ЗАГОРОДНЫЙ Int. HD</li>
+<li>ЗАЛ СУДА</li>
+<li>ЗВЕЗДА Плюс</li>
+<li>ЗДОРОВОЕ ТВ</li>
+<li>ИСТОРИЯ</li>
+<li>КАЛЕЙДОСКОП ТВ</li>
+<li>КВН ТВ</li>
+<li>КЛЮЧ</li>
+<li>КРАСНАЯ ЛИНИЯ</li>
+<li>КТО ЕСТЬ КТО</li>
+<li>КТО КУДА</li>
+<li>КУЛИНАР ТВ (DE)</li>
+<li>КУХНЯ ТВ</li>
+<li>МАМА</li>
+<li>МИР</li>
+<li>МОСКВА ДОВЕРИЕ</li>
+<li>МУЖСКОЙ</li>
+<li>МУЗЫКА 1 International (Catcast)</li>
+<li>МУЗЫКА 2 International (Catcast)</li>
+<li>МУЗЫКА КИНО International (Catcast)</li>
+<li>НАНО</li>
+<li>НАНО HD</li>
+<li>НАУКА</li>
+<li>НВВ (Народ Всё Видит)</li>
+<li>НЕИЗВЕСТНАЯ РОССИЯ</li>
+<li>НИК (Новый Игровой Канал)</li>
+<li>НОСТАЛЬГИЯ</li>
+<li>НТВ Стиль</li>
+<li>ОРУЖИЕ</li>
+<li>ОТКРЫТЫЙ МИР</li>
+<li>ПЕРВЫЙ ВЕГЕТАРИАНСКИЙ</li>
+<li>ПЕРВЫЙ КОСМИЧЕСКИЙ HD</li>
+<li>ПЕРЕЦ</li>
+<li>ПОЕХАЛИ!</li>
+<li>ПРИКЛЮЧЕНИЯ</li>
+<li>ПСИХОЛОГИЯ 21</li>
+<li>РАДОСТЬ МОЯ</li>
+<li>РОДНОЙ КАНАЛ</li>
+<li>САРАФАН</li>
+<li>СВЕТЛОЕ ТВ</li>
+<li>СОВЕРШЕННО СЕКРЕТНО</li>
+<li>СТС Love</li>
+<li>СУББОТА!</li>
+<li>ТАЙНА</li>
+<li>ТАЙНЫ ГАЛАКТИКИ (Galaxy)</li>
+<li>ТАНЦУЙ!</li>
+<li>ТВОЁ ТВ ЮМОР</li>
+<li>ТЕАТР</li>
+<li>ТЕЛЕДОМ</li>
+<li>ТЕЛЕКАФЕ</li>
+<li>ТЕЛЕПУТЕШЕСТВИЯ</li>
+<li>ТЕХНО 24</li>
+<li>ТОНУС</li>
+<li>ТОЧКА ОТРЫВА</li>
+<li>УСАДЬБА</li>
+<li>УСПЕХ</li>
+<li>ЦЕНТРАЛЬНОЕ ТЕЛЕВИДЕНИЕ</li>
+<li>ART</li>
+<li>ARTE (FR)</li>
+<li>BCU Christmas</li>
+<li>BOX Gurman HD</li>
+<li>BOX Travel HD</li>
+<li>BRODILO TV</li>
+<li>DA VINCI</li>
+<li>DISCOVERY CHANNEL HD</li>
+<li>DISCOVERY SCIENCE</li>
+<li>E TV</li>
+<li>ENGLISH CLUB TV</li>
+<li>FASHION & LIFESTYLE</li>
+<li>FashionTV UHD </li>
+<li>FOOD NETWORK</li>
+<li>GAGS NETWORK</li>
+<li>HD Life</li>
+<li>HGTV</li>
+<li>HISTORY</li>
+<li>HISTORY 2</li>
+<li>INVESTIGATION DISCOVERY HD</li>
+<li>MEZZO</li>
+<li>MEZZO LIVE HD</li>
+<li>MUSEUM HD</li>
+<li>MUSEUM 4K</li>
+<li>NATIONAL GEOGRAPHIC</li>
+<li>Pro100TV</li>
+<li>SAN PORTO</li>
+<li>SUNSET SPACE</li>
+<li>TLC</li>
+<li>TRAVEL+ADVENTURE</li>
+<li>TRAVEL+ADVENTURE HD</li>
+<li>Ushba TV - Retrovision Motor</li>
+<li>viju History</li>
+<li>Women's Magazine</li>
+<li>WORLD FASHION CHANNEL</li>
+
+<li class="n-groupe">КИНО</li>
+<li>1FILMAX (GoodGame)</li>
+<li>2FILMAX (GoodGame)</li>
+<li class="text-decoration-line-through">3FILMAX (GoodGame)</li>
+<li>43 КАНАЛ (Туапсе)</li>
+<li>312 КИНО (KG)</li>
+<li>БЛОКБАСТЕР</li>
+<li>ВИДЕОКАССЕТА</li>
+<li>ВСЁ ТВ (GoodGame)</li>
+<li>ДЕНЬ ПОБЕДЫ</li>
+<li>ДЕТСКОЕ КИНО International</li>
+<li>ДОМ КИНО</li>
+<li>ДОМ КИНО ПРЕМИУМ HD</li>
+<li>ДОРАМА</li>
+<li>ДУШЕВНОЕ HD</li>
+<li>ЕВРОКИНО</li>
+<li>ИЛЛЮЗИОН+</li>
+<li>ИНДИЙСКОЕ КИНО</li>
+<li>ИНДИЯ</li>
+<li>КАМЕДИ</li>
+<li>КИНЕКО</li>
+<li>КИНО 1 International (Catcast)</li>
+<li>КИНО БЕЗ ГРАНИЦ</li>
+<li>КИНО ТВ</li>
+<li>КИНО ТВ HD</li>
+<li>КИНО ТВ +4</li>
+<li>КИНО ТВ HD +7</li>
+<li>КИНОБОЕВИК (KZ)</li>
+<li>КИНОКОМЕДИЯ</li>
+<li>КИНОМАН (КиноСат)</li>
+<li>КИНОМИКС</li>
+<li>КИНОПОКАЗ</li>
+<li>КИНОПРЕМЬЕРА</li>
+<li>КИНОПРЕМЬЕРА HD</li>
+<li>КИНОСВИДАНИЕ</li>
+<li>КиноСезон</li>
+<li>КИНОСЕМЬЯ</li>
+<li>КИНОСЕРИЯ</li>
+<li>КИНОУЖАС</li>
+<li>КИНОХИТ</li>
+<li>КЛАССИКА КИНО</li>
+<li>КОМЕДИЯ</li>
+<li>КОШМАР HD (GoodGame)</li>
+<li>ЛАВСТОРИ</li>
+<li>ЛЮБИМОЕ КИНО</li>
+<li>МИР СЕРИАЛА</li>
+<li>МИРОВОЕ КИНО (KZ)</li>
+<li>МОСФИЛЬМ. ЗОЛОТАЯ КОЛЛЕКЦИЯ</li>
+<li>МОСФИЛЬМ. ЗОЛОТАЯ КОЛЛЕКЦИЯ +4</li>
+<li>МУЖСКОЕ КИНО</li>
+<li>НАШ КИНОПОКАЗ</li>
+<li>НАШЕ МУЖСКОЕ HD</li>
+<li>НАШЕ НОВОЕ КИНО</li>
+<li>НСТ</li>
+<li>НТВ Право</li>
+<li>НТВ Сериал</li>
+<li>НТВ Хит</li>
+<li>ПОБЕДА</li>
+<li class="text-decoration-line-through">ПРЕМИАЛЬНОЕ HD</li>
+<li>ПРЕМИУМ КИНО (KZ)</li>
+<li>ПРО ЛЮБОВЬ</li>
+<li>РЕТРО</li>
+<li>РОДНОЕ КИНО</li>
+<li>РУССКИЙ БЕСТСЕЛЛЕР</li>
+<li>РУССКИЙ ДЕТЕКТИВ</li>
+<li>РУССКИЙ ИЛЛЮЗИОН</li>
+<li>РУССКИЙ РОМАН</li>
+<li>РУССКИЙ РОМАН HD</li>
+<li>САПФИР</li>
+<li>СЕМЕЙНОЕ КИНО HD (KZ)</li>
+<li>Сити Эдем Кинодетектив (Catcast)</li>
+<li>Сити Эдем Кинокомедия (Catcast)</li>
+<li>Сити Эдем Киномистика (Catcast)</li>
+<li>Сити Эдем Киносемья (Catcast)</li>
+<li>Сити Эдем Киноэкшен (Catcast)</li>
+<li>Сити Эдем Теленовелла (Catcast)</li>
+<li>Сити Эдем ТВ (Catcast)</li>
+<li>Сити Эдем Play (Catcast)</li>
+<li>СМОТРИМ (Россия)</li>
+<li>СТРК (Сочи)</li>
+<li>ТВ 21</li>
+<li>ТВОЁ ТВ</li>
+<li>ФЕНИКС+ КИНО</li>
+<li>ХИТ HD</li>
+<li>Akudji TV (GoodGame)</li>
+<li>AMEDIA 1</li>
+<li>AMEDIA 2</li>
+<li>AMEDIA HIT</li>
+<li>AMEDIA HIT HD</li>
+<li>AMEDIA PREMIUM</li>
+<li>AMEDIA PREMIUM HD</li>
+<li>BCU Сваты HD</li>
+<li>BCU СССР HD</li>
+<li>BCU Romantic HD</li>
+<li>.black</li>
+<li>BOLLYWOOD</li>
+<li>BOLT</li>
+<li>BOX СССР 4K</li>
+<li>BOX Oscar</li>
+<li>CINEMA</li>
+<li>CINEMA HD (КОСМОС ТВ) (BY)</li>
+<li>CineMan Мелодрама</li>
+<li>CineMan РуКино</li>
+<li>CineMan Сваты</li>
+<li>COMEDY CENTRAL</li>
+<li>DetectiveJam HD</li>
+<li>FAN</li>
+<li>FAN HD (GoodGame)</li>
+<li>FILMBOX</li>
+<li>FILMBOX ARTHOUSE</li>
+<li>FILM UA Drama</li>
+<li>FlixSnip</li>
+<li>FMC (Goodgame)</li>
+<li>FX</li>
+<li>FX Life</li>
+<li>High Cinema Citkom</li>
+<li>High Cinema On Demand</li>
+<li>High Cinema Premiere</li>
+<li>High Cinema RU Kino</li>
+<li>High Cinema RU Serial</li>
+<li>HOLLYWOOD</li>
+<li>HOLLYWOOD HD</li>
+<li>IPTVPLAY ПАМЯТЬ</li>
+<li>Just TV</li>
+<li>KINO 24</li>
+<li>KinoJam 1</li>
+<li class="text-decoration-line-through">KinoJam 2</li>
+<li>KINOLIVING</li>
+<li>KION ХИТ HD</li>
+<li>MM Драма</li>
+<li>MM Роскино</li>
+<li>MM Сваты</li>
+<li>MM Семейный 1</li>
+<li>MM Семейный 2</li>
+<li>MM Love</li>
+<li>MM USSR Детектив</li>
+<li>MM USSR Комедия</li>
+<li>MM USSR Мультфильм</li>
+<li>plan B</li>
+<li>QAlem 1 (KZ)</li>
+<li>QAlem 2 (KZ)</li>
+<li>.red</li>
+<li>.red HD</li>
+<li>ROMANCE HD</li>
+<li>.sci-fi</li>
+<li>SCREAM HD</li>
+<li>SeleCaoTV (GoodGame)</li>
+<li>seriesTV (GoodGame)</li>
+<li>SHOT TV</li>
+<li>STAR CINEMA HD</li>
+<li>STAR FAMILY HD</li>
+<li>START Air</li>
+<li>START World</li>
+<li>SUSPENSE</li>
+<li>TIMELESS DIZI CHANNEL</li>
+<li>TRASH HD</li>
+<li>TVMChannel</li>
+<li>TVRUS (DE)</li>
+<li>U! CINEMAN (AM)</li>
+<li>ULTRA HD CINEMA</li>
+<li>Ushba TV - ЕРАЛАШ</li>
+<li>Ushba TV - Мистер Бин</li>
+<li>Ushba TV - Шоу Бенни Хилла</li>
+<li>Ushba TV - Retrovision</li>
+<li>Ushba TV - Retrovision Кинопанорама</li>
+<li>Ushba TV - Retrovision Classic</li>
+<li>Ushba TV - Retrovision Movies</li>
+<li>VHS-ка HD</li>
+<li>VIASAT KINO COMEDY</li>
+<li>VIASAT KINO WORLD</li>
+<li>viju TV1000</li>
+<li>viju TV1000 Новелла</li>
+<li>viju TV1000 Русское кино</li>
+<li>viju TV1000 Action</li>
+<li>viju+ Comedy</li>
+<li>viju+ Megahit</li>
+<li>viju+ Premiere</li>
+<li>viju+ Serial</li>
+
+<li class="n-groupe">ОБЩЕСТВЕННЫЕ</li>
+<li>360°</li>
+<li>360° НОВОСТИ</li>
+<li>АБАЗА ТВ (AB)</li>
+<li>БЕЛАРУСЬ 1 HD (BY)</li>
+<li>БЕЛАРУСЬ 2 HD (BY)</li>
+<li>БЕЛАРУСЬ 3 HD (BY)</li>
+<li>БЕЛАРУСЬ 24 (BY)</li>
+<li class="text-decoration-line-through">БелСат (PL)</li>
+<li>ВМЕСТЕ-РФ</li>
+<li>ГОВОРИТ МОСКВА (WEB)</li>
+<li>ДОЖДЬ [Geo]</li>
+<li>ДУМА ТВ</li>
+<li>ЕГЭ ТВ</li>
+<li class="text-decoration-line-through">За!ТВ</li>
+<li>ИЗВЕСТИЯ</li>
+<li>КОНГРЕСС ТВ</li>
+<li>КРИК-ТВ</li>
+<li>ЛДПР ТВ</li>
+<li>МАГНАТ HD</li>
+<li class="text-decoration-line-through">МИНИСТЕРСТВО ИДЕЙ</li>
+<li>МОСКОВСКИЙ ОБРАЗОВАТЕЛЬНЫЙ</li>
+<li>МТРК Петропавловск (KZ)</li>
+<li>НАСТОЯЩЕЕ ВРЕМЯ</li>
+<li class="text-decoration-line-through">НОВЫЙ МИР</li>
+<li>НТВ Мир</li>
+<li>ОНТ HD (BY)</li>
+<li>ОСН (Общественная служба новостей)</li>
+<li>ОТР</li>
+<li>ПЕРВЫЙ ИНФОРМАЦИОННЫЙ (BY)</li>
+<li>ПЕРВЫЙ РОССИЙСКИЙ НАЦИОНАЛЬНЫЙ КАНАЛ</li>
+<li class="text-decoration-line-through">ПРО БИЗНЕС</li>
+<li>ПРОДВИЖЕНИЕ</li>
+<li>ПРОСВЕЩЕНИЕ</li>
+<li>РАТНИК</li>
+<li>РЕН ТВ International</li>
+<li>РЖД ТВ</li>
+<li>РОССИЯ-РТР</li>
+<li>РТС 1 (RS)</li>
+<li>РТС 2 (RS)</li>
+<li class="text-decoration-line-through">СИНЕРГИЯ ТВ</li>
+<li>Соловьёв LIVE</li>
+<li>СТВ (BY)</li>
+<li>СТВ HD (BY)</li>
+<li>ТАВРИЯ</li>
+<li>ТАСС</li>
+<li>ТВ-3 (BY)</li>
+<li class="text-decoration-line-through">ТЕЛЕВИДЕНИЕ НОВЫХ РЕГИОНОВ</li>
+<li>ТОЧКА ТВ </li>
+<li>ТСВ (Приднестровье)</li>
+<li class="text-decoration-line-through">ЦАРЬГРАД</li>
+<li>ARIRANG (KR)</li>
+<li>BBC NEWS (GB)</li>
+<li>BBC ONE (GB)</li>
+<li>BBC TWO (GB)</li>
+<li>BVN (NL)</li>
+<li>CBC (AZ)</li>
+<li>CBC NEWS (CA)</li>
+<li>CGTN русский (CN)</li>
+<li>CNBC Europe (US)</li>
+<li>CNN (US)</li>
+<li class="text-decoration-line-through">ETV+ (EE)</li>
+<li class="text-decoration-line-through">EURONEWS <small>рус.</small></li>
+<li>EURONEWS</li>
+<li>FRANCE 2 (FR)</li>
+<li>FRANCE 3 (FR)</li>
+<li>FRANCE 24 (FR)</li>
+<li>FRANCE 24 ENG (FR)</li>
+<li class="text-decoration-line-through">GlobalStar TV</li>
+<li>H1 Sat (AM)</li>
+<li>La Une (BE)</li>
+<li class="text-decoration-line-through">N4 (MD)</li>
+<li>Nelonen (FI)</li>
+<li>NEWS FRONT</li>
+<li>NHK World Japan</li>
+<li>NOW TV (News Of The World)</li>
+<li class="text-decoration-line-through">PUBLIKA TV (MD)</li>
+<li>QAZAQSTAN Int. (KZ)</li>
+<li>REUTERS (GB)</li>
+<li>RT</li>
+<li>RT Balkan</li>
+<li>RT Doc</li>
+<li>RTL (DE)</li>
+<li>RTL Zwei (DE)</li>
+<li>RTVi</li>
+<li>SILK WAY (KZ)</li>
+<li>SKY NEWS International (GB)</li>
+<li>SPIEGEL TV (DE)</li>
+<li>TGRT Europe (TR)</li>
+<li>The Guardian (GB)</li>
+<li>TRT 1 (TR)</li>
+<li>TRT HABER (TR)</li>
+<li>TV BRICS</li>
+<li class="text-decoration-line-through">TV1 KG</li>
+<li>TV3 (LT)</li>
+<li>TV5Monde Europe (FR)</li>
+<li>TV6 (LT)</li>
+<li>UNIVER (Казань)</li>
+<li>ZDF (DE)</li>
+
+<li class="n-groupe">РЕГИОНАЛЬНЫЕ</li>
+<li>6ТВ (Хабаровск) +7</li>
+<li>6ТВ Комсомольское Время (Комсомольск-на-Амуре) +7</li>
+<li>8 КАНАЛ (Владивосток) +7</li>
+<li>АСТВ (Южно-Сахалинск) +8</li>
+<li>25 РЕГИОН (Владивосток) +7</li>
+<li>41 РЕГИОН (Петропавловск-Камчатский) +9</li>
+<li>АМУРСКОЕ ОБЛАСТНОЕ ТЕЛЕВИДЕНИЕ (Благовещенск) +6</li>
+<li>ВОСТОК 24 (Владивосток) +7</li>
+<li>ГОРОД 24 (Благовещенск) +6</li>
+<li>ГУБЕРНИЯ (Хабаровск) +7</li>
+<li>ЗАБАЙКАЛЬЕ (Чита) +6</li>
+<li>КАМЧАТКА 1 (Петропавловск-Камчатский) +9</li>
+<li>КОЛЫМА ПЛЮС (Магадан) +8</li>
+<li>НТК21 | Губерния (Биробиджан) +7</li>
+<li>ОТВ Приморье (Владивосток) +7</li>
+<li>ОТВ Сахалин (Южно-Сахалинск) +8</li>
+<li>ОТР (Хабаровский край) +7</li>
+<li>РОССИЯ 1 (Хабаровский край)</li>
+<li>РОССИЯ 24 (Хабаровский край)</li>
+<li>ТВ-КАРИБУ (Магадан) +8</li>
+<li>ТВ-КОЛЫМА-ПЛЮС (Магадан) +8</li>
+<li>ТЕЛЕМИКС (Уссурийск) +7</li>
+<li>ТЫНДА ТВ (Амурская Область) +6</li>
+<li class="text-decoration-line-through">ХАБАРОВСК +7</li>
+
+<li class="n-groupe">РЕЛИГИЯ</li>
+<li>БОГ БЛАГ ТВ</li>
+<li>ВЕРА 24</li>
+<li>КАББАЛА ТВ (IL)</li>
+<li>МузСоюз</li>
+<li>НАДЕЖДА</li>
+<li class="text-decoration-line-through">НЕБЕСА ТВ7</li>
+<li>СОЮЗ</li>
+<li>СПАС</li>
+<li>ТБН</li>
+<li>Телеканал Благая Весть</li>
+<li>ТРИ АНГЕЛА</li>
+<li>ХУЗУР ТВ (Татарстан)</li>
+<li>ANGEL TV Русский</li>
+<li>CBS (KR)</li>
+<li>CNL Европа</li>
+<li>EWTN Europe</li>
+<li>LIFE TV EUROPE (EE)</li>
+<li>Red ADVenir Internacional (BO)</li>
+<li>SCIENTOLOGY NETWORK (US)</li>
+
+<li class="n-groupe">ТЕЛЕМАГАЗИН</li>
+<li>ЮВЕЛИРИЯ</li>
+<li>ЮВЕЛИРОЧКА</li>
+<li>LEOMAX 24 (Shop 24)</li>
+<li>SHOPPING LIVE</li>
+
+        </ol>
+       </div>
+      </div>
+     </div>
+    </div>
+
+</div>
+
+<h3 class="inter-font-900">Получить ссылку на Плейлист:</h3>
+
+<p class="fw-semibold">
+ Для расшифровки <b>ссылки на Плейлист</b> используются криптографические API вашего браузера, если вы знаете <b>пароль</b>. Расшифровка не имеет зависимостей, и никакие данные не покидают окно браузера.
+</p>
+
+<div>
+ <h4>Подсказка пароля:</h4>
+ <pre class="hint">Спросите у Автора</pre>
+</div>
+
+<div>
+ <h4>Пароль:</h4>
+ <input type="text" id="password" placeholder="См. подсказку выше" class="password_input" required>
+</div>
+
+<div class="btn-group d-flex justify-content-center">
+ <button class="mber-home-get-touch mber-send-btn" type="button" onclick="decrypt()"><span class="mber-get-text">Расшифровать</span></button>
+ <!--<span id="errormsg"></span>-->
+</div>
+<div id="errormsg"></div>
+
+<div id="text_output_div" hidden>
+ <pre id="target_text" class="decrypted"></pre>
+</div>
+
+<div id="image_output_div" hidden>
+ <img id="target_image" class="decrypted">
+</div>
+
+<div id="file_output_div" hidden>
+ <a id="target_file" class="decrypted">Скачать</a>
+</div>
+
+<details>
+ <summary class="sm-md-font inter-font-700">Детали</summary>
+ Это входные данные для дешифровки, которые можно безопасно передавать в открытом виде. Без правильного пароля они бесполезны.
+ <div>
+  Salt:
+  <input type="text" id="salt" value="" readonly>
+ </div>
+
+ <div>
+  IV:
+  <input type="text" id="iv" value="" readonly>
+ </div>
+
+ <div>
+  Ciphertext:<br>
+  <textarea rows="4" cols="40" id="cipher" readonly></textarea>
+ </div>
+</details>
+
+<div class="empty-div-50"></div>
+<h3>Правообладателям</h3>
+<p class="mber-copyright-content m-0 ex-sm-font inter-font-400 b-text light-copyright">
+Все материалы, размещенные на странице, взяты из открытых (общедоступных) источников.<br>
+Эта страница не имеет никакого отношения к данным материалам и не несёт ответственности за их содержание.<br>
+Все права на аудио-, видео- и фотоматериалы, представленные здесь принадлежат их законным владельцам и предназначены только для ознакомления.<br>
+Автор также не несёт ответственности за возможные последствия использования их в целях, запрещённых Законом.
+Посетитель обязуется не применять полученные здесь ссылки и информацию в целях, запрещённых Законом.
+</p>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+   AOS.init();
+  </script>
+
+</div>
+</div>
+</div>
+
+</body>
+<script>
+const secretType = "message"
+const secretExt  = ""
+const saltSize   = 32  // bytes
+const blockSize  = 16 // bytes
+const keySize    = 32   // bytes
+const iterations = 1036025
+const saltHex    = "f56669983384e772a05d025320e1c57c29f8dd0f814dcca6b940a896ea90f210"
+const ivHex      = "9659c83a520433bf32079fb4046a8c7a"
+const cipherHex  = "8d93ff78e2249103de51df98cc5c56219a00d1a022a0a0f763535d4a4dc4a8643a8cf5bbba55ec420053c05fe87e8d40"
+</script>
+</html>
