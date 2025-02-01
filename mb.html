@@ -351,7 +351,7 @@ body {
 Мало кто задается вопросом, куда подевался самый первый косолапый житель «Мишкиной берлоги» по кличке Миша
 </p>
 <p class="sm-md-font">
-
+<span class="im im-play im-mid"></span><a class="link" href="https://www.youtube.com/watch?v=4yO5tl22CQ4&t=9m57s" data-fancybox="video" data-caption="трагическая смерть медведя Миши">трагическая смерть медведя Миши</a> <span class="sm-font">(Разговор со зрителями канала «Мишкина берлога», 16 марта 2024)</span>
 </p>
 
 <p class="roboto-medium b-text inter-font-500 fst-italic m-0">
@@ -665,6 +665,45 @@ body {
    AOS.init();
   </script>
 
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script>
+   $("[data-fancybox]").fancybox({
+    /* Все кнопки для демо */
+    buttons: ["zoom", "share", "slideShow", "fullScreen", "download", "thumbs", "close"],
+    /* ------------------- */
+
+    /* Стрелки влево и вправо */
+    btnTpl: {
+     arrowLeft:
+      '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
+      '<svg version="1.1" id="Arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54 54" xml:space="preserve"><g><path d="M0,0v54h54V0H0z M52,52H2V2h50V52z"/><path d="M35,45c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L19.414,27l16.293-16.293 c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.586,27l17.707,17.707C34.488,44.902,34.744,45,35,45z"/></g></svg>' +
+      "</button>",
+
+     arrowRight:
+      '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
+      '<svg version="1.1" id="Arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54 54" xml:space="preserve"><g><path d="M0,0v54h54V0H0z M52,52H2V2h50V52z"/><path d="M18.293,44.707C18.488,44.902,18.744,45,19,45s0.512-0.098,0.707-0.293L37.414,27L19.707,9.293 c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L34.586,27L18.293,43.293C17.902,43.684,17.902,44.316,18.293,44.707z"/></g></svg>' +
+      "</button>",
+    },
+
+    /* Руссификация */
+    lang: "ru",
+    i18n: {
+     ru: {
+      CLOSE: "Закрыть",
+      NEXT: "Следующий",
+      PREV: "Предыдущий",
+      ERROR: "Контент не может быть загружен. <br/> Попробуйте позже.",
+      PLAY_START: "Начать слайдшоу",
+      PLAY_STOP: "Остановить слайдшоу",
+      FULL_SCREEN: "Полный экран",
+      THUMBS: "Эскизы",
+      DOWNLOAD: "Скачать",
+      SHARE: "Поделиться",
+      ZOOM: "Увеличить",
+     },
+    },
+   });
+  </script>
 
 </div>
 </div>
