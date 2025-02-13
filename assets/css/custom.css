@@ -654,6 +654,9 @@ ul { list-style-type: none; }
 .color7 {
 	color: #B39153;
 }
+.color8 {
+	color: #a87b60;
+}
 .ex-sm-font {
 	font-size: 14px;
 	line-height: 18px;
@@ -5331,7 +5334,27 @@ to {
 .buttonx--pan:hover::before {
 	transform: translate3d(0,-100%,0);
 }
-
+/**********  КНОПКА 12 https://getcssscan.com/css-buttons-examples  **********/
+/* <button class="btn button-12" role="button">Button 12</button> */
+.btn.button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  background: #201B0E;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn.button-12:hover {
+  background: #CCBB9C;
+  color: #201B0E;
+}
 /**********  КНОПКА 74  **********/
 /* <button class="button-74" role="button">Button 74</button> */
 .button-74 {
