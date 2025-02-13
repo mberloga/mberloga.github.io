@@ -63,7 +63,7 @@ element.classList.add("page_visible");
 body {
  background-color: #efe4cf;
  font-size: large;
- margin: 25px;
+ margin: 15px;
 }
 div {
  margin: 5px;
@@ -111,7 +111,14 @@ input.password_input {
 .iptv_item {
  margin-bottom: 30px;
 }
-
+ul.audioparam {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 1.1;
+}
+ul.audioparam li {
+  margin: 0 5px;
+}
 @media (max-width: 600px) {
   .longtext {
     font-size: 14px;
@@ -119,9 +126,72 @@ input.password_input {
   }
 }
 
-
-
-
+.bodyindicator {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: ;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.bodyindicator .indicator {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+}
+.bodyindicator .indicator span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px solid #283B08;
+  border-right: 3px solid #283B08;
+  animation: animate 1s linear infinite;
+}
+.bodyindicator .indicator span:nth-child(1) {
+  top: -30px;
+  left: -30px;
+  animation-delay: 0s;
+}
+.bodyindicator .indicator span:nth-child(2) {
+  top: -15px;
+  left: -15px;
+  animation-delay: 0.2s;
+}
+.bodyindicator .indicator span:nth-child(3) {
+  top: 0;
+  left: 0;
+  animation-delay: 0.4s;
+}
+.bodyindicator .indicator span:nth-child(4) {
+  top: 15px;
+  left: 15px;
+  animation-delay: 0.6s;
+}
+.bodyindicator .indicator span:nth-child(5) {
+  top: 30px;
+  left: 30px;
+  animation-delay: 0.8s;
+}
+@keyframes animate {
+  0% {
+    border-color: #283B08;
+    transform: translate(0, 0);
+  }
+  20% {
+    border-color: #283B08;
+    transform: translate(15px, 15px);
+  }
+  20.1%,
+  100% {
+    border-color: #556B2F;
+  }
+}
 </style>
   <script>
   // Display the encryption inputs on the page (invoked during body onload)
@@ -1581,6 +1651,7 @@ input.password_input {
 
 <div class="iptv_item">
 <p class="fs-4 fw-bold color8">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><path fill="currentColor" d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0L0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7M331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5c37.1-37.1 49.7-89.3 37.9-136.7c-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4l-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2c-47.4-11.7-99.6.9-136.6 37.9c-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9m-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7M64 472c-13.2 0-24-10.8-24-24c0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24"/></svg>
 Каталог ресурсов, необходимых для удобного и стабильного просмотра IPTV
 </p>
 <p class="sm-font fw-semibold">
@@ -1603,13 +1674,187 @@ input.password_input {
 <div class="empty-div-50"></div>
 <hr>
 <h3>Правообладателям</h3>
-<p class="mber-copyright-content m-0 ex-sm-font inter-font-400 b-text light-copyright">
+<p class="m-0 ex-sm-font inter-font-400 b-text light-copyright">
 Все материалы, размещенные на странице, взяты из открытых (общедоступных) источников.<br>
 Эта страница не имеет никакого отношения к данным материалам и не несёт ответственности за их содержание.<br>
 Все права на аудио-, видео- и фотоматериалы, представленные здесь принадлежат их законным владельцам и предназначены только для ознакомления.<br>
 Автор также не несёт ответственности за возможные последствия использования их в целях, запрещённых Законом.
 Посетитель обязуется не применять полученные здесь ссылки и информацию в целях, запрещённых Законом.
 </p>
+<hr>
+</div>
+</div>
+</div>
+
+
+
+<div class="empty-div-50"></div>
+<div class="container">
+
+<p class="fs-3 fw-bold gr-text text-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="1.94em" height="2em" viewBox="0 0 496 512"><path fill="currentColor" d="M0 256c0 137 111 248 248 248s248-111 248-248S385 8 248 8S0 119 0 256m200-48c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32m158.5 16.5c-14.8-13.2-46.2-13.2-61 0L288 233c-8.3 7.4-21.6.4-19.8-10.8c4-25.2 34.2-42.1 59.9-42.1S384 197 388 222.2c1.7 11.1-11.4 18.3-19.8 10.8zM157.8 325.8C180.2 352.7 213 368 248 368s67.8-15.4 90.2-42.2c13.6-16.2 38.1 4.2 24.6 20.5C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.5-16.3 11.2-36.7 24.6-20.4"/></svg>
+Рекомендую хорошим людям
+</p>
+
+<div class="bodyindicator">
+<div class="indicator">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+   <span></span>
+</div>
+</div>
+
+<div class="empty-div-100"></div>
+
+<div class="">
+<figure class="figure float-md-start mx-auto d-block px-3 text-center">
+<img src="assets/images/homepage/zweig.jpg" class="img img-fluid" width="300" alt="">
+<figcaption class="figure-caption text-center b-text ex-sm-font fst-italic">
+
+</figcaption>
+</figure>
+<p class="fs-4 fw-bold text-center">
+Стефан Цвейг<br>
+<span class="fs-1 inter-font-900">«Нетерпение сердца»</span>
+</p>
+
+<p class="sm-md-font txt-justify inter-font-700">
+<span class="sm-font fw-normal fst-italic">(нем. Ungeduld des Herzens, 1938, опубликован в 1939 году)</span> - единственный завершённый роман австрийского писателя Стефана Цвейга.<br>
+В этом романе Стефан Цвейг показывает Австро-Венгрию начала XX века накануне Первой мировой войны, описывая нравы и социальные предрассудки того времени. Как и лучшие новеллы автора, роман изобилует мельчайшими психологическими нюансами, в которых раскрываются чувства и мотивации поступков персонажей. В эпиграфе к своему роману Стефан Цвейг писал:
+</p>
+
+<p class="sm-md-font txt-justify inter-font-500 fst-italic">
+«…Есть два рода сострадания. Одно - малодушное и сентиментальное, оно, в сущности, не что иное,
+как нетерпение сердца, спешащего поскорее избавиться от тягостного ощущения при виде чужого
+несчастья; это не сострадание, а лишь инстинктивное желание оградить свой покой от страданий
+ближнего. Но есть и другое сострадание – истинное, которое требует действий, а не сантиментов,
+оно знает, чего хочет, и полно решимости, страдая и сострадая, сделать все, что в человеческих силах
+и даже свыше их.»
+</p>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="mb-3 text-center">
+<a class="link--arrowed fs-5 lh-1 fw-semibold" href="https://www.100bestbooks.ru/files/Zweig_Neterpenie_serdtsa.pdf" title="" target="_blank" rel="noreferrer noopener">
+СКАЧАТЬ
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<div class="mb-3 text-center">
+<a class="link--arrowed fs-5 lh-1 fw-semibold" href="https://royallib.com/book/tsveyg_stefan/neterpenie_serdtsa.html" title="" target="_blank" rel="noreferrer noopener">
+СКАЧАТЬ
+<span class="fw-semibold sm-font"><span class="mbblue">DOC</span>, EPUB, FB2, HTML, RTF, TXT</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<hr class="hr33">
+<p class="fs-5 fw-bold text-center m-0 gr-text">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.25A9.75 9.75 0 0 0 2.25 12v5q0 .04.004.08v.05c-.003 1.278.602 2.682 1.963 3.25l.071.03c.11.044.22.12.362.25c.07.064.138.132.22.213l.008.008c.08.08.175.175.277.265c.204.183.474.388.83.506c.37.122.77.131 1.208.022c.723-.18 1.266-.752 1.469-1.454c.089-.309.089-.668.088-1.084v-4.094c0-.285 0-.528-.01-.728a2.3 2.3 0 0 0-.107-.627c-.23-.683-.786-1.223-1.504-1.377a2.25 2.25 0 0 0-1.264.065c-.37.133-.652.354-.87.558c-.12.11-.269.267-.391.396l-.164.17a1.8 1.8 0 0 1-.427.338q-.136.07-.263.152V12a8.25 8.25 0 1 1 16.5 0v1.864a3 3 0 0 0-.538-.274a1.2 1.2 0 0 1-.362-.25c-.07-.064-.138-.132-.22-.213l-.008-.008a7 7 0 0 0-.277-.265a2.4 2.4 0 0 0-.83-.506q-.553-.184-1.208-.022c-.723.18-1.266.752-1.469 1.454c-.089.309-.088.668-.088 1.085v4.093c0 .285 0 .528.01.728c.012.208.037.418.107.627c.23.683.786 1.223 1.504 1.377c.463.1.883.073 1.264-.065c.37-.133.652-.354.87-.558c.12-.11.269-.267.391-.395c.065-.069.123-.13.164-.17a1.8 1.8 0 0 1 .427-.34c1.11-.573 1.755-1.724 1.758-2.936v-.143L21.75 17v-5A9.75 9.75 0 0 0 12 2.25"/></svg>
+СЛУШАТЬ АУДИОКНИГУ ОНЛАЙН:</p>
+<div class="mb-3 text-center">
+<a class="link--arrowed fs-6 lh-1 fw-semibold" href="https://akniga.org/cveyg-stefan-neterpenie-serdca" title="" target="_blank" rel="noreferrer noopener">
+Читает: Евгений Терновский
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+<br>
+<a class="link--arrowed fs-6 lh-1 fw-semibold" href="https://akniga.org/cveyg-stefan-neterpenie-serdca-1" title="" target="_blank" rel="noreferrer noopener">
+Читает: Нина Гуркова
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<hr class="hr33">
+<p class="fs-5 fw-bold text-center m-0 gr-text">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.25A9.75 9.75 0 0 0 2.25 12v5q0 .04.004.08v.05c-.003 1.278.602 2.682 1.963 3.25l.071.03c.11.044.22.12.362.25c.07.064.138.132.22.213l.008.008c.08.08.175.175.277.265c.204.183.474.388.83.506c.37.122.77.131 1.208.022c.723-.18 1.266-.752 1.469-1.454c.089-.309.089-.668.088-1.084v-4.094c0-.285 0-.528-.01-.728a2.3 2.3 0 0 0-.107-.627c-.23-.683-.786-1.223-1.504-1.377a2.25 2.25 0 0 0-1.264.065c-.37.133-.652.354-.87.558c-.12.11-.269.267-.391.396l-.164.17a1.8 1.8 0 0 1-.427.338q-.136.07-.263.152V12a8.25 8.25 0 1 1 16.5 0v1.864a3 3 0 0 0-.538-.274a1.2 1.2 0 0 1-.362-.25c-.07-.064-.138-.132-.22-.213l-.008-.008a7 7 0 0 0-.277-.265a2.4 2.4 0 0 0-.83-.506q-.553-.184-1.208-.022c-.723.18-1.266.752-1.469 1.454c-.089.309-.088.668-.088 1.085v4.093c0 .285 0 .528.01.728c.012.208.037.418.107.627c.23.683.786 1.223 1.504 1.377c.463.1.883.073 1.264-.065c.37-.133.652-.354.87-.558c.12-.11.269-.267.391-.395c.065-.069.123-.13.164-.17a1.8 1.8 0 0 1 .427-.34c1.11-.573 1.755-1.724 1.758-2.936v-.143L21.75 17v-5A9.75 9.75 0 0 0 12 2.25"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 15.575q-.2 0-.375-.062T11.3 15.3l-3.6-3.6q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L11 12.15V5q0-.425.288-.712T12 4t.713.288T13 5v7.15l1.875-1.875q.3-.3.713-.288t.712.313q.275.3.288.7t-.288.7l-3.6 3.6q-.15.15-.325.213t-.375.062M6 20q-.825 0-1.412-.587T4 18v-2q0-.425.288-.712T5 15t.713.288T6 16v2h12v-2q0-.425.288-.712T19 15t.713.288T20 16v2q0 .825-.587 1.413T18 20z"/></svg>
+СЛУШАТЬ ИЛИ СКАЧАТЬ АУДИОКНИГУ ОНЛАЙН:<br>
+<span class="b-text">Части первая и вторая.
+<span class="fw-normal sm-font">Читает:</span> Евгений Терновский</span>
+</p>
+<div class="d-flex justify-content-center">
+<ul class="audioparam">
+  <li>
+<b>Часть первая</b><br>
+Длительность: <b>9:11:21</b><br>
+Битрейт: <b>320 kbps</b><br>
+Размер: <b>1.2 Гб</b>
+  </li>
+  <li>
+<b>Часть вторая</b><br>
+Длительность: <b>8:20:50</b><br>
+Битрейт: <b>320 kbps</b><br>
+Размер: <b>1.1 Гб</b>
+  </li>
+</ul>
+</div>
+<div class="mb-3 text-center">
+<a class="link--arrowed fs-6 lh-1 fw-semibold" href="https://mp3king.cc/music/цвейг+нетерпение+сердца+аудиокнига/" title="" target="_blank" rel="noreferrer noopener">
+здесь
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+или&nbsp;
+<a class="link--arrowed fs-6 lh-1 fw-semibold" href="https://mp3song.cc/mp3/стефан-цвейг-нетерпение-сердца-все-части.html" title="" target="_blank" rel="noreferrer noopener">
+здесь
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<hr class="hr33">
+<p class="fs-5 fw-bold text-center m-0 gr-text">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.684 23.94a12.01 12.01 0 0 0 9.599-7.79c-.118.044-.26.096-.432.147c-2 .59-3.404-.466-3.687-.649c-.283-.18-.587-.48-.643-.464c-.183 1.132-1.218 2.706-3.58 3.42c-1.295.391-2.687.4-3.681-.157l.328.822c.13.328.351.866.488 1.192c0 0 .858 2.044 1.608 3.48M2.723 7.153l3.54-.66c.323-.059.68.124.794.407l2.432 6.07c.332.633.399.773.615 1.043c0 0 1.68 2.398 4.24 1.812c1.726-.394 2.532-1.69 2.587-2.612c.057-.296-.032-.669-.185-1.016L13.832 5.61c-.117-.266.022-.527.306-.581l2.953-.55a.69.69 0 0 1 .706.376l3.227 6.91c.13.276.394.712.588.966c0 0 .671.964 1.747.78c.266 0 .569-.143.569-.143q.071-.645.072-1.31c0-6.627-5.373-12-12.002-12C5.372.06 0 5.433 0 12.06c0 5.319 3.46 9.827 8.252 11.402a25 25 0 0 1-.919-2.121L2.298 7.808c-.111-.297.083-.59.425-.654"/></svg>
+ТОРРЕНТЫ:
+<span class="b-text fw-normal sm-font">(требуется регистрация)</span>
+</p>
+<div class="d-flex justify-content-center">
+<ul class="audioparam">
+  <li>
+Жанр: <b>роман</b><br>
+Исполнитель: <b>Евгений Терновский</b><br>
+Прочитано по изданию: <b>М., Правда, 1988</b><br>
+Перевод: <b>с нем. Н.Н.Бунин</b>
+  </li>
+  <li>
+Аудиокодек: <b>MP3</b><br>
+Битрейт: <b>96 kbps и 48 kbps</b><br>
+Время звучания: <b>17:31:44</b>
+  </li>
+</ul>
+</div>
+
+<div class="mb-3 text-center">
+<a class="link--arrowed fs-5 lh-1 fw-semibold" href="https://rutracker.org/forum/viewtopic.php?t=5221179" title="" target="_blank" rel="noreferrer noopener">
+СКАЧАТЬ
+<span class="fw-semibold sm-font">MP3 | 96 kbps | 725.5 Мб</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+<br>
+<a class="link--arrowed fs-5 lh-1 fw-semibold" href="https://rutracker.org/forum/viewtopic.php?t=432005" title="" target="_blank" rel="noreferrer noopener">
+СКАЧАТЬ
+<span class="fw-semibold sm-font">MP3 | 48 kbps | 574.9 Мб</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+<br>
+</div>
+
+</div>
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1639,10 +1884,6 @@ input.password_input {
   <script>
    AOS.init();
   </script>
-
-</div>
-</div>
-</div>
 
 </body>
 <script>
