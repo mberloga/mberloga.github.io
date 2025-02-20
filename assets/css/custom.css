@@ -6642,6 +6642,30 @@ data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%2
   font-style: italic;
   font-size: 12px;
 }
+/* Питон */
+.grid-container-p {
+  columns: 3 200px;
+  column-gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.grid-container-p div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+.grid-container-p div img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.grid-container-p div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: left;
+}
 
 .highlighted_paragraph {
     border-left: 4px solid;
@@ -8472,4 +8496,49 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 }
 .lie-text.mb-red {
   color: #e01a2b;
+}
+
+.donation {
+	display: inline-block;
+	color: #000000;
+	font-family: "Roboto", sans-serif;
+	line-height: 1.2;
+	font-weight: 700;
+	border-radius: 3px 3px 3px 3px;
+	background-color: #fff705;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+	transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,1);
+	padding: 10px;
+}
+.analiz {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="300px" height="300px" viewBox="0 0 15 15"><path opacity="0.1" fill="currentColor" fill-rule="evenodd" d="M.877 7.5a6.623 6.623 0 1 1 13.246 0a6.623 6.623 0 0 1-13.246 0M7.5 1.827a5.673 5.673 0 1 0 0 11.346a5.673 5.673 0 0 0 0-11.346m.75 8.673a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m-2.2-4.25c0-.678.585-1.325 1.45-1.325s1.45.647 1.45 1.325c0 .491-.27.742-.736 1.025l-.176.104a5 5 0 0 0-.564.36c-.242.188-.524.493-.524.961a.55.55 0 0 0 1.1.004a.4.4 0 0 1 .1-.098c.102-.079.215-.144.366-.232q.116-.067.27-.159c.534-.325 1.264-.861 1.264-1.965c0-1.322-1.115-2.425-2.55-2.425S4.95 4.928 4.95 6.25a.55.55 0 0 0 1.1 0" clip-rule="evenodd"/></svg>');
+    width: 100%;
+    height: 100%;
+    background-position: center center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.bg-body-tertiary {
+    background-image: url(../images/piton/masha.jpg);
+	width: 100%;
+    height: 100%;
+    background-position: center center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.piton-title {
+	font-size: 64px;
+	line-height: 78px;
+}
+
+@media (max-width: 640px) {
+.piton-title {
+	font-size: 48px;
+	line-height: 58px;
+}
 }
