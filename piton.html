@@ -1,0 +1,1410 @@
+<!-- https://mberloga.github.io/piton  https://mberloga.github.io/piton.html
+Создание карусели/слайдера с помощью плагина Owl Carousel 2
+https://denis-creative.com/owl-carousel-2/
+Слайдер для сайта Owl Carousel 2 — настройка просто и быстро
+https://active-vision.ru/blog/slayder-dlya-sayta-owl-carousel-2-nastroyka/
+https://owlcarousel2.github.io/OwlCarousel2/
+-->
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Судьба медведей. Новый дом</title>
+  <meta name="description" content="Судьба медведей из «Мишкиной берлоги». Новый дом">
+  <meta name="keywords" content="">
+
+  <!-- ЗАПРЕТ ИНДЕКСАЦИИ !!! -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- ЗАГРУЗКА ВЕБ-СТРАНИЦЫ БЕЗ КЭШИРОВАНИЯ -->
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+
+  <!-- OG meta tags that improve the look of your post on social media -->
+  <meta property="og:site_name" content="Судьба медведей. Новый дом">
+  <!--website name-->
+  <meta property="og:site" content="">
+  <!--website link-->
+  <meta property="og:title" content="Судьба медведей. Новый дом">
+  <!--Post title-->
+  <meta property="og:description" content="Судьба медведей из «Мишкиной берлоги». Новый дом">
+  <!--Post description-->
+  <meta property="og:image" content="">
+  <!-- Image link (jpg only)-->
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:url" content="">
+  <!--where do you want your post to link to-->
+  <meta property="og:type" content="article">
+
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-title" content="Судьба медведей. Новый дом">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/peaxdrawnicons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/pwfreearrows.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.atuin.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media-query.css">
+
+<!-- Плавное появление страницы -->
+<script>
+setTimeout(function(){
+var element = document.getElementById("page_appearance");
+element.classList.add("page_visible");
+}, 300);
+</script>
+<noscript>
+	<style>.page_hide{opacity: 1 !important;}</style>
+</noscript>
+
+<style>
+body {
+ background-color: #efe4cf;
+ font-size: large;
+}
+.m25 {
+ margin: 25px;
+}
+.scroll-top {
+  --ghost-accent-color: #B39153;
+	position: fixed;
+  z-index: 50;
+  padding: 0;
+	right: 20px;
+	bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);    
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	border-radius: 50%;
+  transition: all .4s ease;
+  border: none;
+  box-shadow: inset 0 0 0 2px rgba(204, 187, 156, 0.3);
+  color: #ccc;
+  background-color: #efe4cf;
+}
+
+.scroll-top.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top .icon-tabler-arrow-up {
+  position: absolute;
+  stroke-width: 2px;
+  stroke: #333;
+}
+
+.scroll-top svg path { 
+	fill: none; 
+}
+
+.scroll-top svg.progress-circle path {
+	stroke: #333;
+	stroke-width: 4;
+  transition: all .4s ease;
+}
+
+.scroll-top:hover {
+  color: var(--ghost-accent-color);
+}
+
+.scroll-top:hover .progress-circle path, .scroll-top:hover .icon-tabler-arrow-up {
+  stroke: var(--ghost-accent-color);
+}
+
+.home-demo .item {
+  background: rgba(0, 0, 0, 0.1);
+  flex: 1 1 100px;
+  padding: 5px;
+}
+.home-demo h2 {
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+.home-slider {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 601px) {
+  .home-demo .item {
+    margin: 5px;
+  }
+}
+
+.owl-carousel, .owl-carousel .item {
+	-webkit-tap-highlight-color: transparent;
+	position: relative;
+}
+#owl-slider-1 .owl-nav {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	line-height: 0;
+}
+
+.table_component {
+    overflow: auto;
+    width: 100%;
+	margin-bottom: 30px;
+}
+.table_component table {
+    border: 1px inset #000000;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+	font-size: 13px;
+	line-height: 1.1;
+}
+.table_component caption {
+    caption-side: top;
+    text-align: center;
+}
+.table_component th {
+    border: 1px inset #000000;
+    background-color: transparent;
+    color: #000000;
+    padding: 5px;
+}
+.table_component td {
+    border: 1px inset #000000;
+    background-color: transparent;
+    color: #000000;
+    padding: 5px;
+}
+
+</style>
+
+</head>
+
+<body class="mber-body-wrap mber-page-wrap-light">
+
+  <div class="p-5 text-center bg-body-tertiary">
+    <div class="container py-5">
+      <h1 class="inter-font-900 piton-title colorbg text-center">СУДЬБА МЕДВЕДЕЙ</h1>
+    </div>
+  </div>
+
+<div class="m25">
+<div class="container-fluid">
+<div class="row justify-content-center">
+
+<div class="s-char-heading text-center">
+<h1 class="inter-font-900 b-text">Мишек из «Мишкиной берлоги» окончательно решено передать в зоопарк «Сихотэ-Алинь» в Силинском парке Комсомольска-на-Амуре</h1>
+<p class="s-char-heading__name">Зоопарк «Сихотэ-Алинь» - это часть зооцентра «Питон» в Комсомольске-на-Амуре. Расположен в таёжном массиве и рассчитан на животных дальневосточной тайги.</p>
+</div>
+
+<div class="empty-div-50"></div>
+
+<div class="container-fluid text-center">
+  <div class="row align-items-start">
+    <div class="col-md-8 text-center">
+<h3 class="inter-font-700 text-center">Приамурское межрегиональное управление Росприроднадзора ➔ МАУК «Зоологический центр «Питон»</h3>
+<figure class="figure">
+<img src="assets/images/piton/declaration.jpg" class="img img-fluid" alt="">
+</figure>
+    </div>
+   <div class="col-md-4 text-center">
+<figure class="figure">
+<a data-caption="Приамурское межрегиональное управление Росприроднадзора ➔ МАУК «Зоологический центр «Питон»" data-fancybox="" href="assets/images/piton/rpn.jpg">
+<img src="assets/images/piton/rpn.jpg" class="img img-fluid ZoomCursor" alt="">
+</a>
+</figure>
+<div>
+<a class="link fs-5 lh-1" href="https://disk.yandex.ru/i/NSdLcqVxvuy3Ew" title="Решение Комиссии СИТЕС - скачать с Яндекс Диск " target="_blank" rel="noreferrer noopener">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"><path fill="#909090" d="m24.1 2.072l5.564 5.8v22.056H8.879V30h20.856V7.945z"/><path fill="#f4f4f4" d="M24.031 2H8.808v27.928h20.856V7.873z"/><path fill="#7a7b7c" d="M8.655 3.5h-6.39v6.827h20.1V3.5z"/><path fill="#dd2025" d="M22.472 10.211H2.395V3.379h20.077z"/><path fill="#464648" d="M9.052 4.534H7.745v4.8h1.028V7.715L9 7.728a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .335-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.409-.104a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.193a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.671-2.306c-.111 0-.219.008-.295.011L12 4.538h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.392h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.08-3.915H15v4.8h1.028V7.434h1.3v-.892h-1.3V5.43h1.4v-.892"/><path fill="#dd2025" d="M21.781 20.255s3.188-.578 3.188.511s-1.975.646-3.188-.511m-2.357.083a7.5 7.5 0 0 0-1.473.489l.4-.9c.4-.9.815-2.127.815-2.127a14 14 0 0 0 1.658 2.252a13 13 0 0 0-1.4.288Zm-1.262-6.5c0-.949.307-1.208.546-1.208s.508.115.517.939a10.8 10.8 0 0 1-.517 2.434a4.4 4.4 0 0 1-.547-2.162Zm-4.649 10.516c-.978-.585 2.051-2.386 2.6-2.444c-.003.001-1.576 3.056-2.6 2.444M25.9 20.895c-.01-.1-.1-1.207-2.07-1.16a14 14 0 0 0-2.453.173a12.5 12.5 0 0 1-2.012-2.655a11.8 11.8 0 0 0 .623-3.1c-.029-1.2-.316-1.888-1.236-1.878s-1.054.815-.933 2.013a9.3 9.3 0 0 0 .665 2.338s-.425 1.323-.987 2.639s-.946 2.006-.946 2.006a9.6 9.6 0 0 0-2.725 1.4c-.824.767-1.159 1.356-.725 1.945c.374.508 1.683.623 2.853-.91a23 23 0 0 0 1.7-2.492s1.784-.489 2.339-.623s1.226-.24 1.226-.24s1.629 1.639 3.2 1.581s1.495-.939 1.485-1.035"/><path fill="#909090" d="M23.954 2.077V7.95h5.633z"/><path fill="#f4f4f4" d="M24.031 2v5.873h5.633z"/><path fill="#fff" d="M8.975 4.457H7.668v4.8H8.7V7.639l.228.013a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .332-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.411-.105a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.194a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.67-2.306c-.111 0-.219.008-.295.011l-.235.006h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.315h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.077-3.915h-2.43v4.8h1.028V7.357h1.3v-.892h-1.3V5.353h1.4v-.892"/></svg>
+<span class="roboto-thin">СКАЧАТЬ С ЯНДЕКС ДИСК</span>
+</a>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="empty-div-50"></div>
+
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-8">
+<h3 class="inter-font-700 text-center">ОФИЦИАЛЬНОЕ ЗАЯВЛЕНИЕ:</h3>
+<p class="sm-md-font ks-20 txt-justify inter-font-500 m-0">
+<b>Друзья!</b> Наконец-то решены последние заминки, получены все документы, и мы готовы объявить сбор.<br>
+Напомним, что 13 января 2025 года скончался Михаил Юрьевич Филиппов, основатель эко-фермы «Мишкина берлога». Благодаря уникальной дружбе человека и медведей, Михаил и трое бурых мишек стали известны далеко за пределами родного края и стали небезразличны большому количеству людей. Нам известно, что многие хотели бы посодействовать тому, чтобы их судьба в дальнейшем сложилась наиболее благоприятно и мишки проживали в комфорте.<br>
+Можно долго рассуждать о том, кто виноват в случившемся, о том, что было бы, если бы истории с изъятием у Михаила медведей не произошло, но это случилось и изменить это не в наших силах. Зато в наших силах посодействовать комфортной дальнейшей судьбе медведей.<br>
+После произошедшего трагического события, <b>Росприроднадзор</b> обратился к нам с предложением о передаче медведей в наш зоопарк, на что мы дали ответ, что <b>можем принять медведей, если сможем собрать нужную сумму на строительство вольера для их содержания</b>.<br>
+На данный момент <b>на нашей территории в Силинском парке</b> ведётся строительство вольера для волков, в то время как строительство вольеров для медведей является внеплановым. И нам нужна ваша поддержка!<br>
+Несмотря на то, что о решении Росприроднадзора было известно давно, нам нужно было дождаться окончания процедуры и получения документа о решении Административного органа СИТЕС.<br>
+Мы приносим извинения благотворителям, кто успел перевести своё пожертвование до нашего официального заявления, и остался в подвешенном состоянии. На данный момент сбор официально открыт.<br>
+<span class="fw-bold d-block mt-2 mb-2">
+На <a class="link" href="http://zoopiton.ru/donation_mishki" title="Зооцентр «Питон» - Пожертвование" target="_blank" rel="noreferrer noopener">нашем сайте <span class="im im-link-external im-mid"></span></a>
+Вы найдёте ссылку для перевода пожертвования, проект вольерного комплекса для медведей <mark>площадью 1126 кв. м.</mark> и документ, подтверждающий решение комиссии СИТЕС о передаче трёх бурых медведей из «Мишкиной берлоги» в МАУК «Зоологический центр «Питон». Помочь можно так же строительными материалами.<br>
+</span>
+Установить точную сумму сбора на данный момент сложно, так как <b>проект вольерного комплекса был разработан ещё в 2018 году</b> и стоимость материалов на данный момент разительно отличается. Отчёт о поступлениях и затратах будет публиковаться на сайте zoopiton.ru.<br>
+Строительство будет проходить поэтапно. В первую очередь будет произведена постройка основного вольера. В последующем вольер будет дорабатываться берлогами, бассейнами, игровыми зонами и декорациями.<br>
+В случае успешного сбора, строительство вольерного комплекса для медведей должно быть окончено <b>осенью 2025 года</b>. До этого времени медведи будут находиться на территории эко-фермы «Мишкина берлога».<br>
+<span class="d-block text-end">
+<a class="link" href="https://vk.com/wall-211743659_272" title="Зоологический центр «Питон» - ВК" target="_blank" rel="noreferrer noopener">Зоологический центр «Питон» - ВК <span class="im im-link-external im-mid"></span></a>
+</span>
+</p>
+    </div>
+  </div>
+</div>
+
+<div class="row align-items-center justify-content-center mt-2">
+ <div class="col col-lg-8 mx-auto text-center">
+<figure class="figure">
+<img src="assets/images/piton/irina_trifonova.jpg" class="img img-fluid rounded" alt="">
+<figcaption class="figure-caption text-center b-text sm-font">
+Директор Зооцентра «Питон» <b>Ирина Анатольевна Трифонова</b> в «Сахалинском зооботаническом парке» (ноябрь, 2023)
+</figcaption>
+</figure>
+ </div>
+</div>
+
+<div class="empty-div-100"></div>
+
+<h2 class="fs-1 inter-font-900 text-center">Эскизный проект вольеров для бурых медведей<br>
+<span class="fs-4 inter-font-500">ООО «АЛ Инжиниринг», г.Москва, 2018 г.</span><br>
+<a class="link fs-5 lh-1" href="https://disk.yandex.ru/i/WdPH9dp8jdY-3Q" title="Эскизный проект вольеров для бурых медведей (2018) - скачать с Яндекс Диск " target="_blank" rel="noreferrer noopener">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"><path fill="#909090" d="m24.1 2.072l5.564 5.8v22.056H8.879V30h20.856V7.945z"/><path fill="#f4f4f4" d="M24.031 2H8.808v27.928h20.856V7.873z"/><path fill="#7a7b7c" d="M8.655 3.5h-6.39v6.827h20.1V3.5z"/><path fill="#dd2025" d="M22.472 10.211H2.395V3.379h20.077z"/><path fill="#464648" d="M9.052 4.534H7.745v4.8h1.028V7.715L9 7.728a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .335-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.409-.104a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.193a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.671-2.306c-.111 0-.219.008-.295.011L12 4.538h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.392h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.08-3.915H15v4.8h1.028V7.434h1.3v-.892h-1.3V5.43h1.4v-.892"/><path fill="#dd2025" d="M21.781 20.255s3.188-.578 3.188.511s-1.975.646-3.188-.511m-2.357.083a7.5 7.5 0 0 0-1.473.489l.4-.9c.4-.9.815-2.127.815-2.127a14 14 0 0 0 1.658 2.252a13 13 0 0 0-1.4.288Zm-1.262-6.5c0-.949.307-1.208.546-1.208s.508.115.517.939a10.8 10.8 0 0 1-.517 2.434a4.4 4.4 0 0 1-.547-2.162Zm-4.649 10.516c-.978-.585 2.051-2.386 2.6-2.444c-.003.001-1.576 3.056-2.6 2.444M25.9 20.895c-.01-.1-.1-1.207-2.07-1.16a14 14 0 0 0-2.453.173a12.5 12.5 0 0 1-2.012-2.655a11.8 11.8 0 0 0 .623-3.1c-.029-1.2-.316-1.888-1.236-1.878s-1.054.815-.933 2.013a9.3 9.3 0 0 0 .665 2.338s-.425 1.323-.987 2.639s-.946 2.006-.946 2.006a9.6 9.6 0 0 0-2.725 1.4c-.824.767-1.159 1.356-.725 1.945c.374.508 1.683.623 2.853-.91a23 23 0 0 0 1.7-2.492s1.784-.489 2.339-.623s1.226-.24 1.226-.24s1.629 1.639 3.2 1.581s1.495-.939 1.485-1.035"/><path fill="#909090" d="M23.954 2.077V7.95h5.633z"/><path fill="#f4f4f4" d="M24.031 2v5.873h5.633z"/><path fill="#fff" d="M8.975 4.457H7.668v4.8H8.7V7.639l.228.013a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .332-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.411-.105a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.194a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.67-2.306c-.111 0-.219.008-.295.011l-.235.006h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.315h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.077-3.915h-2.43v4.8h1.028V7.357h1.3v-.892h-1.3V5.353h1.4v-.892"/></svg>
+<span class="roboto-thin">СКАЧАТЬ С ЯНДЕКС ДИСК</span>
+</a>
+</h2>
+<h2 class="inter-font-900 text-center">Схемы вольеров:</h2>
+<div class="col-md-9">
+<p class="sm-md-font">
+● Генплан. План зонирования. М 1:200<br>
+● План вольеров с бурыми медведями на отм. 0.000. М 1:100<br>
+● План кровли. М 1:200<br>
+● Разрез поперечный 1-1 по вольеру с бурым медведем(самец). М 1:100 / Разрез продольный 2-2. М 1:100<br>
+</p>
+</div>
+<div class="home-demo" style="width:100%;" id="owl-slider-1">
+  <div class="owl-carousel owl-theme home-slider">
+    <div class="item">
+     <a data-caption="Генплан. План зонирования. М 1:200" data-fancybox="plan" href="assets/images/piton/scheme01.jpg">
+	  <img src="assets/images/piton/scheme01.jpg" class="d-block w-100 ZoomCursor" alt="">
+	 </a>
+    </div>
+    <div class="item">
+     <a data-caption="План вольеров с бурыми медведями на отм. 0.000. М 1:100" data-fancybox="plan" href="assets/images/piton/scheme02.jpg">
+	  <img src="assets/images/piton/scheme02.jpg" class="d-block w-100 ZoomCursor" alt="">
+	 </a>
+    </div>
+    <div class="item">
+     <a data-caption="План кровли. М 1:200" data-fancybox="plan" href="assets/images/piton/scheme03.jpg">
+	  <img src="assets/images/piton/scheme03.jpg" class="d-block w-100 ZoomCursor" alt="">
+	 </a>
+    </div>
+	<div class="item">
+     <a data-caption="Разрез поперечный 1-1 по вольеру с бурым медведем(самец). М 1:100 / Разрез продольный 2-2. М 1:100" data-fancybox="plan" href="assets/images/piton/scheme04.jpg">
+	  <img src="assets/images/piton/scheme04.jpg" class="d-block w-100 ZoomCursor" alt="">
+	 </a>
+    </div>
+  </div>
+</div>
+
+<div class="empty-div-30"></div>
+
+<div class="col-md-10">
+<h3 class="inter-font-700 text-center">Эскиз. Вид сверху</h3>
+<a data-caption="Эскиз. Вид сверху" data-fancybox="plan" href="assets/images/piton/sketch01.jpg">
+<img src="assets/images/piton/sketch01.jpg" class="img img-fluid ZoomCursor" alt="">
+</a>
+<div class="empty-div-30"></div>
+<h3 class="inter-font-700 text-center">Эскиз. Фасад</h3>
+<a data-caption="Эскиз. Фасад" data-fancybox="plan" href="assets/images/piton/sketch02.jpg">
+<img src="assets/images/piton/sketch02.jpg" class="img img-fluid ZoomCursor" alt="">
+</a>
+<div class="empty-div-30"></div>
+<h3 class="inter-font-700 text-center">Эскиз. Вольер самца</h3>
+<a data-caption="Эскиз. Вольер самца" data-fancybox="plan" href="assets/images/piton/sketch03.jpg">
+<img src="assets/images/piton/sketch03.jpg" class="img img-fluid ZoomCursor" alt="">
+</a>
+<div class="empty-div-30"></div>
+<h3 class="inter-font-700 text-center">Эскиз. Вольер самки с молодняком</h3>
+<a data-caption="Эскиз. Вольер самки с молодняком" data-fancybox="plan" href="assets/images/piton/sketch04.jpg">
+<img src="assets/images/piton/sketch04.jpg" class="img img-fluid ZoomCursor" alt="">
+</a>
+</div>
+<div class="divider div-transparent div-arrow-down"></div>
+<div class="empty-div-30"></div>
+
+<div class="grid-container-p">
+  <div>
+    <a data-caption="Вольер самки с молодняком. Фрагмент. Грот" data-fancybox="plan" href="assets/images/piton/fragment01.jpg">
+	<img class="grid-item grid-item-1 ZoomCursor" src="assets/images/piton/fragment01.jpg" alt="">
+    </a>
+	<p class="fs-5 inter-font-700">Вольер самки с молодняком. Фрагмент. Грот</p>
+  </div>
+  <div>
+    <a data-caption="Вольер самца. Фрагмент. Грот" data-fancybox="plan" href="assets/images/piton/fragment02.jpg">
+	<img class="grid-item grid-item-2 ZoomCursor" src="assets/images/piton/fragment02.jpg" alt="">
+    </a>
+	<p class="fs-5 inter-font-700">Вольер самца. Фрагмент. Грот</p>
+  </div>
+  <div>
+    <a data-caption="Вольер самца. Фрагмент. Холм" data-fancybox="plan" href="assets/images/piton/fragment03.jpg">
+	<img class="grid-item grid-item-3 ZoomCursor" src="assets/images/piton/fragment03.jpg" alt="">
+    </a>
+	<p class="fs-5 inter-font-700">Вольер самца. Фрагмент. Холм</p>
+  </div>
+</div>
+
+<hr>
+
+<h3 class="flex-item fs-1 inter-font-900 text-center">МАУК «Зоологический центр «Питон»</h3>
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-md-5 text-center">
+<img src="assets/images/piton/banner.png" class="img img-fluid" alt="">
+    </div>
+   <div class="col-md-7">
+<p class="fs-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7" stroke-width="0.5" stroke="currentColor"/></svg>
+г. Комсомольск-на-Амуре, ул. Орджоникидзе, д.9/2<br>
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+<a href="tel:+74217590971">+7 (4217) 59-09-71</a><br>
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 20 20"><path fill="currentColor" d="M14.608 12.172c0 .84.239 1.175.864 1.175c1.393 0 2.28-1.775 2.28-4.727c0-4.512-3.288-6.672-7.393-6.672c-4.223 0-8.064 2.832-8.064 8.184c0 5.112 3.36 7.896 8.52 7.896c1.752 0 2.928-.192 4.727-.792l.386 1.607c-1.776.577-3.674.744-5.137.744c-6.768 0-10.393-3.72-10.393-9.456c0-5.784 4.201-9.72 9.985-9.72c6.024 0 9.215 3.6 9.215 8.016c0 3.744-1.175 6.6-4.871 6.6c-1.681 0-2.784-.672-2.928-2.161c-.432 1.656-1.584 2.161-3.145 2.161c-2.088 0-3.84-1.609-3.84-4.848c0-3.264 1.537-5.28 4.297-5.28c1.464 0 2.376.576 2.782 1.488l.697-1.272h2.016v7.057zm-2.951-3.168c0-1.319-.985-1.872-1.801-1.872c-.888 0-1.871.719-1.871 2.832c0 1.68.744 2.616 1.871 2.616c.792 0 1.801-.504 1.801-1.896z" stroke-width="0.5" stroke="currentColor"/></svg>
+<a href="mailto:zoopiton@yandex.ru" class="mber-mail-text">zoopiton@yandex.ru</a><br>
+<span class="im im-vk im-2x"></span>
+<a class="link" href="https://vk.com/zoopiton" title="Зоологический центр «Питон» (ВКонтакте)" target="_blank" rel="noreferrer noopener">vk.com/zoopiton</a> /
+<a class="link" href="https://vk.com/zoocenterpiton" title="Зооцентр Питон (ВКонтакте)" target="_blank" rel="noreferrer noopener">vk.com/zoocenterpiton</a><br>
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1024 0q141 0 272 36t245 103t207 160t160 208t103 245t37 272q0 141-36 272t-103 245t-160 207t-208 160t-245 103t-272 37q-141 0-272-36t-245-103t-207-160t-160-208t-103-244t-37-273q0-141 36-272t103-245t160-207t208-160T751 37t273-37m0 1920q123 0 237-32t214-90t182-141t140-181t91-214t32-238q0-123-32-237t-90-214t-141-182t-181-140t-214-91t-238-32q-123 0-237 32t-214 90t-182 141t-140 181t-91 214t-32 238q0 123 32 237t90 214t141 182t181 140t214 91t238 32m597-880l48-144h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74zm-464-144h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74l48 144zm-512 0h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74l48 144z"/></svg>
+<a class="link" href="https://www.zoopiton.ru/" title="Зооцентр «Питон»" target="_blank" rel="noreferrer noopener">zoopiton.ru</a><br>
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 48 48"><g fill="none"><path fill="#e01a2b" stroke="#e01a2b" stroke-linejoin="round" stroke-width="4" d="M24 44C29.5228 44 34.5228 41.7614 38.1421 38.1421C41.7614 34.5228 44 29.5228 44 24C44 18.4772 41.7614 13.4772 38.1421 9.85786C34.5228 6.23858 29.5228 4 24 4C18.4772 4 13.4772 6.23858 9.85786 9.85786C6.23858 13.4772 4 18.4772 4 24C4 29.5228 6.23858 34.5228 9.85786 38.1421C13.4772 41.7614 18.4772 44 24 44Z"/><path fill="#fff" fill-rule="evenodd" d="M24 11C25.3807 11 26.5 12.1193 26.5 13.5C26.5 14.8807 25.3807 16 24 16C22.6193 16 21.5 14.8807 21.5 13.5C21.5 12.1193 22.6193 11 24 11Z" clip-rule="evenodd"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M24.5 34V20H23.5H22.5"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M21 34H28"/></g></svg>
+<a class="link" href="https://zoopiton.ru/donation_mishki" title="Зооцентр «Питон» - ВСЯ НЕОБХОДИМАЯ ИНФОРМАЦИЯ" target="_blank" rel="noreferrer noopener">ВСЯ НЕОБХОДИМАЯ ИНФОРМАЦИЯ</a>
+</p>
+    </div>
+  </div>
+</div>
+
+<p class="fs-5 inter-font-700 text-center">
+<a class="all-content-wrap dpi donation mx-1" href="https://yookassa.ru/my/i/Z5SAGuN9Kauy/l" title="" target="_blank" rel="noreferrer noopener">ВНЕСТИ ПОЖЕРТВОВАНИЕ НА СТРОИТЕЛЬСТВО ВОЛЬЕРОВ ДЛЯ МЕДВЕДЕЙ
+<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M12 13a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v3.5a.5.5 0 0 0 1 0V3h9v9H8.5a.5.5 0 0 0 0 1zM9 6.5v3a.5.5 0 0 1-1 0V7.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 7H5.5a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.497" clip-rule="evenodd"/></svg>
+</a>
+</p>
+
+<h3 class="inter-font-700 text-center mt-4">Документы:<br>
+<a class="link link--arrowed lh-sm" href="https://zoopiton.ru/documents" target="_blank" rel="noreferrer noopener">
+<span class="fs-4 inter-font-500">перейти на страницу с Документами</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</h3>
+
+<div class="row">
+<div class="col-lg-8 mx-auto">
+<p class="fs-5 inter-font-700 m-0">
+Договор о взаимоотношениях муниципального образования и Зооцентра «Питон»
+</p>
+<a class="link fs-5 lh-1" href="https://disk.yandex.ru/i/m3hBmeeUb6HTGg" title="Договор о взаимоотношениях муниципального образования и Зооцентра «Питон» - скачать с Яндекс Диск " target="_blank" rel="noreferrer noopener">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"><path fill="#909090" d="m24.1 2.072l5.564 5.8v22.056H8.879V30h20.856V7.945z"/><path fill="#f4f4f4" d="M24.031 2H8.808v27.928h20.856V7.873z"/><path fill="#7a7b7c" d="M8.655 3.5h-6.39v6.827h20.1V3.5z"/><path fill="#dd2025" d="M22.472 10.211H2.395V3.379h20.077z"/><path fill="#464648" d="M9.052 4.534H7.745v4.8h1.028V7.715L9 7.728a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .335-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.409-.104a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.193a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.671-2.306c-.111 0-.219.008-.295.011L12 4.538h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.392h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.08-3.915H15v4.8h1.028V7.434h1.3v-.892h-1.3V5.43h1.4v-.892"/><path fill="#dd2025" d="M21.781 20.255s3.188-.578 3.188.511s-1.975.646-3.188-.511m-2.357.083a7.5 7.5 0 0 0-1.473.489l.4-.9c.4-.9.815-2.127.815-2.127a14 14 0 0 0 1.658 2.252a13 13 0 0 0-1.4.288Zm-1.262-6.5c0-.949.307-1.208.546-1.208s.508.115.517.939a10.8 10.8 0 0 1-.517 2.434a4.4 4.4 0 0 1-.547-2.162Zm-4.649 10.516c-.978-.585 2.051-2.386 2.6-2.444c-.003.001-1.576 3.056-2.6 2.444M25.9 20.895c-.01-.1-.1-1.207-2.07-1.16a14 14 0 0 0-2.453.173a12.5 12.5 0 0 1-2.012-2.655a11.8 11.8 0 0 0 .623-3.1c-.029-1.2-.316-1.888-1.236-1.878s-1.054.815-.933 2.013a9.3 9.3 0 0 0 .665 2.338s-.425 1.323-.987 2.639s-.946 2.006-.946 2.006a9.6 9.6 0 0 0-2.725 1.4c-.824.767-1.159 1.356-.725 1.945c.374.508 1.683.623 2.853-.91a23 23 0 0 0 1.7-2.492s1.784-.489 2.339-.623s1.226-.24 1.226-.24s1.629 1.639 3.2 1.581s1.495-.939 1.485-1.035"/><path fill="#909090" d="M23.954 2.077V7.95h5.633z"/><path fill="#f4f4f4" d="M24.031 2v5.873h5.633z"/><path fill="#fff" d="M8.975 4.457H7.668v4.8H8.7V7.639l.228.013a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .332-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.411-.105a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.194a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.67-2.306c-.111 0-.219.008-.295.011l-.235.006h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.315h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.077-3.915h-2.43v4.8h1.028V7.357h1.3v-.892h-1.3V5.353h1.4v-.892"/></svg>
+<span class="roboto-thin">СКАЧАТЬ С ЯНДЕКС ДИСК</span>
+</a>
+<p class="fs-5 inter-font-700 m-0">
+Устав организации
+</p>
+<a class="link fs-5 lh-1" href="https://disk.yandex.ru/i/aerTCpJMzHdKyg" title="Устав организации - скачать с Яндекс Диск " target="_blank" rel="noreferrer noopener">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"><path fill="#909090" d="m24.1 2.072l5.564 5.8v22.056H8.879V30h20.856V7.945z"/><path fill="#f4f4f4" d="M24.031 2H8.808v27.928h20.856V7.873z"/><path fill="#7a7b7c" d="M8.655 3.5h-6.39v6.827h20.1V3.5z"/><path fill="#dd2025" d="M22.472 10.211H2.395V3.379h20.077z"/><path fill="#464648" d="M9.052 4.534H7.745v4.8h1.028V7.715L9 7.728a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .335-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.409-.104a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.193a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.671-2.306c-.111 0-.219.008-.295.011L12 4.538h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.392h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.08-3.915H15v4.8h1.028V7.434h1.3v-.892h-1.3V5.43h1.4v-.892"/><path fill="#dd2025" d="M21.781 20.255s3.188-.578 3.188.511s-1.975.646-3.188-.511m-2.357.083a7.5 7.5 0 0 0-1.473.489l.4-.9c.4-.9.815-2.127.815-2.127a14 14 0 0 0 1.658 2.252a13 13 0 0 0-1.4.288Zm-1.262-6.5c0-.949.307-1.208.546-1.208s.508.115.517.939a10.8 10.8 0 0 1-.517 2.434a4.4 4.4 0 0 1-.547-2.162Zm-4.649 10.516c-.978-.585 2.051-2.386 2.6-2.444c-.003.001-1.576 3.056-2.6 2.444M25.9 20.895c-.01-.1-.1-1.207-2.07-1.16a14 14 0 0 0-2.453.173a12.5 12.5 0 0 1-2.012-2.655a11.8 11.8 0 0 0 .623-3.1c-.029-1.2-.316-1.888-1.236-1.878s-1.054.815-.933 2.013a9.3 9.3 0 0 0 .665 2.338s-.425 1.323-.987 2.639s-.946 2.006-.946 2.006a9.6 9.6 0 0 0-2.725 1.4c-.824.767-1.159 1.356-.725 1.945c.374.508 1.683.623 2.853-.91a23 23 0 0 0 1.7-2.492s1.784-.489 2.339-.623s1.226-.24 1.226-.24s1.629 1.639 3.2 1.581s1.495-.939 1.485-1.035"/><path fill="#909090" d="M23.954 2.077V7.95h5.633z"/><path fill="#f4f4f4" d="M24.031 2v5.873h5.633z"/><path fill="#fff" d="M8.975 4.457H7.668v4.8H8.7V7.639l.228.013a2 2 0 0 0 .647-.117a1.4 1.4 0 0 0 .493-.291a1.2 1.2 0 0 0 .332-.454a2.1 2.1 0 0 0 .105-.908a2.2 2.2 0 0 0-.114-.644a1.17 1.17 0 0 0-.687-.65a2 2 0 0 0-.411-.105a2 2 0 0 0-.319-.026m-.189 2.294h-.089v-1.48h.194a.57.57 0 0 1 .459.181a.92.92 0 0 1 .183.558c0 .246 0 .469-.222.626a.94.94 0 0 1-.524.114m3.67-2.306c-.111 0-.219.008-.295.011l-.235.006h-.78v4.8h.918a2.7 2.7 0 0 0 1.028-.175a1.7 1.7 0 0 0 .68-.491a1.9 1.9 0 0 0 .373-.749a3.7 3.7 0 0 0 .114-.949a4.4 4.4 0 0 0-.087-1.127a1.8 1.8 0 0 0-.4-.733a1.6 1.6 0 0 0-.535-.4a2.4 2.4 0 0 0-.549-.178a1.3 1.3 0 0 0-.228-.017m-.182 3.937h-.1V5.315h.013a1.06 1.06 0 0 1 .6.107a1.2 1.2 0 0 1 .324.4a1.3 1.3 0 0 1 .142.526c.009.22 0 .4 0 .549a3 3 0 0 1-.033.513a1.8 1.8 0 0 1-.169.5a1.1 1.1 0 0 1-.363.36a.67.67 0 0 1-.416.106m5.077-3.915h-2.43v4.8h1.028V7.357h1.3v-.892h-1.3V5.353h1.4v-.892"/></svg>
+<span class="roboto-thin">СКАЧАТЬ С ЯНДЕКС ДИСК</span>
+</a>
+</div>
+</div>
+
+<h3 class="inter-font-700 text-center mt-4 mb-3">Важные выдержки из документов:</h3>
+<div class="row">
+<div class="col-lg-10 mx-auto">
+<p class="sm-md-font inter-font-400 text-center fw-bold">
+ДОГОВОР<br>
+О ВЗАИМООТНОШЕНИЯХ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОДСКОЙ ОКРУГ «ГОРОД КОМСОМОЛЬСКА-НА-АМУРЕ» И МУНИЦИПАЛЬНОГО УЧРЕЖДЕНИЯ КУЛЬТУРЫ «ЗООЛОГИЧЕСКИЙ ЦЕНТР «ПИТОН»
+</p>
+<p class="sm-font inter-font-700 m-0 text-end">03.02.2009</p>
+<p class="sm-font inter-font-400 m-0"><b>1. ПРЕДМЕТ ДОГОВОРА</b></p>
+<p class="sm-font inter-font-400 txt-justify">
+1.1. «Администрация» от имени муниципального образования городского округа «Город Комсомольска-на-Амуре» осуществляет права собственника муниципального имущества, закрепленного за «Учреждением»,
+а «Учреждение» владеет и пользуется этим имуществом в пределах установленных законом, в соответствии с настоящим договором.
+</p>
+<p class="sm-font inter-font-400 m-0"><b>3. РАЗГРАНИЧЕНИЕ ПОЛНОМОЧИЙ В ВОПРОСАХ ПО УПРАВЛЕНИЮ ИМУЩЕСТВОМ</b></p>
+<p class="sm-font inter-font-400 txt-justify">
+3.1. «Администрация» осуществляет права собственника в части распоряжения имуществом.<br>
+3.3. «Учреждение» не вправе отчуждать или иным образом распоряжаться закрепленным за ним имуществом и имуществом, приобретенным за счет средств, выделенных ему по смете без письменного согласия «Администрации».<br>
+3.4. Плоды, продукция и доходы от использования имущества, находящегося в оперативном управлении «Учреждения», а также имущество, приобретенное по иным основаниям, поступают в оперативное управление «Учреждения».<br>
+3.5. «Администрация» вправе изъять излишнее, неиспользуемое, либо используемое не по назначению имущество, находящееся в оперативном управлении «Учреждения», и распоряжаться им по своему усмотрению.
+</p>
+<p class="sm-font inter-font-400 m-0"><b>5. УПРАВЛЕНИЕ УЧРЕЖДЕНИЕМ</b></p>
+<p class="sm-font inter-font-400 txt-justify">
+5.1. «Учреждение» отнесено к муниципальным учреждениям культуры города и управляется на принципах единоначалия директором, назначаемым на должность и освобождаемым от нее главой города.<br>
+5.2. Руководство и контроль за работой «Учреждения» по вопросам, отнесенным к компетенции органов местного самоуправления в области культуры, осуществляет отдел культуры и средств массовой информации администрации города, принимая приказы, обязательные для исполнения «Учреждением».<br> 
+5.3. Контроль за сохранностью и эффективным целевым использованием закрепленного имущества осуществляют Комитет по управлению имуществом администрации города и отдел культуры и средств массовой информации администрации города.
+</p>
+<p class="sm-font inter-font-400 m-0"><b>6. ОБЯЗАННОСТИ СТОРОН</b></p>
+<p class="sm-font inter-font-400 txt-justify">
+6.1. «Администрация» принимает на себя обязанности по:<br>
+6.1.1. финансированию «Учреждения» за счет средств местного и краевого бюджетов;<br>
+6.1.2. контролю за финансово-хозяйственной деятельностью;<br>
+6.1.3. контролю за эффективным использованием по назначению и сохранности имущества, переданного «Учреждению»;<br>
+6.1.4. контролю за соблюдением «Учреждением» действующего законодательства РФ;
+...
+</p>
+<p class="sm-font inter-font-400 m-0"><b>7. ОТВЕТСТВЕННОСТЬ СТОРОН</b></p>
+<p class="sm-font inter-font-400 txt-justify">
+7.1. Стороны несут бремя содержания имущества:<br>
+- «Администрация» в части финансирования капитального и текущего ремонта в соответствии с действующим законодательством;<br>
+- «Учреждение» в части осуществления текущего ремонта;<br>
+- «Учреждение» содержит имущество на уровне не ниже определяемого нормативами, действующими на территории города.<br>
+7.2. «Учреждение» несет ответственность за сохранность и целевое использование закрепленного муниципального имущества.<br>
+7.4. Списание основных средств проводится «Учреждением» на основании приказа Комитета по управлению имуществом администрации города.
+</p>
+<p class="sm-font inter-font-400 m-0"><b>8. ПРАВА СТОРОН</b></p>
+<p class="sm-font inter-font-400 txt-justify">
+8.1. Права «Администрации»:<br>
+8.1.1. По своему усмотрению совершать в отношении закрепленного за «Учреждением» имущества любые действия, не противоречащие закону и не нарушающие права «Учреждения» на владение и пользование указанным имуществом.<br>
+8.1.3. Утверждать цены и тарифы на платные услуги, оказываемые «Учреждением» населению.<br>
+8.1.4. Утверждать устав, вносить изменения (дополнения) в устав «Учреждения».<br>
+8.1.5. Назначать и освобождать от должности директора  «Учреждения».
+</p>
+</div>
+</div>
+<hr class="hr33">
+<div class="row">
+<div class="col-lg-10 mx-auto">
+<p class="sm-md-font inter-font-400 text-center fw-bold">
+УСТАВ<br>
+Муниципального автономного учреждения культуры<br>
+«ЗООЛОГИЧЕСКИЙ ЦЕНТР «ПИТОН»
+</p>
+<p class="sm-font inter-font-700 m-0 text-end">14.09.2012</p>
+<p class="sm-font inter-font-400 m-0"><b>1. ОБЩИЕ ПОЛОЖЕНИЯ</b></p>
+<p class="sm-font inter-font-400 txt-justify ks-20 lh-base">
+<mark>1.1. Муниципальное автономное учреждение культуры «Зоологический центр «Питон» (далее - Учреждение) создано путем изменения типа существующего муниципального учреждения культуры 
+«Зоологический центр «Питон» в соответствии с ГК РФ, Федеральным законом от 03 ноября 2006 года № 174-ФЗ «Об автономных учреждениях», на основании постановления администрации города Комсомольска-на-Амуре
+Хабаровского края от <span class="text-decoration-underline">14 сентября 2012 года</span> <span class="text-decoration-underline">№ 2935-па</span> «О создании Муниципального автономного учреждения культуры «Зоологический центр «Питон»
+путем изменения типа существующего муниципального учреждения культуры «Зоологический центр «Питон».</mark>
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+1.2. Наименование Учреждения:
+полное - Муниципальное автономное учреждение культуры «Зоологический центр «Питон», сокращенное - МАУК «Зооцентр «Питон».<br>
+Организационно-правовая форма - муниципальное учреждение.<br>
+Тип - автономное учреждение.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+1.3. Учреждение является некоммерческой организацией, созданной для выполнения работ, оказания услуг на территории муниципального образования городского округа «Город Комсомольск-на-Амуре» в сфере культуры.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+1.4. Учредителем Учреждения и собственником закрепленного за Учреждением имущества является муниципальное образование городской округ «Город Комсомольска-на-Амуре» (далее - Учредитель).
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+Функции и полномочия Учредителя Учреждения от имени муниципального образования городского округа «Город Комсомольска-на-Амуре» в установленном администрацией города Комсомольска-на-Амуре порядке осуществляет отдел культуры и средств массовой информации администрации города Комсомольска-на-Амуре Хабаровского края.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+1.5. Функции и полномочия собственника имущества Учреждения в установленном порядке осуществляет Комитет по управлению имуществом администрации города Комсомольска-на-Амуре  Хабаровского края.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+1.10. Учредитель не несет ответственность по обязательствам Учреждения.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+1.11. Учреждение не отвечает по обязательствам Учредителя.
+</p>
+<p class="sm-font inter-font-400 m-0"><b>2. ЦЕЛИ, ПРЕДМЕТ И ВИДЫ ДЕЯТЕЛЬНОСТИ</b></p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+2.1. Цель создания Учреждения - сохранение, разведение и популяризация животных, содержащихся в неволе, экспонирование и изучение животных в искусственных условиях, решение научно-просветительных, исследовательских и природоохранных задач и представляет собой музей живой природы.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+2.4. Учреждение осуществляет следующие основные виды деятельности:<br>
+- Сохранение, разведение животных, содержащихся в неволе<br>
+- Экспонирование и изучение животных в искусственных условиях<br>
+- Решение научно-просветительских, исследовательских и природоохранных задач<br>
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+2.5. Учреждение осуществляет следующие дополнительные виды деятельности:<br>
+- оказание платных услуг населению в виде постоянно действующей экспозиции экзотических животных, птиц, рыб и растений;<br>
+- ведение племенной и селекционной работы;<br>
+- оказание ветеринарных платных услуг населению;<br>
+- осуществление торговых операций (реализация животных, рыб, продукции животноводства и другой продукции хозяйственной деятельности Учреждения);<br>
+- организация и проведение смотров, выставок по тематике профиля данной деятельности Учреждения;<br>
+- внешнеэкономическая деятельность Учреждения (работа с зоопарками мира);<br>
+- установка и эксплуатация аттракционов;<br>
+- производство и реализация населению товаров народного потребления, биоматериалов, биоостатков, фотопродукции, сувениров, печатной продукции, буклетов, книг, методических пособий, сельскохозяйственной продукции;<br>
+- проведение праздников, ярмарок, аукционов, лотерей, конкурсов, шоу-программ, передвижных зоовыставок, научно-просветительных и культурно-просветительных мероприятий;<br>
+- предоставление услуг в области фотографии и кинопроизводства;<br>
+- передача в установленном порядке животных, не относящихся к редким и исчезающим видам, для использования в театрах зверей и приравненных к ним организациях по согласованиям с учредителем;<br>
+- выполнение платных заказов юридических и физических лиц по оказанию методической, консультативной и ветеринарно-лечебной помощи, карантирование животных и птиц, а также услуги по организации живых уголков;<br>
+- организация зоомагазинов, обмен животных с другими зоопарками, организациями, организация точки общественного питания, выполнение художественно-оформительских работ;<br>
+- торговля покупными товарами, соответствующими основной цели деятельности Учреждения;<br>
+- оказание посреднических услуг;<br>
+- организация кружков по работе с детьми;<br>
+- оказание транспортных услуг;<br>
+- оказание услуг по организации платных стоянок для посетителей Учреждения.
+</p>
+<p class="sm-font inter-font-400 m-0"><b>4. УПРАВЛЕНИЕ УЧРЕЖДЕНИЕМ</b></p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+4.1. Органами управления Учреждения являются Наблюдательный совет, директор Учреждения.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+4.2. Наблюдательный совет<br>
+В состав Наблюдательного совета входят:<br>
+- представители Учредителя - 2 человека (1/3);<br>
+- представители общественности, в том числе лица, имеющие заслуги и достижения в соответствующей сфере деятельности - 3 человека;<br>
+- представители трудового коллектива Учреждения - 2 человека (1/3).
+</p>
+<p class="sm-font inter-font-400 m-0"><b>5. РУКОВОДИТЕЛЬ УЧРЕЖДЕНИЯ</b></p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+5.1. Учреждение возглавляет директор.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+5.2. К компетенции директора Учреждения относятся вопросы осуществления текущего руководства деятельностью Учреждения, за исключением вопросов, отнесенных настоящим Уставом к компетенции Учредителя, Наблюдательного совета.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+5.4. Директор Учреждения осуществляет текущее руководство деятельностью Учреждения и подотчетен в своей деятельности Учредителю и Наблюдательному совету Учреждения.
+</p>
+<p class="sm-font inter-font-400 m-0"><b>6. ПРАВА И ОБЯЗАННОСТИ УЧРЕЖДЕНИЯ</b></p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+6.1. Учреждение строит свои отношения с другими организациями и гражданами во всех сферах хозяйственной деятельности на основе договоров, контрактов.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+6.2. Для выполнения уставных целей Учреждение имеет право в порядке, установленном действующим законодательством РФ:<br>
+- создавать филиалы, представительства;<br>
+...<br>
+- заключать все виды договоров с юридическими и физическими лицами, не противоречащие законодательству РФ, а также целям и предмету деятельности Учреждения;<br>
+- приобретать или арендовать основные и оборотные средства за счет имеющихся у него финансовых ресурсов;<br>
+...
+</p>
+<p class="sm-font inter-font-400 m-0"><b>7. ИМУЩЕСТВО И ФИНАНСЫ</b></p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+7.1. Имущество Учреждения закрепляется за ним на праве оперативного управления.
+Решение Учредителя об отнесении имущества к категории особо ценного движимого имущества принимается одновременно с принятием решения о закреплении указанного имущества за Учреждением или о выделении средств на его приобретение.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+7.2. Земельный участок, необходимый для выполнения Учреждением своих уставных задач, предоставляется ему на праве постоянного (бессрочного) пользования.
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+7.3. Имущество, закрепленное за Учреждением, и земельный участок является собственностью муниципального образования городского округа «Город Комсомольск-на-Амуре».
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+7.5. Учреждение не вправе без согласия Учредителя распоряжаться недвижимым имуществом и особо ценным движимым имуществом, закрепленным за ним или приобретенным за счет выделенных ему средств на приобретение этого имущества. 
+</p>
+<p class="sm-font inter-font-400 txt-justify ks-20">
+7.6. Источниками формирования имущества и финансовых ресурсов Учреждения являются:<br>
+- имущество, закрепленное за ним на праве оперативного управления;<br>
+- бюджетные ассигнования в виде субсидий;<br>
+- средства от оказания платных услуг;<br>
+- безвозмездные поступления;<br>
+- иные источники, не запрещенные действующим законодательством РФ.
+</p>
+</div>
+</div>
+
+<h3 class="inter-font-700 text-center mt-4 mb-3">Определения:</h3>
+<div class="row">
+<div class="col-lg-10 mx-auto">
+<p class="sm-md-font inter-font-500">
+<b>МАУК</b> - муниципальное автономное учреждение культуры<br>
+<b>Муниципальное учреждение</b> - организация, которая находится в непосредственном подчинении местного муниципального образования. Его финансирование проходит за счет финансовых средств, существующих в муниципальном образовании.<br>
+<b>Муниципальное образование</b> - населённая территория, на которой осуществляется местное самоуправление в России, то есть решаются преимущественно вопросы местного значения.<br>
+<b>ДОХОДЫ</b> бюджетов муниципальных образований (местных бюджетов) формируются за счёт собственных доходов (доходов от местных налогов и сборов), отчислений от федеральных налогов и сборов (в том числе налогов, предусмотренных специальными налоговыми режимами), а также от региональных налогов, доходов от муниципальных предприятий и учреждений, штрафов, межбюджетных трансфертов (дотаций, субсидий, субвенций и др.) из вышестоящих бюджетов, самообложения населения (оно возможно в определённых размерах в соответствии с законом) и др.<br>
+<b>Автономное учреждение</b>, в отличие от <b>бюджетного</b>, не может выступать государственным или муниципальным заказчиком на размещение заказов на поставки товаров, выполнение работ, оказание услуг для государственных или муниципальных нужд и не подпадает под действие Федерального закона № 94-ФЗ.
+Федеральный закон № 94-ФЗ регулирует весь комплекс отношений между заказчиком и поставщиком товаров, услуг и работ для государственных и муниципальных нужд, а также нужд бюджетных учреждений.
+</div>
+</div>
+
+<div class="divider div-transparent div-arrow-down"></div>
+
+<hgroup class="text-center">
+<h3 class="flex-item fs-1 inter-font-900">Зоопарк «Сихотэ-Алинь»</h3>
+<p class="mber-subheading flex-item fs-3">(вторая территория «Питона», в стадии строительства)</p>
+</hgroup>
+  <div class="row align-items-center justify-content-center mt-4">
+    <div class="col col-lg-8 text-center">
+     <img src="assets/images/piton/sa.jpg" class="img img-fluid rounded" alt="">
+    </div>
+  </div>
+<p class="sm-md-font inter-font-600 mt-4 px-4">
+<b>Зоопарк «Сихотэ-Алинь»</b> - это часть зооцентра «Питон» в Комсомольске-на-Амуре. Расположен в таёжном массиве и рассчитан на животных дальневосточной тайги.</br>
+Идея создания зоопарка появилась в <b>2014 году</b>. На территории площадью полтора гектара постепенно сооружают вольеры, органично вписывающиеся в природный ландшафт.</br>
+<b>5 декабря 2024 года</b> зоопарк «Сихотэ-Алинь» открылся для посетителей. Находится он на Комсомольском шоссе. Работает со вторника по воскресенье включительно с 11 до 17 часов, понедельник — санитарный день, посетителей пока пускают только группами.</br>
+Стоимость билетов: детский (с 3 до 14 лет) - 150 рублей, взрослый (с 14 лет) - 300 рублей, дети до 3 лет - бесплатно, пенсионеры, студенты, военнослужащие по призыву - 200 рублей, граждане старше 70 лет - 20 рублей.</br>
+Также по вторникам, четвергам, пятницам и воскресеньям проводятся показательные кормления животных: в 12 часов кормят лосей, в 15 часов - леопарда, а в 16 часов - орланов
+<small class="fst-italic">(Нейро Яндекс)</small>.
+</p>
+<p class="fs-4 text-center mt-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7" stroke-width="0.5" stroke="currentColor"/></svg>
+Хабаровский край, Комсомольск-на-Амуре, Силинский парк
+</p>
+
+<section id="map-section" class="map-section">
+<div id="map" style="width:auto; height:500px"></div>
+<div class="mt-4">
+<a class="link--arrowed fs-5 lh-1 fw-semibold" href="https://2gis.ru/komsomolsk-on-amur/geo/70030076736944900/tab/reviews" title="Зоопарк «Сихотэ-Алинь» - 2ГИС" target="_blank" rel="noreferrer noopener">
+● См. карту на 2ГИС (есть отзывы и фотографии)
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+<br>
+<a class="link--arrowed fs-5 lh-1 fw-semibold" href="https://yandex.ru/maps/org/sikhote_alin/220358745389/?ll=137.029148%2C50.581675&z=13" title="Зоопарк «Сихотэ-Алинь» - Яндекс Карты" target="_blank" rel="noreferrer noopener">
+● См. карту на Яндекс Картах
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+</section>
+
+<div class="empty-div-30"></div>
+
+<h3 class="inter-font-700 text-center mt-4">Зоопарк «Сихотэ-Алинь» в СМИ</h3>
+<hgroup>
+<p class="flex-item fs-5 inter-font-500 second-color"><b>5 декабря 2024</b>, «Вести. Хабаровск» <span class="badge text-bg-danger">ВИДЕО</span></p>
+<h5 class="flex-item fs-4 inter-font-700">
+<a class="link link--arrowed lh-sm" href="https://vestidv.ru/news/2024/12/05/91382" target="_blank" rel="noreferrer noopener">
+В гостях у хищников: в Городе юности открыл свои двери строящийся зоопарк «Сихотэ-Алинь»
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+<p class="fs-5 roboto-thin m-0">
+<a href="javascript:;" class="link--arrowed lh-1" data-type="iframe" data-src="https://vk.com/video_ext.php?oid=-73985648&amp;id=456248596&amp;hash=57129158ee7896d2" data-caption="В гостях у хищников: в Городе юности открыл свои двери строящийся зоопарк «Сихотэ-Алинь» (опубл. 5 декабря 2024)" data-fancybox="">
+ВИДЕО ВК
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path transform="translate(5 4)" class="arrow-icon--play" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"></path></g></svg>
+</a>
+</p>
+</h5>
+</hgroup>
+<hr>
+<hgroup>
+<p class="flex-item fs-5 inter-font-500 second-color"><b>1 декабря 2024</b>, Komsagram (ВК) <span class="badge text-bg-danger">ФОТО</span></p>
+<h5 class="flex-item fs-4 inter-font-700">
+<a class="link link--arrowed lh-sm" href="https://vk.com/wall-161985796_411288" target="_blank" rel="noreferrer noopener">
+Тигр, рысь, леопард, волки, лисы, олени, орланы - всё это обитатели зоопарка «Сихотэ-Алинь»
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</h5>
+</hgroup>
+<hr>
+<hgroup>
+<p class="flex-item fs-5 inter-font-500 second-color"><b>30 ноября 2024</b>, Komsagram (ВК)</p>
+<h5 class="flex-item fs-4 inter-font-700">
+<a class="link link--arrowed lh-sm" href="https://vk.com/wall-161985796_411153" target="_blank" rel="noreferrer noopener">
+Зооцентр «Питон» открыл новую территорию для посетителей
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</h5>
+</hgroup>
+<hr>
+<hgroup>
+<p class="flex-item fs-5 inter-font-500 second-color"><b>13 ноября 2023</b>, «Сахалинский зооботанический парк»</p>
+<h5 class="flex-item fs-4 inter-font-700">
+<a class="link link--arrowed lh-sm" href="https://sakhalinzoo.ru/index.php?r=news/view&id=16214" target="_blank" rel="noreferrer noopener">
+Строящийся в Хабаровском крае зоопарк «Сихотэ-Алинь» укрепляет связи с Сахалином
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</h5>
+</hgroup>
+<hr>
+<hgroup>
+<p class="flex-item fs-5 inter-font-500 second-color"><b>20 октября 2023</b>, «Вести. Хабаровск» <span class="badge text-bg-danger">ВИДЕО</span></p>
+<h5 class="flex-item fs-4 inter-font-700">
+<a class="link link--arrowed lh-sm" href="https://vestidv.ru/news/2023/10/20/69361" target="_blank" rel="noreferrer noopener">
+На территории нового Сихотэ-Алиньского зоопарка в Комсомольске началось строительство
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+<p class="fs-5 roboto-thin m-0">
+<a href="javascript:;" class="link--arrowed lh-1" data-type="iframe" data-src="https://vk.com/video_ext.php?oid=-73985648&amp;id=456244204&amp;hash=31c47f6ac082f07a" data-caption="На территории нового Сихотэ-Алиньского зоопарка в Комсомольске началось строительство (опубл. 20 октября 2023)" data-fancybox="">
+ВИДЕО ВК
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path transform="translate(5 4)" class="arrow-icon--play" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"></path></g></svg>
+</a>
+</p>
+</h5>
+</hgroup>
+<hr>
+<hgroup>
+<p class="flex-item fs-5 inter-font-500 second-color"><b>25 мая 2020</b>, dvnovosti.ru <span class="badge text-bg-danger">ФОТО</span></p>
+<h5 class="flex-item fs-4 inter-font-700">
+<a class="link link--arrowed lh-sm" href="https://www.dvnovosti.ru/komsomolsk/2020/05/25/114979/" target="_blank" rel="noreferrer noopener">
+Медленно, но верно: несколько вольеров построено в комсомольском зоопарке «Сихотэ-Алинь»
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</h5>
+<p class="flex-item inter-font-500">
+Директор «Питона» Ирина Трифонова: <span class="fst-italic">«Зоопарк «Сихотэ-Алинь» займет территорию примерно в <b>1,5 тысячи квадратных метров</b>...»</span>
+Как соотнести эти слова с заявлением «Питона» о начале сбора средств на вольеры для медведей, в котором говорится, что площадь вольерного комплекса по проекту составляет <b>1126 кв. м.</b>?
+</p>
+</hgroup>
+<hr>
+<hgroup>
+<p class="flex-item fs-5 inter-font-500 second-color">без даты, «Амурский судостроительный завод» <span class="badge text-bg-danger">ФОТО</span></p>
+<h5 class="flex-item fs-4 inter-font-700">
+<a class="link link--arrowed lh-sm" href="https://асзкмс.рф/амурские-корабелы-помогают-зоосаду/" target="_blank" rel="noreferrer noopener">
+Амурские корабелы помогают зоосаду
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</h5>
+</hgroup>
+
+<div class="empty-div-30"></div>
+
+<h3 class="inter-font-700 text-center mt-4">Видео</h3>
+
+<div class="row d-flex justify-content-center">
+<div class="col-lg-8">
+
+<div class="pvideo mb-3">
+<p class="fs-5 inter-font-500 second-color m-0"><b>15 января 2025</b>, «Вести. Хабаровск» (ВК)</p>
+<p class="fs-4 inter-font-700 m-0">
+<a href="javascript:;" class="link--arrowed lh-1" data-type="iframe" data-src="https://vk.com/video_ext.php?oid=-73985648&amp;id=456248981&amp;hash=fccf2f7fe26e874d" data-caption="Время для хвойного десерта настало в зоопарке «Сихотэ-Алинь» Комсомольска-на-Амуре (опубл. 15 января 2025)" data-fancybox="">
+Время для хвойного десерта настало в зоопарке «Сихотэ-Алинь» Комсомольска-на-Амуре
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path transform="translate(5 4)" class="arrow-icon--play" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"></path></g></svg>
+</a>
+</p>
+</div>
+
+<div class="pvideo mb-3">
+<p class="fs-5 inter-font-500 second-color m-0"><b>11 января 2025</b>, ОК - ?? НЕ ГРУЗИТСЯ</p>
+<p class="fs-4 inter-font-700 m-0">
+<a href="javascript:;" class="link--arrowed lh-1" data-type="iframe" data-src="https://ok.ru/videoembed/8963705080480" data-caption="С радостью делимся с вами впечатлениями о нашей экскурсии в зоопарк «Сихотэ-Алинь» (опубл. 11 января 2025)" data-fancybox="">
+С радостью делимся с вами впечатлениями о нашей экскурсии в зоопарк «Сихотэ-Алинь»
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path transform="translate(5 4)" class="arrow-icon--play" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"></path></g></svg>
+</a>
+</p>
+</div>
+
+<div class="pvideo mb-3">
+<p class="fs-5 inter-font-500 second-color m-0"><b>11 сентября 2021</b>, YouTube, Rutube</p>
+<p class="fs-4 inter-font-700 m-0">
+<a class="link--arrowed" data-fancybox="video" data-caption="В зоопарк «Сихотэ-Алинь» - новая территория зооцентра «Питон» - на один день пустили посетителей (опубл. 11 сентября 2021) " href="https://www.youtube.com/watch?v=qPLMJuJPkmk">
+Зоопарк «Сихотэ-Алинь»
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path transform="translate(5 4)" class="arrow-icon--play" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"></path></g></svg>
+</a>
+</p>
+<p class="fs-4 inter-font-700 m-0">
+<a href="javascript:;" class="link--arrowed lh-1" data-type="iframe" data-src="https://rutube.ru/play/embed/aab24710c68761b844742a88a2984f64" data-caption="В зоопарк «Сихотэ-Алинь» - новая территория зооцентра «Питон» - на один день пустили посетителей (опубл. 2 декабря 2023)" data-fancybox="">
+Зоопарк «Сихотэ-Алинь»
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path transform="translate(5 4)" class="arrow-icon--play" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"></path></g></svg>
+</a>
+</p>
+<p class="sm-font m-0">В зоопарк «Сихотэ-Алинь» - новая территория зооцентра «Питон» - на один день пустили посетителей.</p>
+</div>
+
+</div>
+</div>
+
+<div class="empty-div-30"></div>
+
+<h3 class="inter-font-700 text-center mt-4">Фото (осень-зима 2024)</h3>
+<div class="grid-container-p">
+  <div>
+    <a data-caption="Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa00.jpg">
+	<img class="grid-item grid-item-1 ZoomCursor" src="assets/images/piton/sa00.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa01.jpg">
+	<img class="grid-item grid-item-2 ZoomCursor" src="assets/images/piton/sa01.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Зоопарк «Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa02.jpg">
+	<img class="grid-item grid-item-3 ZoomCursor" src="assets/images/piton/sa02.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa03.jpg">
+	<img class="grid-item grid-item-1 ZoomCursor" src="assets/images/piton/sa03.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa04.jpg">
+	<img class="grid-item grid-item-2 ZoomCursor" src="assets/images/piton/sa04.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Зоопарк «Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa05.jpg">
+	<img class="grid-item grid-item-3 ZoomCursor" src="assets/images/piton/sa05.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa06.jpg">
+	<img class="grid-item grid-item-2 ZoomCursor" src="assets/images/piton/sa06.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Зоопарк «Сихотэ-Алинь», 2024 г." data-fancybox="zsa" href="assets/images/piton/sa07.jpg">
+	<img class="grid-item grid-item-3 ZoomCursor" src="assets/images/piton/sa07.jpg" alt="">
+    </a>
+  </div>
+  <div>
+    <a data-caption="Зоопарк «Сихотэ-Алинь», Открытие для посетителей, 30 ноября 2024 г." data-fancybox="zsa" href="assets/images/piton/sa08.jpg">
+	<img class="grid-item grid-item-3 ZoomCursor" src="assets/images/piton/sa08.jpg" alt="">
+    </a>
+  </div>
+</div>
+
+<h3 class="fs-3 inter-font-900 text-center mt-4">«Гладко было на бумаге, да забыли про овраги»</h3>
+<p class="sm-md-font inter-font-500 mt-4 px-4 text-center">
+Согласитесь, фотографии, мягко скажем, не впечатляют.
+</p>
+<div class="container-fluid text-center analiz">
+  <div class="row align-items-center" style="height: 400px;">
+    <div class="col-md-6 offset-md-3 text-center">
+<p class="sm-md-font inter-font-700">
+Материал по истории строительства зоопарка, анализу текущей ситуации с объективными выводами будет пополняться по мере поступления информации. 
+</p>
+    </div>
+  </div>
+</div>
+
+<div class="empty-div-100"></div>
+
+<h2 class="fs-1 inter-font-900 text-center">Законодательство</h2>
+<hgroup>
+<h4 class="flex-item inter-font-900" id="pp1937">Постановление Правительства РФ от 30 декабря 2019 г. N 1937 «Об утверждении требований к использованию животных в культурно-зрелищных целях и их содержанию»</h4>
+<p class="flex-item mber-subheading inter-font-700">Требования к использованию животных в культурно-зрелищных целях и их содержанию</p>
+</hgroup>
+<div class="btn-group d-flex justify-content-center mt-2">
+ <a class="bn1 mx-1" href="https://base.garant.ru/73363811/" title="Постановление Правительства РФ от 30 декабря 2019 г. N 1937" target="_blank" rel="noreferrer noopener">Текст &rsaquo;</a>
+</div>
+<h5 class="inter-font-700 text-center mt-2">I. Общие положения</h5>
+<p class="sm-md-font">
+1. Настоящий документ устанавливает требования к использованию животных в культурно-зрелищных целях и их содержанию.
+</p>
+<p class="sm-md-font">
+2. Понятия, используемые в настоящем документе, означают следующее:<br>
+<span class="fw-semibold">"ветеринарный пункт"</span> - санитарный блок и изолятор;<br>
+<span class="fw-semibold">"вольер"</span> - любой (уличный или внутренний) тип постоянного места содержания животных (вольер, клетка, авиарий, загон, пруд, террариум, аквариум, акватеррариум, бассейн и др.);<br>
+...<br>
+<span class="fw-semibold">"зоопарк"</span> - юридическое лицо или индивидуальный предприниматель, осуществляющие на постоянной основе деятельность по демонстрации животных, содержащие зоологическую коллекцию, способствующие сохранению видов животных посредством экологического просвещения, сбора и распространения информации о животных, рекреации и проведения исследований. Указанное понятие применяется в отношении парков животных, сафари-парков, парков птиц, аквариумов и специализированных коллекций (коллекции живых беспозвоночных, рыб, амфибий, рептилий, птиц, млекопитающих);<br>
+<span class="fw-semibold">"зоосад"</span> - юридическое лицо или индивидуальный предприниматель, осуществляющие на постоянной основе деятельность по демонстрации животных и растений, содержащие зоологическую и ботаническую коллекции, способствующие сохранению видов животных и растений посредством экологического просвещения, сбора и распространения информации о животных и растениях, рекреации и проведения исследований;<br>
+<span class="fw-semibold">"зоотеатр"</span> - юридическое лицо или индивидуальный предприниматель, осуществляющие на постоянной основе деятельность по подготовке и показу тематических спектаклей, других публичных представлений с участием животных, в которых представлен жанр цирковой дрессуры, располагающие манежем, сценой, помещениями для содержания животных;<br>
+<span class="fw-semibold">"изолятор"</span> - помещение, где содержатся животные, подозреваемые в заболевании или больные заразными болезнями животных;<br>
+...<br>
+<span class="fw-semibold">"санитарный блок"</span> - помещение, предназначенное для карантинной передержки вновь поступающих животных и содержания травмированных животных;<br>
+...
+</p>
+<p class="sm-md-font">
+3. Руководитель организации или индивидуальный предприниматель, осуществляющие деятельность по содержанию и использованию животных в зоопарках, зоосадах, цирках, зоотеатрах, дельфинариях и океанариумах, обязаны обеспечить соблюдение требований, установленных настоящим документом.
+</p>
+<p class="sm-md-font">...</p>
+
+
+<div class="row">
+<div class="col-md-6 offset-md-6">
+<p class="ex-sm-font fst-italic">Приложение N 7 к требованиям к использованию животных в культурно-зрелищных целях и их содержанию</p>
+</div>
+</div>
+
+<h5 class="inter-font-700 text-center mt-2">Размеры вольеров для содержания хищных животных и слонов зоопарками (зоосадами)</h5>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <!--
+	<caption>Размеры вольеров для содержания хищных животных и слонов зоопарками (зоосадами)</caption>
+	-->
+    <thead>
+        <tr>
+            <th>Наименование группы животных</th>
+            <th>Виды животных</th>
+            <th>Тип помещения</th>
+            <th>Площадь помещения, м² (не менее)</th>
+            <th>Высота помещения, м (не менее)</th>
+            <th>Площадь уличного вольера, м² (не менее)</th>
+            <th>Примечание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>крупные кошачьи, <b>медведи</b></td>
+            <td>лев, тигр, ягуар, леопард, пума, <b>все медведи, кроме белого</b></td>
+            <td>вольер</td>
+            <td>20</td>
+            <td>3</td>
+            <td>80</td>
+            <td>суммарная площадь 2 вольеров (основного и перегонного) - не менее 100 м²</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="divider div-transparent div-arrow-down"></div>
+
+<hgroup>
+<h4 class="flex-item inter-font-900" id="pp1938">Постановление Правительства РФ от 30 декабря 2019 г. N 1938 «Об утверждении Положения о лицензировании деятельности по содержанию и использованию животных в зоопарках, зоосадах, цирках, зоотеатрах, дельфинариях и океанариумах»</h4>
+<p class="flex-item mber-subheading inter-font-700">Положение о лицензировании деятельности по содержанию и использованию животных в зоопарках, зоосадах, цирках, зоотеатрах, дельфинариях и океанариумах</p>
+</hgroup>
+<div class="btn-group d-flex justify-content-center mt-2">
+ <a class="bn1 mx-1" href="https://base.garant.ru/73363809/" title="Постановление Правительства РФ от 30 декабря 2019 г. N 1938" target="_blank" rel="noreferrer noopener">Текст &rsaquo;</a>
+</div>
+
+<div class="divider div-transparent div-arrow-down"></div>
+
+<h5 class="inter-font-600 mt-2">Природоохранная прокуратура разъясняет требования к содержанию животных в культурно-зрелищных целях </h5>
+<div class="bgblock">
+<p class="sm-font">
+В силу положений Федерального закона «Об ответственном обращении с животными и о внесении изменений в отдельные законодательные акты Российской Федерации» № 498-ФЗ (далее – Закон) под использованием животных в культурно-зрелищных целях понимается использование животных при осуществлении деятельности в области культуры, отдыха и развлечений (в том числе в зоопарках, зоосадах, цирках, зоотеатрах, дельфинариях, океанариумах), на выставках животных, в спортивных соревнованиях, в процессе производства рекламы, при создании произведений кинематографии, для производства фото- и видеопродукции, на телевидении, в просветительской деятельности, в целях демонстрации (в том числе в местах розничной торговли, местах оказания услуг общественного питания).
+</p>
+<p class="sm-font">
+Частью 9 статьи 15 Закона установлено, что деятельность по содержанию и использованию животных в зоопарках, зоосадах, цирках, зоотеатрах, дельфинариях, океанариумах подлежит лицензированию в соответствии с Федеральным законом «О лицензировании отдельных видов деятельности» от 04.05.2011 № 99-ФЗ.
+</p>
+<p class="sm-font">
+Обязательные требования к соискателю лицензии перечислены в «Положении о лицензировании деятельности по содержанию и использованию животных в зоопарках, зоосадах, цирках, зоотеатрах, дельфинариях и океанариумах», которое утверждено постановлением Правительства РФ от 30.12.2019 № 1938 (далее – Положение).
+</p>
+<p class="sm-font">
+Соискатель лицензии для осуществления деятельности по содержанию и использованию животных должен соответствовать следующим лицензионным требованиям:<br>
+- иметь на праве собственности или на ином законном основании специально предназначенных зданий, сооружений, помещений, обособленных территорий по месту осуществления лицензируемого вида деятельности, технических средств и оборудования, необходимых для осуществления деятельности по содержанию и использованию животных и соответствующих требованиям, утвержденным постановлением Правительства РФ от 30.12.2019 № 1937;<br>
+- для выполнения работ по содержанию и использованию животных в зоопарках, зоосадах и океанариумах заключить трудовой договор с работником, имеющим высшее образование соответственно по одной из специальностей и (или) одному из направлений подготовки - биология, ветеринария, зоотехния;<br>
+- для выполнения работ по содержанию и использованию животных в цирках и зоотеатрах заключить трудовой договор с работником, имеющим высшее образование соответственно по одной из специальностей и (или) одному из направлений подготовки - биология, ветеринария, зоотехния, или работника, имеющего среднее профессиональное образование по одному из направлений подготовки - культура и искусство, цирковое искусство и стаж работы не менее 2 лет в должности артиста жанра дрессуры животных, или работника, имеющего стаж работы не менее 10 лет в должности артиста жанра дрессуры животных;<br>
+- для выполнения работ по содержанию и использованию животных в дельфинариях заключить трудовой договор с работником, имеющим высшее образование соответственно по одной из специальностей и (или) одному из направлений подготовки - биология, ветеринария, зоотехния, и работника, имеющего среднее профессиональное образование по одному из направлений подготовки - культура и искусство, цирковое искусство и стаж работы не менее 2 лет в должности артиста жанра дрессуры животных, или работника, имеющего стаж работы не менее 10 лет в должности артиста жанра дрессуры животных.
+</p>
+<p class="sm-font">
+Также деятельность соискателя лицензии должна соответствовать требованиям, предусмотренных статьями 9-12 и 15 Закона, требованиям, перечисленным в постановлении Правительства РФ от 30.12.2019 № 1937.
+</p>
+<p class="sm-font">
+В обязательном порядке соискателем лицензии должны соблюдаться ветеринарные правила осуществления профилактических, диагностических, лечебных, ограничительных и иных мероприятий, установления и отмены карантина и иных ограничений, направленных на предотвращение распространения и ликвидацию очагов заразных и иных болезней животных, если животные, используемые лицензиатом в культурно-зрелищных целях, восприимчивы к соответствующим болезням животных.
+<br><a href="https://vk.com/wall-139880595_2025" title="Природоохранная прокуратура разъясняет требования к содержанию животных в культурно-зрелищных целях" target="_blank" rel="noreferrer noopener"><span class="float-end sm-font fst-italic">vk.com/wall-139880595_2025</span></a>
+</p>
+</div>
+
+<div class="divider div-transparent div-dot"></div>
+
+<h4 class="inter-font-900" id="pp1659">Постановление Правительства РФ от 12 декабря 2019 г. N 1659 «Об утверждении Правил обращения с конфискованными дикими животными в неволе, возврат которых в среду их обитания невозможен» (с изменениями и дополнениями)</h4>
+<div class="btn-group d-flex justify-content-center mt-1">
+ <a class="bn1 mx-1" href="https://base.garant.ru/73245702/" title="Постановление Правительства РФ от 12 декабря 2019 г. N 1659" target="_blank" rel="noreferrer noopener">Текст &rsaquo;</a>
+</div>
+<p class="sm-md-font mt-2">
+В соответствии с пунктом 10 части 1 статьи 5 и частью 2 статьи 22 Федерального закона "Об ответственном обращении с животными и о внесении изменений в отдельные законодательные акты Российской Федерации" Правительство Российской Федерации постановляет:
+</p>
+<p class="sm-md-font">
+1. Утвердить прилагаемые <b>Правила</b> обращения с конфискованными дикими животными в неволе, возврат которых в среду их обитания невозможен.<br>
+...
+</p>
+<div class="bgblock_2">
+<h5 class="inter-font-700 text-center mt-2">Правила<br>обращения с конфискованными дикими животными в неволе, возврат которых в среду их обитания невозможен</h5>
+<p class="sm-md-font">
+1. Настоящие Правила устанавливают порядок обращения с конфискованными дикими животными в неволе, возврат которых в среду их обитания невозможен (далее - конфискованные животные).
+</p>
+<p class="sm-md-font">
+В целях настоящих Правил под конфискованными животными понимаются дикие животные, которые содержались или использовались в условиях неволи с нарушением требований, установленных Федеральным законом "Об ответственном обращении с животными и о внесении изменений в отдельные законодательные акты Российской Федерации", и были конфискованы в соответствии с законодательством Российской Федерации.
+</p>
+<p class="sm-md-font">
+2. ...<br>
+Настоящие Правила распространяются на юридических лиц и индивидуальных предпринимателей, осуществляющих содержание и использование диких животных, в том числе в зоопарках, зоосадах, цирках, зоотеатрах, дельфинариях, океанариумах.
+</p>
+<p class="sm-md-font">
+...
+</p>
+<p class="sm-md-font">
+4. Решение об обращении с конфискованными животными принимается руководителем Федеральной службы по надзору в сфере природопользования или уполномоченными им лицами, руководителями территориальных органов Федеральной службы по надзору в сфере природопользования (далее - уполномоченные органы) с учетом заключения органов, осуществляющих федеральный государственный ветеринарный надзор, о безопасности их дальнейшего использования <mark>в месячный срок со дня вступления в законную силу решения суда о конфискации указанных животных</mark>.
+</p>
+<p class="sm-md-font">
+5. ...<br>
+При невозможности принятия конфискованных животных указанными государственными (муниципальными) унитарными предприятиями и государственными (муниципальными) учреждениями эти животные передаются безвозмездно для содержания и (или) использования (применения) <mark>иным юридическим лицам и индивидуальным предпринимателям, соблюдающим требования, указанные в пункте 6 настоящих Правил</mark>, и имеющим условия для содержания и надлежащего ухода за соответствующими животными.
+</p>
+<p class="sm-md-font">
+6. Юридические лица и индивидуальные предприниматели, которым уполномоченными органами передаются конфискованные животные, должны соблюдать требования к содержанию и использованию животных, установленные Федеральным законом "Об ответственном обращении с животными и о внесении изменений в отдельные законодательные акты Российской Федерации" и принятыми в соответствии с указанным Федеральным законом нормативными правовыми актами.
+</p>
+<p class="sm-md-font">
+7. При принятии решения об обращении с конфискованными животными приоритет при передаче юридическим лицам и индивидуальным предпринимателям, указанным в пункте 5 настоящих Правил, имеют юридические лица и индивидуальные предприниматели, обеспечивающие при прочих равных условиях содержание и (или) использование конфискованных животных в целях сохранения ресурса и генетического фонда объектов животного мира <mark>и в иных научных и воспитательных целях до момента их естественной смерти</mark> (за исключением случая принятия решения об обращении с конфискованными животными, занесенными в Красную книгу Российской Федерации или охраняемыми международными договорами Российской Федерации).<br>
+...
+</p>
+<p class="sm-md-font">
+8. Дикие животные передаются органом, должностные лица которого осуществили их изъятие, юридическим лицам и индивидуальным предпринимателям, указанным в пункте 5 настоящих Правил, на ответственное хранение с оформлением акта приема-передачи по форме согласно приложению до принятия уполномоченными органами решения об обращении с конфискованными животными.
+</p>
+<p class="sm-md-font">
+...
+</p>
+<p class="sm-md-font">
+10. Конфискованные животные принимаются уполномоченными органами от лица, которому указанные животные были переданы на ответственное хранение в соответствии с пунктом 8 настоящих Правил, и передаются уполномоченными органами для содержания и (или) использования (применения) <mark>юридическим лицам или индивидуальным предпринимателям</mark>, указанным в пункте 5 настоящих Правил, <mark>по договору безвозмездного пользования</mark> с оформлением акта приема-передачи, предусмотренного приложением к настоящим Правилам.<br>
+...
+</p>
+</div>
+
+<div class="empty-div-100"></div>
+
+<h2 class="fs-1 inter-font-900 b-text text-center">Вольеры для содержания в неволе</h2>
+<p class="sm-md-font fw-semibold">
+Фондом благополучия медведей «Мир медведей»,
+имеющим многолетний опыт содержания медведя в полувольных условиях, после проведения анализа российского и международного законодательства
+были разработаны <b>рекомендации</b> по условиям содержания медведей в неволе:
+</p>
+<div class="mb-3">
+<a class="link--arrowed fs-5 lh-1" href="https://disk.yandex.ru/i/wQBVrIe_Vo1Ujg" title="Требования к вольерам по содержанию медведей (версия от 2023 г.)" target="_blank" rel="noreferrer noopener">
+● Требования к вольерам по содержанию медведей (версия от 2023 г.)
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">Стандартинформ, 2019</p>
+<a class="link--arrowed fs-5 lh-1 fw-bold" href="https://meganorm.ru/Data2/1/4293729/4293729691.pdf" title="ГОСТ Р 58420-2019. СОДЕРЖАНИЕ ХИЩНЫХ ЖИВОТНЫХ. Общие требования" target="_blank" rel="noreferrer noopener">
+● ГОСТ Р 58420-2019. СОДЕРЖАНИЕ ХИЩНЫХ ЖИВОТНЫХ. Общие требования
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">Авиамедведь Мансур</p>
+<a class="link--arrowed fs-5 lh-1" href="https://mansur.il-14.ru/page30863056.html" title="Каково это - опекать взрослого бурого медведя?" target="_blank" rel="noreferrer noopener">
+● Каково это - опекать взрослого бурого медведя?
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">American Bear Association (рус. пер.)</p>
+<a class="link--arrowed fs-5 lh-1" href="https://bolshieserdca.livejournal.com/3738.html" title="Как содержать медведей в неволе" target="_blank" rel="noreferrer noopener">
+● Как содержать медведей в неволе
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+
+<h4 class="inter-font-600 b-text">Научные статьи:</h4>
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">Front. Vet. Sci., 13 December 2023</p>
+<a class="link--arrowed fs-5 lh-1" href="https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2023.1299029/full" title="A retrospective study on the prevalence of main clinical findings in brown bears (Ursus arctos) rescued from substandard husbandry conditions" target="_blank" rel="noreferrer noopener">
+● A retrospective study on the prevalence of main clinical findings in brown bears (Ursus arctos) rescued from substandard husbandry conditions
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">vetpomosh.ru, обновлено 1 марта 2019</p>
+<a class="link--arrowed fs-5 lh-1" href="https://www.vetpomosh.ru/article52.php" title="Принципы содержания и кормления медведей в неволе, болезни медведей, их лечение и профилактика" target="_blank" rel="noreferrer noopener">
+● Принципы содержания и кормления медведей в неволе, болезни медведей, их лечение и профилактика
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">Ефимова Ю.В., Автореферат диссертации, 2012</p>
+<a class="link--arrowed fs-5 lh-1" href="https://new-disser.ru/_avtoreferats/01005460432.pdf" title="Фактор новизны в исследовательской и игровой деятельности человека и высших животных" target="_blank" rel="noreferrer noopener">
+● Фактор новизны в исследовательской и игровой деятельности человека и высших животных
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">Моисеева Т.А.(к.б.н.) // Принципы экологии, 2023, №1</p>
+<a class="link--arrowed fs-5 lh-1" href="https://cyberleninka.ru/article/n/k-voprosu-o-povedenii-burogo-medvedya-v-nevole" title="К вопросу о поведении бурого медведя в неволе" target="_blank" rel="noreferrer noopener">
+● К вопросу о поведении бурого медведя в неволе
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">Буянов И.Ю.(к.с.х.н.), Шушакова М.М., Третинникова Т.Н., Некипелова Е.О. // Вестник КрасГАУ, 2020, №3</p>
+<a class="link--arrowed fs-5 lh-1" href="https://cyberleninka.ru/article/n/obogaschenie-sredy-dlya-semeystva-medvezhi-v-parke-roev-ruchey" title="Обогащение среды для семейства медвежьи в парке Роев ручей" target="_blank" rel="noreferrer noopener">
+● Обогащение среды для семейства медвежьи в парке «Роев ручей»
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+<div class="mb-3">
+<p class="m-0 inter-font-500 sm-font second-color">Штефан Кнёпфер // FOUR PAWS, Центр спасения и реабилитации медведей, 2015</p>
+<a class="link--arrowed fs-5 lh-1" href="https://kldzoo.ru/upload/medialibrary/493/obogashchenie-medvedey-ot-four-paws-perevod-na-russkiy-yazyk.pdf" title="Рекомендации по содержанию бурого медведя (Ursus arctos) в неволе - обогащение и создание оптимальной среды" target="_blank" rel="noreferrer noopener">
+● Рекомендации по содержанию бурого медведя (Ursus arctos) в неволе - обогащение и создание оптимальной среды
+<span class="mbred fw-semibold sm-font">PDF</span>
+<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<g fill="none" stroke="#000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle><path class="arrow-icon--arrow-down" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path></g>
+</svg>
+</a>
+</div>
+
+
+
+<div class="divider div-transparent div-arrow-down"></div>
+<div class="empty-div-50"></div>
+<h1 class="inter-font-900 b-text" id="kommentarii">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"><path fill="currentColor" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3c-1.3 1.5-3.9 2.4-6.4 2.4h-.5c-.1.3-.1.5-.1.8c0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4c0 0-.8-.4-.8-1.8c0-.6 2-1.8 2-3.1"/><path fill="currentColor" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6"/></svg>
+Комментарии:</h1>
+
+<p class="sm-md-font">
+<span class="fw-bold mbred">ВАЖНО!</span>
+Комментировать могут только пользователи, имеющие аккаунт на платформе <a class="" href="https://github.com/" title="GitHub" target="_blank" rel="noreferrer noopener"><span class="fw-semibold">GitHub</span> <span class="im im-github im-mid"></span></a>.
+</p>
+<!--
+<p class="sm-md-font fw-semibold">
+Оставляйте, пожалуйста, свои мысли, предложения, конструктивную критику
+</p>
+-->
+
+<div class="giscus">
+<div class="giscus-frame"></div>
+</div>
+<script src="https://giscus.app/client.js"
+        data-repo="mberloga/mberloga.github.io"
+        data-repo-id="R_kgDONXIOBA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONXIOBM4Ck36h"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="https://mberloga.github.io/assets/css/giscus-custom.css"
+        data-lang="ru"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="assets/js/owl.carousel.min.js"></script>
+<script>
+var $homeSlider = $(".home-slider");
+ 
+$(window).resize(function() {
+  showHomeSlider();
+});
+ 
+function showHomeSlider() {
+  if ($homeSlider.data("owlCarousel") !== "undefined") {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+	//if (window.matchMedia("(max-width: 1920px)").matches) {
+      initialHomeSlider();
+    } else {
+      destroyHomeSlider();
+    }
+  }
+}
+showHomeSlider();
+ 
+function initialHomeSlider() {
+  $homeSlider.addClass("owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+	nav: true,
+        navText: [
+          '<svg width="35" height="35" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
+          '<svg width="35" height="35" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>'
+        ],
+    autoplay: true,
+    autoplayTimeout: 10000,
+    smartSpeed: 1000
+  });
+}
+ 
+function destroyHomeSlider() {
+  $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
+}
+</script>
+
+
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>-->
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+   AOS.init();
+  </script>
+
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script>
+   $("[data-fancybox]").fancybox({
+    /* Все кнопки для демо */
+    buttons: ["zoom", "share", "slideShow", "fullScreen", "download", "thumbs", "close"],
+    /* ------------------- */
+
+    /* Стрелки влево и вправо */
+    btnTpl: {
+     arrowLeft:
+      '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
+      '<svg version="1.1" id="Arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54 54" xml:space="preserve"><g><path d="M0,0v54h54V0H0z M52,52H2V2h50V52z"/><path d="M35,45c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L19.414,27l16.293-16.293 c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.586,27l17.707,17.707C34.488,44.902,34.744,45,35,45z"/></g></svg>' +
+      "</button>",
+
+     arrowRight:
+      '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
+      '<svg version="1.1" id="Arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54 54" xml:space="preserve"><g><path d="M0,0v54h54V0H0z M52,52H2V2h50V52z"/><path d="M18.293,44.707C18.488,44.902,18.744,45,19,45s0.512-0.098,0.707-0.293L37.414,27L19.707,9.293 c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L34.586,27L18.293,43.293C17.902,43.684,17.902,44.316,18.293,44.707z"/></g></svg>' +
+      "</button>",
+    },
+
+    /* Руссификация */
+    lang: "ru",
+    i18n: {
+     ru: {
+      CLOSE: "Закрыть",
+      NEXT: "Следующий",
+      PREV: "Предыдущий",
+      ERROR: "Контент не может быть загружен. <br/> Попробуйте позже.",
+      PLAY_START: "Начать слайдшоу",
+      PLAY_STOP: "Остановить слайдшоу",
+      FULL_SCREEN: "Полный экран",
+      THUMBS: "Эскизы",
+      DOWNLOAD: "Скачать",
+      SHARE: "Поделиться",
+      ZOOM: "Увеличить",
+     },
+    },
+   });
+  </script>
+
+</div>
+</div>
+</div>
+    <!--   Scroll Top   -->
+    <button class="btn-toggle-round scroll-top js-scroll-top" type="button" title="Scroll to top">
+      <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="cuurentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <line x1="12" y1="5" x2="12" y2="19" />
+        <line x1="18" y1="11" x2="12" y2="5" />
+        <line x1="6" y1="11" x2="12" y2="5" />
+      </svg>
+    </button>
+
+<script>
+const scrollTopBtn = document.querySelector('.js-scroll-top');
+if (scrollTopBtn) {
+  scrollTopBtn.onclick = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+  
+  const progressPath = document.querySelector('.scroll-top path');
+  const pathLength = progressPath.getTotalLength();
+  progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+  progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+  progressPath.style.strokeDashoffset = pathLength;
+  progressPath.getBoundingClientRect();
+  progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
+  const updateProgress = function() {
+    const scroll = window.scrollY || window.scrollTopBtn || document.documentElement.scrollTopBtn;
+
+    const docHeight = Math.max(
+      document.body.scrollHeight, document.documentElement.scrollHeight,
+      document.body.offsetHeight, document.documentElement.offsetHeight,
+      document.body.clientHeight, document.documentElement.clientHeight
+    );
+
+    const windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+    const height = docHeight - windowHeight;
+    var progress = pathLength - (scroll * pathLength / height);
+    progressPath.style.strokeDashoffset = progress;
+  }
+
+  updateProgress();
+  const offset = 100;
+
+  window.addEventListener('scroll', function(event) {
+    updateProgress();
+
+    //Scroll back to top
+    const scrollPos = window.scrollY || window.scrollTopBtn || document.getElementsByTagName('html')[0].scrollTopBtn;
+    scrollPos > offset ? scrollTopBtn.classList.add('is-active') : scrollTopBtn.classList.remove('is-active');
+
+  }, false);
+}
+</script>
+
+<!-- https://api.2gis.ru/doc/maps/ru/quickstart/ -->
+<!-- <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script> -->
+<script src="assets/js/2gis_loader.js"></script>
+<script type="text/javascript">
+ var map;
+
+ DG.then(function () {
+  map = DG.map("map", {
+   center: [50.428489, 136.787781],
+   zoom: 9,
+  });
+
+  var myIcon = DG.icon({
+   iconUrl: "assets/images/map/mapmarker02.png",
+   iconRetinaUrl: "my-icon@2x.png",
+   iconSize: [64, 64],
+   iconAnchor: [22, 94],
+   popupAnchor: [-3, -76],
+  });
+  
+  var myIcon2 = DG.icon({
+   iconUrl: "assets/images/map/mapmarker03.png",
+   iconRetinaUrl: "my-icon@2x.png",
+   iconSize: [64, 64],
+   iconAnchor: [22, 94],
+   popupAnchor: [-3, -76],
+  });
+
+  DG.marker([50.428489, 136.787781], { icon: myIcon }).addTo(map).bindLabel('База отдыха «Мишкина берлога»');
+  
+  DG.marker([50.5678, 137.05081], { icon: myIcon2 }).addTo(map).bindLabel("Зоопарк «Сихотэ-Алинь»");
+     
+ });
+</script>
+
+</body>
+
+</html>
