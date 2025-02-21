@@ -6723,7 +6723,7 @@ blockquote:after {
     font-family: 'Inter', sans-serif;
 	background-color: rgba(204, 187, 156, 0.3);
 	border-radius: 4px;
-	padding: 4px 4px 0 4px;
+	padding: 10px;
 }
 .s-char-block {
     margin-bottom: 25px;
@@ -8265,7 +8265,6 @@ h1.h1hny span::after {
     }
 }
 
-
 .tass_border {
    border: 2px solid #201B0E;
    border-radius: 5px;
@@ -8273,7 +8272,6 @@ h1.h1hny span::after {
 -moz-box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 }
-
 
 .ts_b_m_bg {
 	border-width: 10px;
@@ -8284,7 +8282,6 @@ box-shadow: 0px 0px 7px 0px rgba(32, 27, 14, 1);
 	border-style: solid;
 	z-index: -1;
 }
-
 
 .table_bear_size {
     overflow: auto;
