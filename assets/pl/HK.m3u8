@@ -7,10 +7,14 @@ http://31.210.208.171:8080/match_hd/index.m3u8?token=+W2MSER
 http://dmi3y-tv.ru/hls/T2/CH_MATCHTV.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://iptvx.one/picons/match-tv.png",МАТЧ!
 http://92.53.64.197:5050/match_tv/video.m3u8?token=m3VIth-Rou_bM1
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://iptvx.one/picons/match-tv.png",МАТЧ!
+http://178.212.71.253:8000/play/34/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://iptvx.one/picons/match-premier.png",МАТЧ! ПРЕМЬЕР (1080p)
 http://u.vipl.one/high/kyhnzwfmb2/53.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://iptvx.one/picons/match-premier.png",МАТЧ! ПРЕМЬЕР
 http://u.vipl.one/high/kyhnzwfmb2/52.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://iptvx.one/picons/match-premier.png",МАТЧ! ПРЕМЬЕР
+http://178.212.71.253:8000/play/57/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
 http://84.50.127.180:9091/play/a04o
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2
@@ -19,6 +23,8 @@ http://84.50.127.180:9091/play/a056
 http://u.vipl.one/high/kyhnzwfmb2/37.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2
 http://u.vipl.one/high/kyhnzwfmb2/39.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
+http://178.212.71.253:8000/play/143/index.m3u8
 
 #EXTINF:0 group-title="НОСТАЛЬГИЯ" tvg-logo="https://img.catcast.tv/uploads/25062020/logos/37745-5ef3d10ff0621.png",МУЗЫКА 1 International (Catcast)
 https://kino-1.catcast.tv/content/37745/index.m3u8
@@ -35,11 +41,15 @@ http://178.124.152.238:8088/nostalgia
 https://ucdn.beetv.kz/bpk-tv/000000057/tve/index.m3u8
 #EXTINF:0 group-title="ЗДОРОВЬЕ" tvg-id="zdorovoe-tv" tvg-logo="https://iptvx.one/picons/zdorovoe-tv.png",ЗДОРОВОЕ ТВ
 http://194.158.218.123:8880/ZdorovoeTV/index.m3u8
+#EXTINF:0 group-title="ЗДОРОВЬЕ" tvg-id="zdorovoe-tv" tvg-logo="https://iptvx.one/picons/zdorovoe-tv.png",ЗДОРОВОЕ ТВ
+http://178.212.71.253:8000/play/94/index.m3u8
 #EXTINF:0 group-title="ЗДОРОВЬЕ" tvg-id="doktor" tvg-logo="https://iptvx.one/picons/doktor.png",ДОКТОР
 http://178.212.71.253:8000/play/68/index.m3u8
 #EXTINF:0 group-title="ЗДОРОВЬЕ" tvg-id="pervy-vegetariansky" tvg-logo="https://iptvx.one/picons/pervy-vegetariansky.png",ПЕРВЫЙ ВЕГЕТАРИАНСКИЙ (НЕ РАБОТАЕТ)
 https://ucdn.beetv.kz/bpk-tv/000002927/tve/index.m3u8
 
+#EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="domashny" tvg-logo="https://iptvx.one/picons/domashny.png",ДОМАШНИЙ
+http://178.212.71.253:8000/play/14/index.m3u8
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="domashny-int" tvg-logo="https://iptvx.one/picons/domashny-int.png",ДОМАШНИЙ International
 https://ucdn.beetv.kz/bpk-tv/000002348/tve/index.m3u8
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="zhivi" tvg-logo="https://iptvx.one/picons/zhivi.png",ЖИВИ!
@@ -52,8 +62,12 @@ http://31.148.48.15/Zhivi/index.m3u8
 https://livetv.mylifeisgood.net.ru/channels/jiviactivno.m3u8
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="ntv-style" tvg-logo="https://iptvx.one/picons/ntv-style.png",НТВ СТИЛЬ
 https://cdn.ntv.ru/th_style/tracks-v1a1/playlist.m3u8
+#EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="psixologia-21" tvg-logo="https://iptvx.one/picons/psixologia-21.png",ПСИХОЛОГИЯ 21
+http://178.212.71.253:8000/play/96/index.m3u8
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="psixologia-21" tvg-logo="https://iptvx.one/picons/psixologia-21.png",ПСИХОЛОГИЯ 21 (НЕ РАБОТАЕТ)
 https://ucdn.beetv.kz/bpk-tv/000000147/tve/index.m3u8
+#EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="rentv" tvg-logo="https://iptvx.one/picons/rentv.png",РЕН ТВ
+http://178.212.71.253:8000/play/11/index.m3u8
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="sts-love" tvg-logo="https://iptvx.one/picons/sts-love.png",СТС LOVE
 http://178.212.71.253:8002/play/a00r/index.m3u8
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="sts-love" tvg-logo="https://iptvx.one/picons/sts-love.png",СТС LOVE
@@ -71,6 +85,9 @@ http://fl2.moveonjoy.com/HGTV/index.m3u8
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-logo="https://i.ibb.co/3rr5RxG/OWN.png",Oprah Winfrey Network (OWN) (East) (US)
 http://fl2.moveonjoy.com/OWN/index.m3u8
 ###--- #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="sanporto" tvg-logo="https://iptvx.one/picons/sanporto.png",SAN PORTO
+
+#EXTINF:0 group-title="ЖЕНСКИЕ" tvg-logo="",TV Jūrmala (LV)
+https://air.star.lv/TV_Jurmala_multistream/index.m3u8
 
 #EXTINF:0 group-title="ЖЕНСКИЕ" tvg-id="tlc" tvg-logo="https://iptvx.one/picons/tlc.png",TLC
 https://ucdn.beetv.kz/bpk-tv/000001498/tve/index.m3u8
@@ -131,6 +148,8 @@ http://178.212.71.253:8002/play/a00n/index.m3u8
 http://ott-cdn.ucom.am/s35/index.m3u8
 #EXTINF:0 group-title="КУЛЬТУРА" tvg-id="mezzo" tvg-logo="https://iptvx.one/picons/mezzo.png",MEZZO
 http://178.212.71.253:8002/play/a00n/index.m3u8
+#EXTINF:0 group-title="КУЛЬТУРА" tvg-id="mezzo" tvg-logo="https://iptvx.one/picons/mezzo.png",MEZZO
+http://178.212.71.253:8000/play/31/index.m3u8
 #EXTINF:0 group-title="КУЛЬТУРА" tvg-id="mezzo-live-hd" tvg-logo="https://iptvx.one/picons/mezzo-live-hd.png",MEZZO LIVE HD
 http://178.212.71.253:8002/play/a00u/index.m3u8
 #EXTINF:0 group-title="КУЛЬТУРА" tvg-logo="https://iptvx.one/picons/museum-hd.png",MUSEUM TV Free (FR) [en]
@@ -156,8 +175,12 @@ https://ucdn.beetv.kz/bpk-tv/000000146/tve/index.m3u8
 http://178.212.71.253:8000/play/95/index.m3u8
 #EXTINF:0 group-title="ПРИРОДА" tvg-id="zhivaya-planeta" tvg-logo="https://iptvx.one/picons/zhivaya-planeta.png",ЖИВАЯ ПЛАНЕТА
 http://95.142.88.250:80/Jivaya_planeta/index.m3u8
+#EXTINF:0 group-title="ПРИРОДА" tvg-id="zhivaya-planeta" tvg-logo="https://iptvx.one/picons/zhivaya-planeta.png",ЖИВАЯ ПЛАНЕТА
+http://178.212.71.253:8000/play/114/index.m3u8
 #EXTINF:0 group-title="ПРИРОДА" tvg-id="zhivaya-priroda" tvg-logo="https://iptvx.one/picons/zhivaya-priroda.png",ЖИВАЯ ПРИРОДА
 https://livetv.mylifeisgood.net.ru/channels/jivyapriroda.m3u8
+#EXTINF:0 group-title="ПРИРОДА" tvg-id="zhivaya-priroda" tvg-logo="https://iptvx.one/picons/zhivaya-priroda.png",ЖИВАЯ ПРИРОДА
+http://178.212.71.253:8000/play/79/index.m3u8
 #EXTINF:0 group-title="ПРИРОДА" tvg-id="zhivaya-priroda" tvg-logo="https://iptvx.one/picons/zhivaya-priroda.png",ЖИВАЯ ПРИРОДА
 https://ucdn.beetv.kz/bpk-tv/000001187/tve/index.m3u8
 #EXTINF:0 group-title="ПРИРОДА" tvg-id="zhivaya-priroda" tvg-logo="https://iptvx.one/picons/zhivaya-priroda.png",ЖИВАЯ ПРИРОДА HD
@@ -227,12 +250,16 @@ http://iptv.prosto.tv:7000/ch319/video.m3u8
 
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="bolshaya-azia" tvg-logo="https://iptvx.one/picons/bolshaya-azia.png",БОЛЬШАЯ АЗИЯ
 https://live-bigasia.cdnvideo.ru/bigasia/bigasia.smil/playlist.m3u8
+#EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="bolshaya-azia" tvg-logo="https://iptvx.one/picons/bolshaya-azia.png",БОЛЬШАЯ АЗИЯ
+http://178.212.71.253:8000/play/83/index.m3u8
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="glazami-turista" tvg-logo="https://iptvx.one/picons/glazami-turista.png",ГЛАЗАМИ ТУРИСТА
 https://livetv.mylifeisgood.net.ru/channels/glazamiturista.m3u8
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="glazami-turista" tvg-logo="https://iptvx.one/picons/glazami-turista.png",ГЛАЗАМИ ТУРИСТА
 https://ucdn.beetv.kz/bpk-tv/000001414/tve/index.m3u8
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="mir-uvlecheniy" tvg-logo="https://iptvx.one/picons/mir-uvlecheniy.png",КТО КУДА
 https://ucdn.beetv.kz/bpk-tv/000001377/tve/index.m3u8
+#EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="moya-planeta" tvg-logo="https://iptvx.one/picons/moya-planeta.png",МОЯ ПЛАНЕТА
+http://178.212.71.253:8000/play/117/index.m3u8
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="moya-planeta" tvg-logo="https://iptvx.one/picons/moya-planeta.png",МОЯ ПЛАНЕТА
 http://65.21.85.175:8000/play/a01m/index.m3u8?token=livetv
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="moya-planeta" tvg-logo="https://iptvx.one/picons/moya-planeta.png",МОЯ ПЛАНЕТА
@@ -245,6 +272,8 @@ https://ucdn.beetv.kz/bpk-tv/000002991/tve/index.m3u8
 http://31.148.48.15/Poehali/index.m3u8
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="teleputeshestvia" tvg-logo="https://iptvx.one/picons/teleputeshestvia.png",ТЕЛЕПУТЕШЕСТВИЯ
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Telepyt
+#EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="hd-life" tvg-logo="https://i.postimg.cc/4dhVkD03/tochka-rf.png",ТОЧКА.РФ
+http://178.212.71.253:8000/play/61/index.m3u8
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-logo="https://i.ibb.co/p1bGxRj/Brodilo-TV.png",BRODILO TV
 https://brodilo.tv/brodilotv.m3u
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="rtg-tv" tvg-logo="https://iptvx.one/picons/rtg-tv.png",RTG TV
@@ -252,11 +281,15 @@ http://92.53.64.197:5050/rtg/video.m3u8?token=m3VIth-Rou_bM1
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="rtg-tv" tvg-logo="https://iptvx.one/picons/rtg-tv.png",RTG TV
 http://178.124.152.238:8088/rtg
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="rtg-tv" tvg-logo="https://iptvx.one/picons/rtg-tv.png",RTG TV
+http://178.212.71.253:8000/play/71/index.m3u8
+#EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="rtg-tv" tvg-logo="https://iptvx.one/picons/rtg-tv.png",RTG TV
 http://31.210.208.171:8080/rtg/index.m3u8?token=+W2MSER
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="rtg-hd" tvg-logo="https://iptvx.one/picons/rtg-hd.png",RTG HD
 http://31.210.208.171:8080/rtg_hd/index.m3u8?token=+W2MSER
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="travel-adventure" tvg-logo="https://iptvx.one/picons/travel-adventure.png",TRAVEL+ADVENTURE
 http://130.193.73.10:8937/play/a026
+#EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="travel-guide-tv" tvg-logo="https://iptvx.one/picons/travel-guide-tv.png",Travel Guide TV (UA) [Geo]
+http://cdn10.live-tv.od.ua:8081/leonovtv/test-abr/playlist.m3u8
 #EXTINF:0 group-title="ПУТЕШЕСТВИЯ" tvg-id="viasat-explore" tvg-logo="https://iptvx.one/picons/viasat-explore.png",viju EXPLORE
 https://ucdn.beetv.kz/bpk-tv/000004157/tve/index.m3u8
 
@@ -307,6 +340,8 @@ https://ucdn.beetv.kz/bpk-tv/000002510/tve/index.m3u8
 
 #EXTINF:0 group-title="ХОББИ" tvg-id="tochka-otryva" tvg-logo="https://iptvx.one/picons/tochka-otryva.png",ТОЧКА ОТРЫВА
 https://ucdn.beetv.kz/bpk-tv/000003208/tve/index.m3u8
+#EXTINF:0 group-title="ХОББИ" tvg-id="usadba" tvg-logo="https://iptvx.one/picons/usadba.png",УСАДЬБА
+http://178.212.71.253:8000/play/91/index.m3u8
 #EXTINF:0 group-title="ХОББИ" tvg-id="usadba" tvg-logo="https://iptvx.one/picons/usadba.png",УСАДЬБА
 http://194.158.218.123:8880/Usadba/index.m3u8
 #EXTINF:0 group-title="ХОББИ" tvg-logo="https://i.ibb.co/LzCfRQg/FYI.png",FYI (East) (US)
@@ -413,6 +448,8 @@ http://s1.tv-nano.com/Nano_rec/index.m3u8
 
 #EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="nauka-20" tvg-logo="https://iptvx.one/picons/nauka-20.png",НАУКА
 http://vod.tuva.ru/nauka2/index.m3u8
+#EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="nauka-20" tvg-logo="https://iptvx.one/picons/nauka-20.png",НАУКА
+http://178.212.71.253:8000/play/88/index.m3u8
 #EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="neizvestnaya-rosia" tvg-logo="https://iptvx.one/picons/neizvestnaya-rosia.png",НЕИЗВЕСТНАЯ РОССИЯ
 https://cdn.ntv.ru/unknown_russia/tracks-v1a1/playlist.m3u8
 #EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="oruzhie" tvg-logo="https://iptvx.one/picons/oruzhie.png",ОРУЖИЕ
@@ -1593,6 +1630,8 @@ https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index_1M.m3u
 https://cdn.nhkworld.jp/www11/nhkworld-tv/domestic/2003459/live.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-logo="https://i.ibb.co/x3gmffG/NOW-TV-News-Of-The-World.png",NOW TV (News Of The World)
 http://84.200.70.180:4042/bysid/1911
+#EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-logo="https://i.ibb.co/kSGwYbf/ORF-1-AT.png",ORF 1 (AT)
+https://strm.hdtvizlecanli.com/live/orf1.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-logo="https://i.ibb.co/ykvt2mH/Palitra-News-GE.png",PALITRANEWS (GE)
 https://live.palitranews.ge/hls/palitratv/index.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-logo="https://i.ibb.co/6yjFq2N/POSTV-GE.png",POSTV (პოსTV) (GE)
@@ -2277,3 +2316,138 @@ http://83.166.53.184:8080/index.m3u8
 http://stream02.vikingsecurity.ee:1935/otsep11/cam9108/playlist.m3u8
 #EXTINF:0 group-title="ВЕБ-КАМЕРЫ EE󠁧󠁢󠁳󠁣󠁴󠁿",Tehvandi staadion, Otepää, Eesti 🇪🇪
 https://internet.valguskaabel.ee/tehvandi/playlist.m3u8
+
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n3PHB9t/BABESTATION-24.png",BABESTATION 24 (18+)
+http://sdn-global-live-streaming-packager-cache-3qsdn.akamaized.net/9528/9528_264_live.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://iptvx.one/picons/fashion-tv.png",FashionTV Midnite Secrets (18+)
+https://fash1043.cloudycdn.services/slive/ftv_ftv_midnite_k1y_27049_midnite_secr_108_hls.smil/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="",Porn Classic (18+)
+http://200.194.238.229:8383/live/pornclassic/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/SJMtXKv/VISIT-X-TV.png",VISIT-X (18+)
+http://stream.visit-x.tv:1935/vxtv/live_720p/playlist.m3u8
+
+#EXTINF:0 group-title="18+" tvg-id="brazzers-tv-europe" tvg-logo="https://i.ibb.co/Hd8vPGC/Brazzers-TV-Europe.png",Brazzers TV Europe (18+)
+http://89.187.167.247/brazzers.stream/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="dorcel" tvg-logo="https://iptvx.one/picons/dorcel.png",Dorcel TV (18+)
+http://89.187.167.247/dorceltv.stream/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="hustler-hd" tvg-logo="https://iptvx.one/picons/hustler-hd.png",Hustler HD (18+)
+http://89.187.167.247/hustler.stream/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="xxl-xxx" tvg-logo="https://iptvx.one/picons/xxl-xxx.png",XXL (18+)
+http://89.187.167.247/xxl.stream/playlist.m3u8
+
+#EXTINF:0 group-title="18+" tvg-id="dorcel" tvg-logo="https://iptvx.one/picons/dorcel.png",Dorcel TV (18+)
+http://213.215.119.236:88/Dorcel/index.m3u8
+#EXTINF:0 group-title="18+" tvg-id="passionxxx" tvg-logo="https://iptvx.one/picons/passionxxx.png",Passion XXX HD (18+)
+http://213.215.119.236:88/Passion_XXX/index.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="",Vixen HD (18+)
+http://213.215.119.236:88/Vixen/index.m3u8
+
+#EXTINF:0 group-title="18+" tvg-id="babes-tv" tvg-logo="https://iptvx.one/picons/babes-tv.png",Babes TV (18+)
+http://88.212.7.11/live/test_basbes_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="brazzers-tv-europe" tvg-logo="https://i.ibb.co/Hd8vPGC/Brazzers-TV-Europe.png",Brazzers TV Europe (18+)
+http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="digital-desire" tvg-logo="https://iptvx.one/picons/digital-desire.png",Digital Desire (18+)
+http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="dorcel" tvg-logo="https://iptvx.one/picons/dorcel.png",Dorcel TV (18+)
+http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="erox" tvg-logo="https://iptvx.one/picons/erox.png",Erox HD (18+)
+http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="eroxxxhd" tvg-logo="https://iptvx.one/picons/eroxxxhd.png",Eroxxx HD (18+)
+http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="extasytv" tvg-logo="https://iptvx.one/picons/extasytv.png",Extasy TV (18+)
+http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="leo-tv-xxx" tvg-logo="https://iptvx.one/picons/leo-tv-xxx.png",Leo TV HD (18+)
+http://88.212.7.11/live/test_leo_hd_hevc/playlist.m3u8
+#EXTINF:0 group-title="18+" tvg-id="reality-kings" tvg-logo="https://iptvx.one/picons/reality-kings.png",Reality Kings TV (18+)
+http://88.212.7.11/live/test_realitykings_sd_hevc/playlist.m3u8
+
+###--- http://adultiptv.net/chs.m3u  http://live.redtraffic.xyz/anal.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Anal (18+)
+http://cdn.adultiptv.net/anal.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Asian (18+)
+http://cdn.adultiptv.net/asian.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Big Ass (18+)
+http://cdn.adultiptv.net/bigass.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Big Dick (18+)
+http://cdn.adultiptv.net/bigdick.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Big Tits (18+)
+http://cdn.adultiptv.net/bigtits.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Blonde (18+)
+http://cdn.adultiptv.net/blonde.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Blowjob (18+)
+http://cdn.adultiptv.net/blowjob.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Brunette (18+)
+http://cdn.adultiptv.net/brunette.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Compilation (18+)
+http://cdn.adultiptv.net/compilation.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Cuckold (18+)
+http://cdn.adultiptv.net/cuckold.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Fetish (18+)
+http://cdn.adultiptv.net/fetish.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Gangbang (18+)
+http://cdn.adultiptv.net/gangbang.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Gay (18+)
+http://cdn.adultiptv.net/gay.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Hardcore (18+)
+http://cdn.adultiptv.net/hardcore.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Interracial (18+)
+http://cdn.adultiptv.net/interracial.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Latina (18+)
+http://cdn.adultiptv.net/latina.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Lesbian (18+)
+http://cdn.adultiptv.net/lesbian.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Live Cams (18+)
+http://cdn.adultiptv.net/livecams.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net MILF (18+)
+http://cdn.adultiptv.net/milf.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Pornstar (18+)
+http://cdn.adultiptv.net/pornstar.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net POV (18+)
+http://cdn.adultiptv.net/pov.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Rough (18+)
+http://cdn.adultiptv.net/rough.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Russian (18+)
+http://cdn.adultiptv.net/russian.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Teen (18+)
+http://cdn.adultiptv.net/teen.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/xLJ0R6j/Adult-IPTV-net.png",AdultIPTV.net Threesome (18+)
+http://cdn.adultiptv.net/threesome.m3u8
+
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Anal (18+)
+http://live.mycamtv.com/anal.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Arab Girls (18+)
+http://live.mycamtv.com/arab.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Asian Girls (18+)
+http://live.mycamtv.com/asian.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Big Ass Girls (18+)
+http://live.mycamtv.com/bigass.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Big Tits Girls (18+)
+http://live.mycamtv.com/bigtits.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Blonde Girls (18+)
+http://live.mycamtv.com/blonde.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Blowjob (18+)
+http://live.mycamtv.com/blowjob.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Brunette Girls (18+)
+http://live.mycamtv.com/brunette.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Ebony Girls (18+)
+http://live.mycamtv.com/ebony.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Girls Squirt (18+)
+http://live.mycamtv.com/squirt.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Latina Girls (18+)
+http://live.mycamtv.com/latina.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Mature (18+)
+http://live.mycamtv.com/bigtits.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Medium Girls (18+)
+http://live.mycamtv.com/medium.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV MILF (18+)
+http://live.mycamtv.com/milf.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Skinny Girls (18+)
+http://live.mycamtv.com/skinny.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Teen Girls (18+)
+http://live.mycamtv.com/teen.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV White Girls (18+)
+http://live.mycamtv.com/white.m3u8
+#EXTINF:0 group-title="18+" tvg-logo="https://i.ibb.co/n15LTsX/mycamtv-com.png",MyCamTV Young Girls (18+)
+http://live.mycamtv.com/young.m3u8
+
+###--- https://raw.githubusercontent.com/mberloga/mberloga.github.io/refs/heads/main/assets/pl/HK.m3u8
