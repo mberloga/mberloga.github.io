@@ -294,6 +294,8 @@ http://iptv.prosto.tv:7000/ch319/video.m3u8
 
 #EXTINF:0 group-title="КИНО" tvg-id="blokbaster" tvg-logo="https://iptvx.one/picons/blokbaster.png",БЛОКБАСТЕР (ПОКАЗЫВАЕТ?)
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Blokbaster_HD
+#EXTINF:0 group-title="КИНО" tvg-id="" tvg-logo="",Бровари Кіно TV
+https://stream.gia.tv/giatv/giatv-88882com/88882com/chunks.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="denpobedy" tvg-logo="https://iptvx.one/picons/denpobedy.png",ДЕНЬ ПОБЕДЫ
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Den_Pobedy
 #EXTINF:0 group-title="КИНО" tvg-id="denpobedy" tvg-logo="https://iptvx.one/picons/denpobedy.png",ДЕНЬ ПОБЕДЫ
@@ -302,6 +304,9 @@ https://livetv.mylifeisgood.net.ru/channels/dcad9e4e7150ef14312ec85b9f2a002e.m3u
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=D_Kino
 #EXTINF:0 group-title="КИНО" tvg-id="domkino" tvg-logo="https://iptvx.one/picons/domkino.png",ДОМ КИНО
 https://streaming.goodstream.cyou/live/44.m3u8
+#EXTINF:0 group-title="КИНО" tvg-id="domkino" tvg-logo="https://iptvx.one/picons/domkino.png",ДОМ КИНО
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/44-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="domkino" tvg-logo="https://iptvx.one/picons/domkino.png",ДОМ КИНО +2
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=DomKino_2_SD
 #EXTINF:0 group-title="КИНО" tvg-id="domkino" tvg-logo="https://iptvx.one/picons/domkino.png",ДОМ КИНО +4
@@ -314,6 +319,8 @@ http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Dorama
 http://31.130.16.62:4022/udp/239.1.10.38:1234
 #EXTINF:0 group-title="КИНО" tvg-id="dushevnoe" tvg-logo="https://iptvx.one/picons/dushevnoe.png",ДУШЕВНОЕ
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=HD_Nash_Kinoroman
+#EXTINF:0 group-title="КИНО" tvg-id="evrokino" tvg-logo="https://iptvx.one/picons/evrokino.png",ЕВРОКИНО
+http://87.120.142.11:18000/STSLove
 #EXTINF:0 group-title="КИНО" tvg-id="evrokino" tvg-logo="https://iptvx.one/picons/evrokino.png",ЕВРОКИНО
 http://109.200.130.123:7537/play/a020
 #EXTINF:0 group-title="КИНО" tvg-id="evrokino" tvg-logo="https://iptvx.one/picons/evrokino.png",ЕВРОКИНО
@@ -394,6 +401,9 @@ http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=NST
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Ostrosuzhetnoe
 #EXTINF:0 group-title="КИНО" tvg-id="pobeda" tvg-logo="https://iptvx.one/picons/pobeda.png",ПОБЕДА
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Pobeda
+#EXTINF:0 group-title="КИНО" tvg-id="pobeda" tvg-logo="https://iptvx.one/picons/pobeda.png",ПОБЕДА
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/43-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="premialnoe-hd" tvg-logo="https://iptvx.one/picons/premialnoe-hd.png",ПРЕМИАЛЬНОЕ
 http://141.95.55.143/CH545/index.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="premialnoe-hd" tvg-logo="https://iptvx.one/picons/premialnoe-hd.png",ПРЕМИАЛЬНОЕ
@@ -438,6 +448,8 @@ http://31.148.48.15/A1/index.m3u8
 http://31.148.48.15/A2/index.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="amedia2" tvg-logo="https://iptvx.one/picons/amedia2.png",AMEDIA 2
 http://ott-cdn.ucom.am/s33/04.m3u8
+#EXTINF:0 group-title="КИНО" tvg-id="amedia2" tvg-logo="https://iptvx.one/picons/amedia2.png",AMEDIA 2
+http://sc.id-tv.kz/A2.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="amedia-premium" tvg-logo="https://iptvx.one/picons/amedia-premium.png",AMEDIA PREMIUM HD
 http://195.18.23.20:8000/play/3/index.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="sony-turbo" tvg-logo="https://iptvx.one/picons/sony-turbo.png",.black
@@ -498,6 +510,8 @@ https://fenixstream2.online/memfs/0ac46a4f-71ea-4bf7-bb62-312df327b6c8.m3u8
 https://sirius.greenhosting.ru/Kino24Ru/video.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="kino-24" tvg-logo="https://iptvx.one/picons/kino-24.png",KINO 24
 http://dmi3y-tv.ru/hls/CH_KINO24.m3u8
+#EXTINF:0 group-title="КИНО" tvg-id="" tvg-logo="",KINO WORLD
+https://wowza1.leisertv.com/live/tv1000russiakino.stream/playlist.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="kinojam1" tvg-logo="https://iptvx.one/picons/kinojam1.png",KINOJAM 1
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Kinojam_1
 #EXTINF:0 group-title="КИНО" tvg-id="kinojam2" tvg-logo="https://iptvx.one/picons/kinojam2.png",KINOJAM 2
@@ -510,6 +524,8 @@ http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=KIONHIT
 https://ucdn.beetv.kz/bpk-tv/000007625/tve/index.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="sony-tv" tvg-logo="https://i.ibb.co/tp4MhBB/red.png",.red
 http://141.95.55.143/CH147/index.m3u8
+#EXTINF:0 group-title="КИНО" tvg-id="sony-tv" tvg-logo="https://i.ibb.co/tp4MhBB/red.png",.red
+http://178.124.152.238:8088/sony
 #EXTINF:0 group-title="КИНО" tvg-id="romance" tvg-logo="https://iptvx.one/picons/romance.png",ROMANCE
 http://130.193.73.10:8937/play/a01o
 #EXTINF:0 group-title="КИНО" tvg-id="romance" tvg-logo="https://iptvx.one/picons/romance.png",ROMANCE
@@ -585,6 +601,8 @@ http://95.156.76.230:33001/udp/230.4.34.108:1234
 http://135.181.115.81:8000/play/a04b/index.m3u8?token=livetv
 #EXTINF:0 group-title="КИНО" tvg-id="vip-premiere" tvg-logo="https://iptvx.one/picons/vip-premiere.png",viju+ Premiere
 http://130.193.73.10:8937/play/a03g
+#EXTINF:0 group-title="КИНО" tvg-id="" tvg-logo="",N-A
+http://185.57.68.33:8091/237/playlist.m3u8
 
 #EXTINF:0 group-title="КИНО" tvg-id="" tvg-logo="",КИНОЗАЛЫ | 6 КАДРОВ
 http://list.onlinetv-sochi.ru:8080/live/view55mod.php?name_id=Kinozal28_SD
@@ -783,6 +801,9 @@ http://95.142.88.250:80/sarafan/index.m3u8
 http://176.107.219.20:9000/play/a009/index.m3u8
 #EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-id="sts" tvg-logo="https://iptvx.one/picons/sts.png",СТС
 http://list.onlinetv-sochi.ru:8080/live/view5mod.php?name_id=STS_0_hd
+#EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-id="sts" tvg-logo="https://iptvx.one/picons/sts.png",СТС
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/296-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-id="super" tvg-logo="https://i.ibb.co/x1Wc3MS/Subbota.png",СУББОТА!
 https://livetv.mylifeisgood.net.ru/channels/subbota.m3u8
 #EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-id="tvoetv-humor" tvg-logo="https://iptvx.one/picons/tvoetv-humor.png",ТВОЁ ТВ ЮМОР
@@ -795,6 +816,9 @@ https://cdn2.skygo.mn/live/disk1/Telecafe/HLS-FTA/Telecafe.m3u8
 http://31.210.208.171:8080/telecafe/index.m3u8?token=+W2MSER
 #EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-id="telekafe" tvg-logo="https://iptvx.one/picons/telekafe.png",ТЕЛЕКАФЕ
 http://31.148.48.15/Telekafe/index.m3u8
+#EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-id="tnt" tvg-logo="https://iptvx.one/picons/tnt.png",ТНТ
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/38-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-id="tnt4-international" tvg-logo="https://i.ibb.co/vHYwn9s/TNT4-International.png",ТНТ4 Int.
 https://cdn2.skygo.mn/live/disk1/TNT4/HLS-FTA/TNT4.m3u8
 #EXTINF:0 group-title="РАЗВЛЕЧЕНИЯ" tvg-logo="https://i.postimg.cc/W4nxRJ4W/alpha-Funny.png",alpha Funny (GoodGame)
@@ -872,6 +896,8 @@ https://livetv.mylifeisgood.net.ru/channels/firstspace.m3u8
 https://ucdn.beetv.kz/bpk-tv/000000332/tve/index.m3u8
 #EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="galaxy-tv" tvg-logo="https://iptvx.one/picons/galaxy-tv.png",ТАЙНЫ ГАЛАКТИКИ (GALAXY)
 http://195.26.83.96:7007/play/a00j/index.m3u8?token=test
+#EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="galaxy-tv" tvg-logo="https://iptvx.one/picons/galaxy-tv.png",ТАЙНЫ ГАЛАКТИКИ (GALAXY)
+https://iptv.itv.uz/hls/live/t/e38-HYU7MQe6CZ5Jzl1CAA/e/1747076242/1472/index.m3u8?ip=104.28.212.141
 #EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="texno-24" tvg-logo="https://iptvx.one/picons/texno-24.png",ТЕХНО 24
 https://ucdn.beetv.kz/bpk-tv/000000008/tve/index.m3u8
 #EXTINF:0 group-title="ПОЗНАВАТЕЛЬНЫЕ" tvg-id="texno-24" tvg-logo="https://iptvx.one/picons/texno-24.png",ТЕХНО 24
@@ -1183,7 +1209,7 @@ http://185.23.80.28:8080/MMTV/index.m3u8?token=test
 https://streaming.televizor-24-tochka.ru/live/618.m3u8
 #EXTINF:0 group-title="МУЗЫКА" tvg-id="muztv" tvg-logo="https://iptvx.one/picons/muztv.png",МУЗ-ТВ
 #EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
-https://streaming.skynetconnect.online/live/618.m3u8
+https://streaming.skynetconnect.online/live/618-req_offset_28000000-req_window_0-3k_v5.m3u8
 #EXTINF:0 group-title="МУЗЫКА" tvg-id="muztv" tvg-logo="https://iptvx.one/picons/muztv.png",МУЗ-ТВ
 https://streaming.goodstream.cyou/live/618.m3u8
 #EXTINF:0 group-title="МУЗЫКА" tvg-id="muztv" tvg-logo="https://iptvx.one/picons/muztv.png",МУЗ-ТВ HD
@@ -1797,6 +1823,9 @@ http://194.143.148.28:8080/RT_DOC/manifest.m3u8
 http://tv.streams.baikal-telecom.net:8080/RT_DOC/tracks-v1a1/mono.m3u8
 ###--- #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="" tvg-logo="https://i.ibb.co/3MJcyYK/Za-TV.png",За!ТВ
 
+#EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="zvezda" tvg-logo="https://iptvx.one/picons/zvezda.png",ЗВЕЗДА
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/748-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="zvyazda-by" tvg-logo="https://iptvx.one/picons/zvyazda-by.png",ЗВЯЗДА (BY)
 http://178.124.182.25:7013/play/a01g
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="izvestia" tvg-logo="https://iptvx.one/picons/izvestia.png",ИЗВЕСТИЯ
@@ -1848,6 +1877,9 @@ https://stream1.freetv.fun/nastoiashchee-vremia-1.m3u8
 https://m3u8.ott.blue/watch/207/video.m3u8?geo=auto&token=94450098895765784220366841698509
 ###--- #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="novy-mir" tvg-logo="https://iptvx.one/picons/novy-mir.png",НОВЫЙ МИР
 
+#EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="ntv-mir" tvg-logo="https://iptvx.one/picons/ntv-mir.png",НТВ-Мир
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/213-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="ont-by" tvg-logo="https://iptvx.one/picons/ont-by.png",ОНТ (BY)
 http://178.124.182.25:7001/play/a003_dvbt
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="ont-by" tvg-logo="https://iptvx.one/picons/ont-by.png",ОНТ HD (BY)
@@ -1863,6 +1895,9 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:informacionnyy.smil/playlist.m3u8
 https://edge52.dc.beltelecom.by/ngtrk/_definst_/smil:informacionnyy.smil/chunklist_w499524774_b5160000_sleng.m3u8?
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="pervy-info-by" tvg-logo="https://iptvx.one/picons/pervy-info-by.png",ПЕРВЫЙ ИНФОРМАЦИОННЫЙ (BY)
 http://178.124.182.25:7001/play/a006_dvbt
+#EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="pervy" tvg-logo="https://iptvx.one/picons/pervy.png",ПЕРВЫЙ КАНАЛ
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/210-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="pervy-kanal-eurasia-kz" tvg-logo="https://iptvx.one/picons/pervy-kanal-eurasia-kz.png",ПЕРВЫЙ КАНАЛ Евразия (KZ)
 http://sc.id-tv.kz/1KanalEvraziya_34_35.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="pervy-kanal-eurasia-kz" tvg-logo="https://iptvx.one/picons/pervy-kanal-eurasia-kz.png",ПЕРВЫЙ КАНАЛ Евразия (KZ)
@@ -1893,11 +1928,17 @@ http://92.50.128.180/utv/1358/index.m3u8
 https://cdn2.skygo.mn/live/disk1/RenTV/HLS-FTA/RenTV.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="rzhd-tv" tvg-logo="https://iptvx.one/picons/rzhd-tv.png",РЖД ТВ
 https://hls-tva.cdnvideo.ru/tva/tva.sdp/playlist.m3u8
+#EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="rossia1" tvg-logo="https://iptvx.one/picons/rossia1.png",РОССИЯ 1
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/211-req_offset_28000000-req_window_0-1k_v5.m3u8
+#EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="rossia-24" tvg-logo="https://iptvx.one/picons/rossia-24.png",РОССИЯ 24
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.skynetconnect.online/live/30-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="rtr-planeta-eu" tvg-logo="https://i.ibb.co/vPNp3DR/Rossia-RTR.png",РОССИЯ-РТР
 https://streaming.televizor-24-tochka.ru/live/211.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-id="rtr-planeta-eu" tvg-logo="https://i.ibb.co/vPNp3DR/Rossia-RTR.png",РОССИЯ-РТР
 #EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
-https://streaming.skynetconnect.online/live/211.m3u8
+https://streaming.skynetconnect.online/live/211-req_offset_28000000-req_window_0-1k_v5.m3u8
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-logo="",РТС 1 (RS)
 http://5.252.238.2:8000/play/a00m
 #EXTINF:0 group-title="ОБЩЕСТВЕННЫЕ" tvg-logo="",РТС 2 (RS)
