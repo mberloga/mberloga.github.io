@@ -2343,14 +2343,14 @@ if (scrollTopBtn) {
  DG.then(function () {
   map = DG.map("map", {
    center: [50.428489, 136.787781],
-   zoom: 9,
+   zoom: 6,
   });
 
   var myIcon = DG.icon({
    iconUrl: "assets/images/map/mapmarker02.png",
    iconRetinaUrl: "my-icon@2x.png",
    iconSize: [64, 64],
-   iconAnchor: [22, 94],
+   iconAnchor: [22, 54],
    popupAnchor: [-3, -76],
   });
   
@@ -2358,13 +2358,23 @@ if (scrollTopBtn) {
    iconUrl: "assets/images/map/mapmarker03.png",
    iconRetinaUrl: "my-icon@2x.png",
    iconSize: [64, 64],
-   iconAnchor: [22, 94],
+   iconAnchor: [22, 54],
+   popupAnchor: [-3, -76],
+  });
+  
+  var myIcon3 = DG.icon({
+   iconUrl: "assets/images/map/mapmarker01.png",
+   iconRetinaUrl: "my-icon@2x.png",
+   iconSize: [64, 64],
+   iconAnchor: [22, 54],
    popupAnchor: [-3, -76],
   });
 
   DG.marker([50.428489, 136.787781], { icon: myIcon }).addTo(map).bindLabel('База отдыха «Мишкина берлога»');
   
   DG.marker([50.5678, 137.05081], { icon: myIcon2 }).addTo(map).bindLabel("Зоопарк «Сихотэ-Алинь»");
+  
+  DG.marker([48.621968, 135.069826], { icon: myIcon3 }).addTo(map).bindLabel("Зоосад «Приамурский» им. В.П. Сысоева");
      
  });
 </script>
