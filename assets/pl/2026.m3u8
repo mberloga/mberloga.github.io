@@ -33,6 +33,8 @@ http://185.46.16.239:8000/Match_Igra
 http://158.101.222.193:88/georgia_play.php?id=matchplaneta
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-planeta" tvg-logo="https://iptvx.one/picons/match-planeta.png",МАТЧ! ПЛАНЕТА
 https://stream8.cinerama.uz/1049/tracks-v1a1/mono.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-planeta" tvg-logo="https://iptvx.one/picons/match-planeta.png",МАТЧ! ПЛАНЕТА
+http://87.76.32.36:8001/matchplaneta
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
 http://89.232.68.194:8080/matchpremier/tracks-v3a1/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-nash-sport" tvg-logo="https://iptvx.one/picons/match-nash-sport.png",МАТЧ! СТРАНА
@@ -60,6 +62,8 @@ http://41.205.93.154/ESPN2/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-logo="https://i.ibb.co/7X50nY7/ESPNU.png",ESPNU (US)
 http://41.205.93.154/ESPNU/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
+http://87.76.32.36:8001/eurosport1hd
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
 http://178.134.1.158:8081/eurosport/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2
 https://flussonic.salomtv.uz/eurosport_2/video.m3u8
@@ -77,6 +81,8 @@ http://99.27.51.147:8080/EuroSport/index.m3u8
 http://99.27.51.147:8080/EuroSport2/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="" tvg-logo="https://i.ibb.co/CvF9WWs/Infosport-Plus-FR.png",InfoSport+ (FR)
 http://99.27.51.147:8080/Infosport/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="" tvg-logo="",Okko Спорт
+http://185.221.213.254:8080/Okko/tracks-v1a1/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="" tvg-logo="https://i.ibb.co/rFMSHZk/RMC-Sport-2-FR.png",RMC Sport 2 (FR)
 http://41.205.93.154/RMCSPORT2/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-id="setanta-sports" tvg-logo="https://iptvx.one/picons/setanta-sports.png",SETANTA SPORTS 1
@@ -295,6 +301,8 @@ https://ucdn.beetv.kz/bpk-tv/000008489/tve/index.m3u8
 https://ucdn.beetv.kz/bpk-tv/000000006/tve/index.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="texno-24" tvg-logo="https://iptvx.one/picons/texno-24.png",ТЕХНО 24
 https://stream8.cinerama.uz/1037/tracks-v1a1/mono.m3u8
+#EXTINF:0 group-title="КИНО" tvg-id="feniks-plus-kino" tvg-logo="https://iptvx.one/picons/feniks-plus-kino.png",ФЕНИКС+ КИНО
+http://86.57.209.210/Fenix/index.m3u8
 #EXTINF:0 group-title="КИНО" tvg-id="feniks-plus-kino" tvg-logo="https://iptvx.one/picons/feniks-plus-kino.png",ФЕНИКС+ КИНО
 http://158.101.222.193:88/georgia_play.php?id=fenikspluskino
 #EXTINF:0 group-title="КИНО" tvg-id="feniks-plus-kino" tvg-logo="https://iptvx.one/picons/feniks-plus-kino.png",ФЕНИКС+ КИНО [BeeTV]
@@ -819,6 +827,8 @@ http://sirius.greenhosting.ru/MultimaniaRu/tracks-v1a1/mono.m3u8
 http://sirius.greenhosting.ru/PingvinRu/tracks-v1a1/mono.m3u8
 #EXTINF:0 group-title="ДЕТСКИЕ" tvg-id="solnce" tvg-logo="https://i.ibb.co/VQFLXm1/sol.png",СОЛНЦЕ
 https://tv.mediacdn.ru/live/solntse/playlist_3000k.m3u8
+#EXTINF:0 group-title="ДЕТСКИЕ" tvg-id="" tvg-logo="",CHD TV СОЮЗМУЛЬТФИЛЬМ
+http://194.26.229.213/souzmultfilm/index.m3u8
 #EXTINF:0 group-title="ДЕТСКИЕ" tvg-id="" tvg-logo="https://i.postimg.cc/Rh516HVw/1.png",IPTVPLAY МультСказки HD
 http://5.188.158.65:4040/IPTVPLAYMultSkazki.tv/video.m3u8?token=lqRGka5-YwwqF0
 
@@ -2226,5 +2236,76 @@ http://cdn-bal.srv4you.net/0154/mpegts
 
 #EXTINF:0 group-title="ВЕБ-КАМЕРЫ", Дворцовая площадь (78 канал)
 https://78.servicecdn.ru/streams/877_13/1080p/index.m3u8
+
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/20428041/avatar?change_time=1766171277&croped=1&mh=140&mw=140",Kinowalk_tv
+http://kinowalk.hopto.org/kinowalk_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://i.postimg.cc/ZK8brxhb/Kino-Jam.png",KinoJam
+http://kinowalk.hopto.org/kinojam_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://i.postimg.cc/gjR3t6sS/1.jpg", Малдер Всё ТВ
+http://kinowalk.hopto.org/vsetv_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://goodgame.ru/files/avatars/av_1643154_P8Jo.jpg",Dimpon TV
+http://kinowalk.hopto.org/dimpon_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://goodgame.ru/files/avatars/av_1676704_9wc1.jpg",MovieToper
+http://kinowalk.hopto.org/movietoper_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/18824582/avatar?change_time=1714643599&croped=1&mh=140&mw=140",ZubrilomFilm
+http://kinowalk.hopto.org/zubrilomfilm_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkplay.ru/user/18929766/avatar?change_time=1715176122&croped=1&mh=140&mw=140",ZubrilomFranchise
+http://kinowalk.hopto.org/zubrilommusic.ru_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/19829671/avatar?change_time=1734328186&croped=1&mh=140&mw=140",wihail
+http://kinowalk.hopto.org/wihail_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/19957061/avatar?change_time=1745459243&croped=1&mh=140&mw=140",Scarface
+http://kinowalk.hopto.org/filmomania_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://lastfm.freetls.fastly.net/i/u/300x300/e6ac114abd700e4d57b230a703187a26.jpg",KINOPRO
+http://kinowalk.hopto.org/kinopro_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/19223927/avatar?change_time=1753304099&croped=1&mh=140&mw=140",Akudji
+http://kinowalk.hopto.org/akudjitv_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://telik.live/images/4k-hits.png",4K — Кино и сериалы
+http://kinowalk.hopto.org/4khits_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/20495921/avatar?change_time=1742225886&croped=1&mh=140&mw=140",Мы из 90-х
+http://kinowalk.hopto.org/miiz90x_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://kino-stream.online/logo/scripach.png",ScripachTV
+http://kinowalk.hopto.org/scripachtv_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://kino-stream.online/logo/SeleCaoTV.png",SeleCaoTV
+http://kinowalk.hopto.org/selecaotv_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://i.imgur.com/FOhNoZe.png",Legion tv
+https://kinowalk.hopto.org/legion-tv_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://i.postimg.cc/MTw7GvDw/Video-Arsenal.png",VideoArsenal
+http://kinowalk.hopto.org/videoarsenal_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://i.postimg.cc/XvHKrWXQ/1.jpg",KinoMix Юрич
+http://kinowalk.hopto.org/yurich_kinomix_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/20655827/avatar?change_time=1752925345&croped=1&mh=140&mw=140",Kinofon
+http://kinowalk.hopto.org/kinofon_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/19397267/avatar?change_time=1763534733&croped=1&mh=140&mw=140",Alex.Films
+http://kinowalk.hopto.org/alex.films_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://lh3.googleusercontent.com/a/ACg8ocJRCQczrVJsPbG0Q7qgMvphfUBuJiGktsI7wwPXSYxQCcGPBu8=s96-c",EvGAMEN
+http://kinowalk.hopto.org/evgamen_movies_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/19940394/avatar?change_time=1734982742&croped=1&mh=140&mw=140",Фильмы сериалы
+http://kinowalk.hopto.org/dfsfsdg_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/25125777/avatar?change_time=1768089850&croped=1&mh=140&mw=140",Rus serials
+http://kinowalk.hopto.org/zzz881_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/30346500/avatar?change_time=1767118302&croped=1&mh=140&mw=140",SerialTV
+http://kinowalk.hopto.org/serialtv_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/20555010/avatar?change_time=1742524384&croped=1&mh=140&mw=140",serial4u
+http://kinowalk.hopto.org/serial4u_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/19857529/avatar?change_time=1735363832&croped=1&mh=140&mw=140",BOSSFILM
+http://kinowalk.hopto.org/bossfilm_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://avatars.mds.yandex.net/i?id=d8bb932a618b126fd382904f1cde2371_sr-5429110-images-thumbs&n=13",Maksim Films
+http://kinowalk.hopto.org/mmaxim0vich_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkplay.ru/user/19154240/avatar?change_time=1720968476&croped=1&mh=140&mw=140",VHS Forever
+http://kinowalk.hopto.org/vhs-forever_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/20292590/avatar?change_time=1746735412&croped=1&mh=140&mw=140",ROMEO Video
+http://kinowalk.hopto.org/romantic_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/20745126/avatar?change_time=1746520742&croped=1&mh=140&mw=140",Эквилибриум
+http://kinowalk.hopto.org/equilibrium_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/18725544/avatar?change_time=1764060712&croped=1&mh=140&mw=140",КОМЕДИИ 24/7
+http://kinowalk.hopto.org/cmexye4ku_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/19638295/avatar?change_time=1758747161&croped=1&mh=140&mw=140",ReanimatoR_VHS
+http://kinowalk.hopto.org/reanimator_vhs_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.contactout.com/companies/49ed994c26cb4d0d32669a350c721e43",Serial Productions
+http://kinowalk.hopto.org/swat2k_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/20737705/avatar?change_time=1746958066&croped=1&mh=140&mw=140",Video Channel
+http://kinowalk.hopto.org/video_channel_live
+#EXTINF:-1 group-title="Кинозалы" tvg-logo="https://images.live.vkvideo.ru/user/13253802/avatar?change_time=1768739676&croped=1&mh=140&mw=140",Aisman
+http://kinowalk.hopto.org/aisman_live
 
 ###--- https://raw.githubusercontent.com/mberloga/mberloga.github.io/refs/heads/main/assets/pl/2026.m3u8
