@@ -36,7 +36,13 @@ https://stream8.cinerama.uz/1049/tracks-v1a1/mono.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-planeta" tvg-logo="https://iptvx.one/picons/match-planeta.png",МАТЧ! ПЛАНЕТА
 http://87.76.32.36:8001/matchplaneta
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
-http://89.232.68.194:8080/matchpremier/tracks-v3a1/index.m3u8
+http://95.181.17.26/dvr01/hd1/NashFutHD/chunks.m3u8?&&wmsAuthSign=c2VydmVyX3RpbWU9Mi8yOC8yMDI2IDc6NTU6NDcgUE0maGFzaF92YWx1ZT1uOENwWDBBVmVRVmhjdFBQQXF1aGhBPT0mdmFsaWRtaW51dGVzPTcyMCZpZD03Nzc=
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (SmartTV; Linux; Tizen 6.0)
+https://mhd128.iptv2022.com/p/huAkeJ8vR-Bhob6cbCvXww,1772394943/streaming/match_premyerhd/324/1/tracks-v5a1/mono.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (SmartTV; Linux; Tizen 6.0)
+https://mhd128.iptv2022.com/p/CDFmEOv55_8aq3RiaWQ4rA,1772394943/streaming/match_premyer/324/1/tracks-v5a1/mono.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-nash-sport" tvg-logo="https://iptvx.one/picons/match-nash-sport.png",МАТЧ! СТРАНА
 http://185.46.16.239:8000/Match_Nash_Sport
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-football1" tvg-logo="https://iptvx.one/picons/match-football1.png",МАТЧ! ФУТБОЛ 1
