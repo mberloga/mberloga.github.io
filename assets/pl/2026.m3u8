@@ -36,13 +36,9 @@ https://stream8.cinerama.uz/1049/tracks-v1a1/mono.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-planeta" tvg-logo="https://iptvx.one/picons/match-planeta.png",МАТЧ! ПЛАНЕТА
 http://87.76.32.36:8001/matchplaneta
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
-http://95.181.17.26/dvr01/hd1/NashFutHD/chunks.m3u8?&&wmsAuthSign=c2VydmVyX3RpbWU9Mi8yOC8yMDI2IDc6NTU6NDcgUE0maGFzaF92YWx1ZT1uOENwWDBBVmVRVmhjdFBQQXF1aGhBPT0mdmFsaWRtaW51dGVzPTcyMCZpZD03Nzc=
+http://stream.mcquack.net/193/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (SmartTV; Linux; Tizen 6.0)
-https://mhd128.iptv2022.com/p/huAkeJ8vR-Bhob6cbCvXww,1772394943/streaming/match_premyerhd/324/1/tracks-v5a1/mono.m3u8
-#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (SmartTV; Linux; Tizen 6.0)
-https://mhd128.iptv2022.com/p/CDFmEOv55_8aq3RiaWQ4rA,1772394943/streaming/match_premyer/324/1/tracks-v5a1/mono.m3u8
+https://flussonic.mkpnet.ru/tv-ee3651e1e7ce5cbf/video.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-nash-sport" tvg-logo="https://iptvx.one/picons/match-nash-sport.png",МАТЧ! СТРАНА
 http://185.46.16.239:8000/Match_Nash_Sport
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-football1" tvg-logo="https://iptvx.one/picons/match-football1.png",МАТЧ! ФУТБОЛ 1
@@ -68,11 +64,11 @@ http://41.205.93.154/ESPN2/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-logo="https://i.ibb.co/7X50nY7/ESPNU.png",ESPNU (US)
 http://41.205.93.154/ESPNU/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
-http://87.76.32.36:8001/eurosport1hd
-#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
-http://178.134.1.158:8081/eurosport/index.m3u8
+http://stream.mcquack.net/176/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 ENG
+http://znty.dyndns.org:5010/hls/eurosport.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2
-https://flussonic.salomtv.uz/eurosport_2/video.m3u8
+http://stream.mcquack.net/192/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 [BeeTV]
 https://ucdn.beetv.kz/bpk-tv/000002478/tve/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2 [BeeTV]
