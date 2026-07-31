@@ -12,15 +12,25 @@ https://stream8.cinerama.uz/1422/tracks-v1a1/mono.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="kxl-hd" tvg-logo="https://iptvx.one/picons/kxl-hd.png",КХЛ PRIME
 http://86.57.209.210/KHL_HD/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+http://zabava-htlive.cdn.ngenix.net/hls/CH_MATCHTV/variant.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
 http://tv.tuva.ru/machtv/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
-http://catchup.videoline.ru/match/playlist.m3u8
+https://flussonic.mkpnet.ru/tv-d3098523a4409835/video.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
-http://185.46.48.18/match/tracks-v1a1/mono.m3u8
+http://45.132.87.69:8080/match/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
 http://5.188.221.43:8080/play/match
-#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ! HD
-http://178.163.2.228:4022/udp/234.0.0.242:2000
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+http://31.131.141.195:8000/play/1030/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+http://185.46.16.239:8000/Match_TV
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.televizor-24-tochka.ru/live/6-req_offset_28000000-req_window_0-1k_v5.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ! (для заграницы)
+http://hls127.freeott.top:8080/MATCH_TV/mono.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-arena" tvg-logo="https://iptvx.one/picons/match-arena.png",МАТЧ! АРЕНА
 http://185.46.16.239:8000/Match_Arena
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-boets" tvg-logo="https://iptvx.one/picons/match-boets.png",МАТЧ! БОЕЦ
@@ -44,6 +54,8 @@ http://185.46.16.239:8000/Match_Nash_Sport
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-football1" tvg-logo="https://iptvx.one/picons/match-football1.png",МАТЧ! ФУТБОЛ 1
 http://45.145.32.13:20440/match_football1/index.m3u8?token=test
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-football3" tvg-logo="https://iptvx.one/picons/match-football3.png",МАТЧ! ФУТБОЛ 3
+http://185.57.68.33/110/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-football3" tvg-logo="https://iptvx.one/picons/match-football3.png",МАТЧ! ФУТБОЛ 3
 http://185.57.68.33/110/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-football3" tvg-logo="https://iptvx.one/picons/match-football3.png",МАТЧ! ФУТБОЛ 3 HD
 http://45.145.32.13:20440/match_futbol_3_hd/index.m3u8?token=test
@@ -65,18 +77,14 @@ http://41.205.93.154/ESPN2/mpegts
 http://41.205.93.154/ESPNU/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
 http://stream.mcquack.net/176/index.m3u8
-#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 ENG
-http://znty.dyndns.org:5010/hls/eurosport.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2
 http://stream.mcquack.net/192/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 ENG
+http://znty.dyndns.org:5010/hls/eurosport.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 [BeeTV]
 https://ucdn.beetv.kz/bpk-tv/000002478/tve/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2 [BeeTV]
 https://ucdn.beetv.kz/bpk-tv/000002479/tve/index.m3u8
-#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 (FR)
-http://41.205.93.154/EUROSPORT1/mpegts
-#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2 (FR)
-http://41.205.93.154/EUROSPORT2/mpegts
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 (FR)
 http://99.27.51.147:8080/EuroSport/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2 (FR)
@@ -602,6 +610,8 @@ http://86.57.209.210/Ocean/index.m3u8
 http://185.57.68.33/232/mpegts
 #EXTINF:0 group-title="ПРИРОДА" tvg-id="animal-planet" tvg-logo="https://iptvx.one/picons/animal-planet.png",ANIMAL PLANET [BeeTV]
 https://ucdn.beetv.kz/bpk-tv/000000216/tve/index.m3u8
+#EXTINF:0 group-title="ПРИРОДА" tvg-id="big-planet" tvg-logo="https://iptvx.one/picons/big-planet.png",BIG PLANET
+http://31.210.208.171:8080/big_planet/index.m3u8?token=+W2MSER
 #EXTINF:0 group-title="ПРИРОДА" tvg-id="big-planet" tvg-logo="https://iptvx.one/picons/big-planet.png",BIG PLANET [BeeTV]
 https://ucdn.beetv.kz/bpk-tv/000008052/tve/index.m3u8
 #EXTINF:0 group-title="ПРИРОДА" tvg-id="curiosity-stream" tvg-logo="https://iptvx.one/picons/curiosity-stream.png",CuriosityStream
