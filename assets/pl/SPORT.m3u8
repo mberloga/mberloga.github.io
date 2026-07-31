@@ -1,0 +1,38 @@
+#EXTM3U deinterlace=1 m3uautoload=1 url-tvg="http://iptvx.one/epg/epg_lite.xml.gz" refresh="86400" tvg-shift=0 cache=500
+#PLAYLIST:SPORT
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1
+http://stream.mcquack.net/176/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2
+http://stream.mcquack.net/192/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 ENG
+http://znty.dyndns.org:5010/hls/eurosport.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 [BeeTV]
+https://ucdn.beetv.kz/bpk-tv/000002478/tve/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2 [BeeTV]
+https://ucdn.beetv.kz/bpk-tv/000002479/tve/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport1" tvg-logo="https://iptvx.one/picons/eurosport1.png",EUROSPORT 1 (FR)
+http://99.27.51.147:8080/EuroSport/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="eurosport2" tvg-logo="https://iptvx.one/picons/eurosport2.png",EUROSPORT 2 (FR)
+http://99.27.51.147:8080/EuroSport2/index.m3u8
+
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+http://tv.tuva.ru/machtv/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+https://flussonic.mkpnet.ru/tv-d3098523a4409835/video.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+http://45.132.87.69:8080/match/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+http://5.188.221.43:8080/play/match
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+http://31.131.141.195:8000/play/1030/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ!
+http://185.46.16.239:8000/Match_TV
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-tv" tvg-logo="https://i.ibb.co/2WfYvVp/m.png",МАТЧ! (для заграницы)
+http://hls127.freeott.top:8080/MATCH_TV/mono.m3u8
+
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
+http://stream.mcquack.net/193/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
+https://flussonic.mkpnet.ru/tv-ee3651e1e7ce5cbf/video.m3u8
+
+###--- https://raw.githubusercontent.com/mberloga/mberloga.github.io/refs/heads/main/assets/pl/SPORT.m3u8
