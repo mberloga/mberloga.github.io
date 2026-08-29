@@ -34,5 +34,10 @@ http://hls127.freeott.top:8080/MATCH_TV/mono.m3u8
 http://stream.mcquack.net/193/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
 https://flussonic.mkpnet.ru/tv-ee3651e1e7ce5cbf/video.m3u8
-
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
+http://46.8.46.14/premier/index.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР (ВРЕМЕННАЯ)
+http://95.181.17.26/dvr01/hd1/NashFutHD/chunks.m3u8?&&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDY6NTc6NTEgQU0maGFzaF92YWx1ZT1TYWp1OWFVQm5VN2dma3lVbGRpYzh3PT0mdmFsaWRtaW51dGVzPTcyMCZpZD03Nzc=
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР (ВРЕМЕННАЯ)
+http://95.181.17.26/dvr01/hd1/NashFutHD/chunks.m3u8?&&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDY6MTA6MDIgQU0maGFzaF92YWx1ZT15VjZUclV1S1ZLekVVOGUrdElSZklBPT0mdmFsaWRtaW51dGVzPTcyMCZpZD1tZWdhcHVsdF9Ga2NYRXg4VEJSaElOZzFKU1Y5TkgxZFlVMU1GVzBVV0JoMEhDQVFLUGhrUlRrNGNVUms9
 ###--- https://raw.githubusercontent.com/mberloga/mberloga.github.io/refs/heads/main/assets/pl/SPORT.m3u8
