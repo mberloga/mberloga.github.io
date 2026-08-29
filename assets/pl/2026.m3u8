@@ -49,6 +49,8 @@ http://87.76.32.36:8001/matchplaneta
 http://stream.mcquack.net/193/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
 https://flussonic.mkpnet.ru/tv-ee3651e1e7ce5cbf/video.m3u8
+#EXTINF:0 group-title="СПОРТ" tvg-id="match-premier" tvg-logo="https://i.ibb.co/Hdfv2hV/mp.png",МАТЧ! ПРЕМЬЕР
+http://46.8.46.14/premier/index.m3u8
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-nash-sport" tvg-logo="https://iptvx.one/picons/match-nash-sport.png",МАТЧ! СТРАНА
 http://185.46.16.239:8000/Match_Nash_Sport
 #EXTINF:0 group-title="СПОРТ" tvg-id="match-football1" tvg-logo="https://iptvx.one/picons/match-football1.png",МАТЧ! ФУТБОЛ 1
